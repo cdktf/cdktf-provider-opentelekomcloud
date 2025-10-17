@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudLtsStreamsV2 <a name="DataOpentelekomcloudLtsStreamsV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLtsStreamsV2.DataOpentelekomcloudLtsStreamsV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/lts_streams_v2 opentelekomcloud_lts_streams_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/lts_streams_v2 opentelekomcloud_lts_streams_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLtsStreamsV2.DataOpentelekomcloudLtsStreamsV2.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataOpentelekomcloudLtsStr
 
 The id of the existing DataOpentelekomcloudLtsStreamsV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/lts_streams_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/lts_streams_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,9 +679,9 @@ new DataOpentelekomcloudLtsStreamsV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLtsStreamsV2.DataOpentelekomcloudLtsStreamsV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLtsStreamsV2.DataOpentelekomcloudLtsStreamsV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLtsStreamsV2.DataOpentelekomcloudLtsStreamsV2Config.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLtsStreamsV2.DataOpentelekomcloudLtsStreamsV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/lts_streams_v2#id DataOpentelekomcloudLtsStreamsV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLtsStreamsV2.DataOpentelekomcloudLtsStreamsV2Config.property.logGroupName">LogGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/lts_streams_v2#log_group_name DataOpentelekomcloudLtsStreamsV2#log_group_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLtsStreamsV2.DataOpentelekomcloudLtsStreamsV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/lts_streams_v2#name DataOpentelekomcloudLtsStreamsV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLtsStreamsV2.DataOpentelekomcloudLtsStreamsV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/lts_streams_v2#id DataOpentelekomcloudLtsStreamsV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLtsStreamsV2.DataOpentelekomcloudLtsStreamsV2Config.property.logGroupName">LogGroupName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/lts_streams_v2#log_group_name DataOpentelekomcloudLtsStreamsV2#log_group_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudLtsStreamsV2.DataOpentelekomcloudLtsStreamsV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/lts_streams_v2#name DataOpentelekomcloudLtsStreamsV2#name}. |
 
 ---
 
@@ -763,7 +763,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/lts_streams_v2#id DataOpentelekomcloudLtsStreamsV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/lts_streams_v2#id DataOpentelekomcloudLtsStreamsV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -778,7 +778,7 @@ public string LogGroupName { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/lts_streams_v2#log_group_name DataOpentelekomcloudLtsStreamsV2#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/lts_streams_v2#log_group_name DataOpentelekomcloudLtsStreamsV2#log_group_name}.
 
 ---
 
@@ -790,7 +790,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/lts_streams_v2#name DataOpentelekomcloudLtsStreamsV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/lts_streams_v2#name DataOpentelekomcloudLtsStreamsV2#name}.
 
 ---
 

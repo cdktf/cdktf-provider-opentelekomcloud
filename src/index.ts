@@ -256,6 +256,9 @@ export * as swrOrganizationV2 from './swr-organization-v2';
 export * as swrRepositoryV2 from './swr-repository-v2';
 export * as taurusdbMysqlBackupV3 from './taurusdb-mysql-backup-v3';
 export * as taurusdbMysqlInstanceV3 from './taurusdb-mysql-instance-v3';
+export * as taurusdbMysqlProxyV3 from './taurusdb-mysql-proxy-v3';
+export * as taurusdbMysqlQuotaV3 from './taurusdb-mysql-quota-v3';
+export * as taurusdbMysqlSqlControlRuleV3 from './taurusdb-mysql-sql-control-rule-v3';
 export * as tmsResourceTagsV1 from './tms-resource-tags-v1';
 export * as tmsTagsV1 from './tms-tags-v1';
 export * as vbsBackupPolicyV2 from './vbs-backup-policy-v2';
@@ -372,6 +375,7 @@ export * as dataOpentelekomcloudErPropagationsV3 from './data-opentelekomcloud-e
 export * as dataOpentelekomcloudErQuotasV3 from './data-opentelekomcloud-er-quotas-v3';
 export * as dataOpentelekomcloudErRouteTablesV3 from './data-opentelekomcloud-er-route-tables-v3';
 export * as dataOpentelekomcloudEvsVolumesV2 from './data-opentelekomcloud-evs-volumes-v2';
+export * as dataOpentelekomcloudFgsFunctionsV2 from './data-opentelekomcloud-fgs-functions-v2';
 export * as dataOpentelekomcloudHssHostGroupsV5 from './data-opentelekomcloud-hss-host-groups-v5';
 export * as dataOpentelekomcloudHssHostsV5 from './data-opentelekomcloud-hss-hosts-v5';
 export * as dataOpentelekomcloudHssIntrusionEventsV5 from './data-opentelekomcloud-hss-intrusion-events-v5';
@@ -384,6 +388,7 @@ export * as dataOpentelekomcloudIdentityProjectV3 from './data-opentelekomcloud-
 export * as dataOpentelekomcloudIdentityProjectsV3 from './data-opentelekomcloud-identity-projects-v3';
 export * as dataOpentelekomcloudIdentityRoleCustomV3 from './data-opentelekomcloud-identity-role-custom-v3';
 export * as dataOpentelekomcloudIdentityRoleV3 from './data-opentelekomcloud-identity-role-v3';
+export * as dataOpentelekomcloudIdentityTemporaryAkskV3 from './data-opentelekomcloud-identity-temporary-aksk-v3';
 export * as dataOpentelekomcloudIdentityUserV3 from './data-opentelekomcloud-identity-user-v3';
 export * as dataOpentelekomcloudImagesImageV2 from './data-opentelekomcloud-images-image-v2';
 export * as dataOpentelekomcloudKmsDataKeyV1 from './data-opentelekomcloud-kms-data-key-v1';
@@ -436,6 +441,11 @@ export * as dataOpentelekomcloudSmnMessageTemplatesV2 from './data-opentelekomcl
 export * as dataOpentelekomcloudSmnSubscriptionV2 from './data-opentelekomcloud-smn-subscription-v2';
 export * as dataOpentelekomcloudSmnTopicSubscriptionV2 from './data-opentelekomcloud-smn-topic-subscription-v2';
 export * as dataOpentelekomcloudSmnTopicV2 from './data-opentelekomcloud-smn-topic-v2';
+export * as dataOpentelekomcloudTaurusdbMysqlBackupsV3 from './data-opentelekomcloud-taurusdb-mysql-backups-v3';
+export * as dataOpentelekomcloudTaurusdbMysqlConfigurationV3 from './data-opentelekomcloud-taurusdb-mysql-configuration-v3';
+export * as dataOpentelekomcloudTaurusdbMysqlEngineVersionsV3 from './data-opentelekomcloud-taurusdb-mysql-engine-versions-v3';
+export * as dataOpentelekomcloudTaurusdbMysqlFlavorsV3 from './data-opentelekomcloud-taurusdb-mysql-flavors-v3';
+export * as dataOpentelekomcloudTaurusdbMysqlInstanceV3 from './data-opentelekomcloud-taurusdb-mysql-instance-v3';
 export * as dataOpentelekomcloudTmsQuotasV1 from './data-opentelekomcloud-tms-quotas-v1';
 export * as dataOpentelekomcloudTmsResourceInstancesV1 from './data-opentelekomcloud-tms-resource-instances-v1';
 export * as dataOpentelekomcloudTmsResourceTagKeysV1 from './data-opentelekomcloud-tms-resource-tag-keys-v1';

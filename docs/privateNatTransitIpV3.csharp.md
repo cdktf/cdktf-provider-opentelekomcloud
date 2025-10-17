@@ -4,7 +4,7 @@
 
 ### PrivateNatTransitIpV3 <a name="PrivateNatTransitIpV3" id="@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3 opentelekomcloud_private_nat_transit_ip_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3 opentelekomcloud_private_nat_transit_ip_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3.Initializer"></a>
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the PrivateNatTransitIpV3 to i
 
 The id of the existing PrivateNatTransitIpV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -924,10 +924,10 @@ new PrivateNatTransitIpV3Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.property.virsubnetId">VirsubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#virsubnet_id PrivateNatTransitIpV3#virsubnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.property.enterpriseProjectId">EnterpriseProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#enterprise_project_id PrivateNatTransitIpV3#enterprise_project_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.property.ipAddress">IpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#ip_address PrivateNatTransitIpV3#ip_address}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#tags PrivateNatTransitIpV3#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.property.virsubnetId">VirsubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#virsubnet_id PrivateNatTransitIpV3#virsubnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.property.enterpriseProjectId">EnterpriseProjectId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#enterprise_project_id PrivateNatTransitIpV3#enterprise_project_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.property.ipAddress">IpAddress</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#ip_address PrivateNatTransitIpV3#ip_address}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#tags PrivateNatTransitIpV3#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Timeouts">PrivateNatTransitIpV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1010,7 +1010,7 @@ public string VirsubnetId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#virsubnet_id PrivateNatTransitIpV3#virsubnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#virsubnet_id PrivateNatTransitIpV3#virsubnet_id}.
 
 ---
 
@@ -1022,7 +1022,7 @@ public string EnterpriseProjectId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#enterprise_project_id PrivateNatTransitIpV3#enterprise_project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#enterprise_project_id PrivateNatTransitIpV3#enterprise_project_id}.
 
 ---
 
@@ -1034,7 +1034,7 @@ public string IpAddress { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#ip_address PrivateNatTransitIpV3#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#ip_address PrivateNatTransitIpV3#ip_address}.
 
 ---
 
@@ -1046,7 +1046,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#tags PrivateNatTransitIpV3#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#tags PrivateNatTransitIpV3#tags}.
 
 ---
 
@@ -1060,7 +1060,7 @@ public PrivateNatTransitIpV3Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#timeouts PrivateNatTransitIpV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#timeouts PrivateNatTransitIpV3#timeouts}
 
 ---
 
@@ -1081,8 +1081,8 @@ new PrivateNatTransitIpV3Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#create PrivateNatTransitIpV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#delete PrivateNatTransitIpV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#create PrivateNatTransitIpV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#delete PrivateNatTransitIpV3#delete}. |
 
 ---
 
@@ -1094,7 +1094,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#create PrivateNatTransitIpV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#create PrivateNatTransitIpV3#create}.
 
 ---
 
@@ -1106,7 +1106,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/private_nat_transit_ip_v3#delete PrivateNatTransitIpV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/private_nat_transit_ip_v3#delete PrivateNatTransitIpV3#delete}.
 
 ---
 

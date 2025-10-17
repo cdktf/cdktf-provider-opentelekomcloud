@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3
+// https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,99 +13,105 @@ import * as cdktf from 'cdktf';
 
 export interface CbrVaultV3Config extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#auto_bind CbrVaultV3#auto_bind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#auto_bind CbrVaultV3#auto_bind}
   */
   readonly autoBind?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#auto_expand CbrVaultV3#auto_expand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#auto_expand CbrVaultV3#auto_expand}
   */
   readonly autoExpand?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#backup_policy_id CbrVaultV3#backup_policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#backup_policy_id CbrVaultV3#backup_policy_id}
   */
   readonly backupPolicyId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#description CbrVaultV3#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#description CbrVaultV3#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#enterprise_project_id CbrVaultV3#enterprise_project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#enterprise_project_id CbrVaultV3#enterprise_project_id}
   */
   readonly enterpriseProjectId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#id CbrVaultV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#id CbrVaultV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#locked CbrVaultV3#locked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#locked CbrVaultV3#locked}
   */
   readonly locked?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#name CbrVaultV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#name CbrVaultV3#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#resource CbrVaultV3#resource}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#resource CbrVaultV3#resource}
   */
   readonly resource?: CbrVaultV3Resource[] | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#tags CbrVaultV3#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#tags CbrVaultV3#tags}
   */
   readonly tags?: { [key: string]: string };
   /**
   * billing block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#billing CbrVaultV3#billing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#billing CbrVaultV3#billing}
   */
   readonly billing: CbrVaultV3Billing;
   /**
   * bind_rules block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#bind_rules CbrVaultV3#bind_rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#bind_rules CbrVaultV3#bind_rules}
   */
   readonly bindRules?: CbrVaultV3BindRules[] | cdktf.IResolvable;
+  /**
+  * policy block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#policy CbrVaultV3#policy}
+  */
+  readonly policy?: CbrVaultV3Policy[] | cdktf.IResolvable;
 }
 export interface CbrVaultV3Resource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#backup_count CbrVaultV3#backup_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#backup_count CbrVaultV3#backup_count}
   */
   readonly backupCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#backup_size CbrVaultV3#backup_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#backup_size CbrVaultV3#backup_size}
   */
   readonly backupSize?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#exclude_volumes CbrVaultV3#exclude_volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#exclude_volumes CbrVaultV3#exclude_volumes}
   */
   readonly excludeVolumes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#id CbrVaultV3#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#id CbrVaultV3#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#include_volumes CbrVaultV3#include_volumes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#include_volumes CbrVaultV3#include_volumes}
   */
   readonly includeVolumes?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#name CbrVaultV3#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#name CbrVaultV3#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#protect_status CbrVaultV3#protect_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#protect_status CbrVaultV3#protect_status}
   */
   readonly protectStatus?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#size CbrVaultV3#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#size CbrVaultV3#size}
   */
   readonly size?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#type CbrVaultV3#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#type CbrVaultV3#type}
   */
   readonly type?: string;
 }
@@ -453,51 +459,51 @@ export class CbrVaultV3ResourceList extends cdktf.ComplexList {
 }
 export interface CbrVaultV3Billing {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#charging_mode CbrVaultV3#charging_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#charging_mode CbrVaultV3#charging_mode}
   */
   readonly chargingMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#cloud_type CbrVaultV3#cloud_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#cloud_type CbrVaultV3#cloud_type}
   */
   readonly cloudType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#consistent_level CbrVaultV3#consistent_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#consistent_level CbrVaultV3#consistent_level}
   */
   readonly consistentLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#console_url CbrVaultV3#console_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#console_url CbrVaultV3#console_url}
   */
   readonly consoleUrl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#extra_info CbrVaultV3#extra_info}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#extra_info CbrVaultV3#extra_info}
   */
   readonly extraInfo?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#is_auto_pay CbrVaultV3#is_auto_pay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#is_auto_pay CbrVaultV3#is_auto_pay}
   */
   readonly isAutoPay?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#is_auto_renew CbrVaultV3#is_auto_renew}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#is_auto_renew CbrVaultV3#is_auto_renew}
   */
   readonly isAutoRenew?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#object_type CbrVaultV3#object_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#object_type CbrVaultV3#object_type}
   */
   readonly objectType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#period_num CbrVaultV3#period_num}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#period_num CbrVaultV3#period_num}
   */
   readonly periodNum?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#period_type CbrVaultV3#period_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#period_type CbrVaultV3#period_type}
   */
   readonly periodType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#protect_type CbrVaultV3#protect_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#protect_type CbrVaultV3#protect_type}
   */
   readonly protectType: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#size CbrVaultV3#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#size CbrVaultV3#size}
   */
   readonly size: number;
 }
@@ -931,11 +937,11 @@ export class CbrVaultV3BillingOutputReference extends cdktf.ComplexObject {
 }
 export interface CbrVaultV3BindRules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#key CbrVaultV3#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#key CbrVaultV3#key}
   */
   readonly key: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#value CbrVaultV3#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#value CbrVaultV3#value}
   */
   readonly value: string;
 }
@@ -1072,9 +1078,158 @@ export class CbrVaultV3BindRulesList extends cdktf.ComplexList {
     return new CbrVaultV3BindRulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface CbrVaultV3Policy {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#destination_vault_id CbrVaultV3#destination_vault_id}
+  */
+  readonly destinationVaultId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#id CbrVaultV3#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id: string;
+}
+
+export function cbrVaultV3PolicyToTerraform(struct?: CbrVaultV3Policy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destination_vault_id: cdktf.stringToTerraform(struct!.destinationVaultId),
+    id: cdktf.stringToTerraform(struct!.id),
+  }
+}
+
+
+export function cbrVaultV3PolicyToHclTerraform(struct?: CbrVaultV3Policy | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destination_vault_id: {
+      value: cdktf.stringToHclTerraform(struct!.destinationVaultId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    id: {
+      value: cdktf.stringToHclTerraform(struct!.id),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class CbrVaultV3PolicyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): CbrVaultV3Policy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destinationVaultId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinationVaultId = this._destinationVaultId;
+    }
+    if (this._id !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.id = this._id;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: CbrVaultV3Policy | cdktf.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._destinationVaultId = undefined;
+      this._id = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._destinationVaultId = value.destinationVaultId;
+      this._id = value.id;
+    }
+  }
+
+  // destination_vault_id - computed: false, optional: true, required: false
+  private _destinationVaultId?: string; 
+  public get destinationVaultId() {
+    return this.getStringAttribute('destination_vault_id');
+  }
+  public set destinationVaultId(value: string) {
+    this._destinationVaultId = value;
+  }
+  public resetDestinationVaultId() {
+    this._destinationVaultId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationVaultIdInput() {
+    return this._destinationVaultId;
+  }
+
+  // id - computed: false, optional: false, required: true
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+}
+
+export class CbrVaultV3PolicyList extends cdktf.ComplexList {
+  public internalValue? : CbrVaultV3Policy[] | cdktf.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): CbrVaultV3PolicyOutputReference {
+    return new CbrVaultV3PolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3}
+* Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3}
 */
 export class CbrVaultV3 extends cdktf.TerraformResource {
 
@@ -1090,7 +1245,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a CbrVaultV3 resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CbrVaultV3 to import
-  * @param importFromId The id of the existing CbrVaultV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CbrVaultV3 that should be imported. Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CbrVaultV3 to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -1102,7 +1257,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource
+  * Create a new {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/cbr_vault_v3 opentelekomcloud_cbr_vault_v3} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1113,7 +1268,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
       terraformResourceType: 'opentelekomcloud_cbr_vault_v3',
       terraformGeneratorMetadata: {
         providerName: 'opentelekomcloud',
-        providerVersion: '1.36.49',
+        providerVersion: '1.36.50',
         providerVersionConstraint: '~> 1.26'
       },
       provider: config.provider,
@@ -1136,6 +1291,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
     this._tags = config.tags;
     this._billing.internalValue = config.billing;
     this._bindRules.internalValue = config.bindRules;
+    this._policy.internalValue = config.policy;
   }
 
   // ==========
@@ -1282,6 +1438,11 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
     return this.getStringAttribute('provider_id');
   }
 
+  // region - computed: true, optional: false, required: false
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+
   // resource - computed: true, optional: true, required: false
   private _resource = new CbrVaultV3ResourceList(this, "resource", true);
   public get resource() {
@@ -1348,6 +1509,22 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
     return this._bindRules.internalValue;
   }
 
+  // policy - computed: false, optional: true, required: false
+  private _policy = new CbrVaultV3PolicyList(this, "policy", true);
+  public get policy() {
+    return this._policy;
+  }
+  public putPolicy(value: CbrVaultV3Policy[] | cdktf.IResolvable) {
+    this._policy.internalValue = value;
+  }
+  public resetPolicy() {
+    this._policy.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -1366,6 +1543,7 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
       tags: cdktf.hashMapper(cdktf.stringToTerraform)(this._tags),
       billing: cbrVaultV3BillingToTerraform(this._billing.internalValue),
       bind_rules: cdktf.listMapper(cbrVaultV3BindRulesToTerraform, true)(this._bindRules.internalValue),
+      policy: cdktf.listMapper(cbrVaultV3PolicyToTerraform, true)(this._policy.internalValue),
     };
   }
 
@@ -1442,6 +1620,12 @@ export class CbrVaultV3 extends cdktf.TerraformResource {
         isBlock: true,
         type: "list",
         storageClassType: "CbrVaultV3BindRulesList",
+      },
+      policy: {
+        value: cdktf.listMapperHcl(cbrVaultV3PolicyToHclTerraform, true)(this._policy.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "CbrVaultV3PolicyList",
       },
     };
 

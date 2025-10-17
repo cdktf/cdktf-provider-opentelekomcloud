@@ -4,7 +4,7 @@
 
 ### FgsEventV2 <a name="FgsEventV2" id="@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_event_v2 opentelekomcloud_fgs_event_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_event_v2 opentelekomcloud_fgs_event_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the FgsEventV2 to import.
 
 The id of the existing FgsEventV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_event_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_event_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -812,10 +812,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.content">Content</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_event_v2#content FgsEventV2#content}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.functionUrn">FunctionUrn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_event_v2#function_urn FgsEventV2#function_urn}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_event_v2#name FgsEventV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_event_v2#id FgsEventV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.content">Content</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_event_v2#content FgsEventV2#content}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.functionUrn">FunctionUrn</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_event_v2#function_urn FgsEventV2#function_urn}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_event_v2#name FgsEventV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsEventV2.FgsEventV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_event_v2#id FgsEventV2#id}. |
 
 ---
 
@@ -897,7 +897,7 @@ Content *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_event_v2#content FgsEventV2#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_event_v2#content FgsEventV2#content}.
 
 ---
 
@@ -909,7 +909,7 @@ FunctionUrn *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_event_v2#function_urn FgsEventV2#function_urn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_event_v2#function_urn FgsEventV2#function_urn}.
 
 ---
 
@@ -921,7 +921,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_event_v2#name FgsEventV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_event_v2#name FgsEventV2#name}.
 
 ---
 
@@ -933,7 +933,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_event_v2#id FgsEventV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_event_v2#id FgsEventV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

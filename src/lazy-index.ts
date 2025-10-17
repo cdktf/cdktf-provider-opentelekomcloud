@@ -256,6 +256,9 @@ Object.defineProperty(exports, 'swrOrganizationV2', { get: function () { return 
 Object.defineProperty(exports, 'swrRepositoryV2', { get: function () { return require('./swr-repository-v2'); } });
 Object.defineProperty(exports, 'taurusdbMysqlBackupV3', { get: function () { return require('./taurusdb-mysql-backup-v3'); } });
 Object.defineProperty(exports, 'taurusdbMysqlInstanceV3', { get: function () { return require('./taurusdb-mysql-instance-v3'); } });
+Object.defineProperty(exports, 'taurusdbMysqlProxyV3', { get: function () { return require('./taurusdb-mysql-proxy-v3'); } });
+Object.defineProperty(exports, 'taurusdbMysqlQuotaV3', { get: function () { return require('./taurusdb-mysql-quota-v3'); } });
+Object.defineProperty(exports, 'taurusdbMysqlSqlControlRuleV3', { get: function () { return require('./taurusdb-mysql-sql-control-rule-v3'); } });
 Object.defineProperty(exports, 'tmsResourceTagsV1', { get: function () { return require('./tms-resource-tags-v1'); } });
 Object.defineProperty(exports, 'tmsTagsV1', { get: function () { return require('./tms-tags-v1'); } });
 Object.defineProperty(exports, 'vbsBackupPolicyV2', { get: function () { return require('./vbs-backup-policy-v2'); } });
@@ -372,6 +375,7 @@ Object.defineProperty(exports, 'dataOpentelekomcloudErPropagationsV3', { get: fu
 Object.defineProperty(exports, 'dataOpentelekomcloudErQuotasV3', { get: function () { return require('./data-opentelekomcloud-er-quotas-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudErRouteTablesV3', { get: function () { return require('./data-opentelekomcloud-er-route-tables-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudEvsVolumesV2', { get: function () { return require('./data-opentelekomcloud-evs-volumes-v2'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudFgsFunctionsV2', { get: function () { return require('./data-opentelekomcloud-fgs-functions-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudHssHostGroupsV5', { get: function () { return require('./data-opentelekomcloud-hss-host-groups-v5'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudHssHostsV5', { get: function () { return require('./data-opentelekomcloud-hss-hosts-v5'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudHssIntrusionEventsV5', { get: function () { return require('./data-opentelekomcloud-hss-intrusion-events-v5'); } });
@@ -384,6 +388,7 @@ Object.defineProperty(exports, 'dataOpentelekomcloudIdentityProjectV3', { get: f
 Object.defineProperty(exports, 'dataOpentelekomcloudIdentityProjectsV3', { get: function () { return require('./data-opentelekomcloud-identity-projects-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudIdentityRoleCustomV3', { get: function () { return require('./data-opentelekomcloud-identity-role-custom-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudIdentityRoleV3', { get: function () { return require('./data-opentelekomcloud-identity-role-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudIdentityTemporaryAkskV3', { get: function () { return require('./data-opentelekomcloud-identity-temporary-aksk-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudIdentityUserV3', { get: function () { return require('./data-opentelekomcloud-identity-user-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudImagesImageV2', { get: function () { return require('./data-opentelekomcloud-images-image-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudKmsDataKeyV1', { get: function () { return require('./data-opentelekomcloud-kms-data-key-v1'); } });
@@ -436,6 +441,11 @@ Object.defineProperty(exports, 'dataOpentelekomcloudSmnMessageTemplatesV2', { ge
 Object.defineProperty(exports, 'dataOpentelekomcloudSmnSubscriptionV2', { get: function () { return require('./data-opentelekomcloud-smn-subscription-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudSmnTopicSubscriptionV2', { get: function () { return require('./data-opentelekomcloud-smn-topic-subscription-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudSmnTopicV2', { get: function () { return require('./data-opentelekomcloud-smn-topic-v2'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlBackupsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-backups-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlConfigurationV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-configuration-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlEngineVersionsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-engine-versions-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlFlavorsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-flavors-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlInstanceV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-instance-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsQuotasV1', { get: function () { return require('./data-opentelekomcloud-tms-quotas-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsResourceInstancesV1', { get: function () { return require('./data-opentelekomcloud-tms-resource-instances-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsResourceTagKeysV1', { get: function () { return require('./data-opentelekomcloud-tms-resource-tag-keys-v1'); } });

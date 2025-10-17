@@ -4,7 +4,7 @@
 
 ### FgsFunctionV2 <a name="FgsFunctionV2" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2 opentelekomcloud_fgs_function_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.Initializer"></a>
 
@@ -85,17 +85,24 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetCodeFilename">ResetCodeFilename</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetCodeType">ResetCodeType</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetCodeUrl">ResetCodeUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetConcurrencyNum">ResetConcurrencyNum</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetCustomImage">ResetCustomImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetDependList">ResetDependList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetDescription">ResetDescription</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetDnsList">ResetDnsList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEnableAuthInHeader">ResetEnableAuthInHeader</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEnableClassIsolation">ResetEnableClassIsolation</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEnableDynamicMemory">ResetEnableDynamicMemory</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEnableLtsLog">ResetEnableLtsLog</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEncryptedUserData">ResetEncryptedUserData</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEnterpriseProjectId">ResetEnterpriseProjectId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEphemeralStorage">ResetEphemeralStorage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetFuncCode">ResetFuncCode</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetFuncMounts">ResetFuncMounts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetFunctiongraphVersion">ResetFunctiongraphVersion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetGpuMemory">ResetGpuMemory</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetHandler">ResetHandler</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetHeartbeatHandler">ResetHeartbeatHandler</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetInitializerHandler">ResetInitializerHandler</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetInitializerTimeout">ResetInitializerTimeout</a></code> | *No description.* |
@@ -103,6 +110,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetLogGroupName">ResetLogGroupName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetLogTopicId">ResetLogTopicId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetLogTopicName">ResetLogTopicName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetLtsCustomTag">ResetLtsCustomTag</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetMaxInstanceNum">ResetMaxInstanceNum</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetMountUserGroupId">ResetMountUserGroupId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetMountUserId">ResetMountUserId</a></code> | *No description.* |
@@ -112,6 +120,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetPreStopHandler">ResetPreStopHandler</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetPreStopTimeout">ResetPreStopTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetReservedInstances">ResetReservedInstances</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetRestoreHookHandler">ResetRestoreHookHandler</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetRestoreHookTimeout">ResetRestoreHookTimeout</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetTags">ResetTags</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetUserData">ResetUserData</a></code> | *No description.* |
@@ -516,6 +526,12 @@ func ResetCodeType()
 func ResetCodeUrl()
 ```
 
+##### `ResetConcurrencyNum` <a name="ResetConcurrencyNum" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetConcurrencyNum"></a>
+
+```go
+func ResetConcurrencyNum()
+```
+
 ##### `ResetCustomImage` <a name="ResetCustomImage" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetCustomImage"></a>
 
 ```go
@@ -534,6 +550,18 @@ func ResetDependList()
 func ResetDescription()
 ```
 
+##### `ResetDnsList` <a name="ResetDnsList" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetDnsList"></a>
+
+```go
+func ResetDnsList()
+```
+
+##### `ResetEnableAuthInHeader` <a name="ResetEnableAuthInHeader" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEnableAuthInHeader"></a>
+
+```go
+func ResetEnableAuthInHeader()
+```
+
 ##### `ResetEnableClassIsolation` <a name="ResetEnableClassIsolation" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEnableClassIsolation"></a>
 
 ```go
@@ -546,10 +574,28 @@ func ResetEnableClassIsolation()
 func ResetEnableDynamicMemory()
 ```
 
+##### `ResetEnableLtsLog` <a name="ResetEnableLtsLog" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEnableLtsLog"></a>
+
+```go
+func ResetEnableLtsLog()
+```
+
 ##### `ResetEncryptedUserData` <a name="ResetEncryptedUserData" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEncryptedUserData"></a>
 
 ```go
 func ResetEncryptedUserData()
+```
+
+##### `ResetEnterpriseProjectId` <a name="ResetEnterpriseProjectId" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEnterpriseProjectId"></a>
+
+```go
+func ResetEnterpriseProjectId()
+```
+
+##### `ResetEphemeralStorage` <a name="ResetEphemeralStorage" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetEphemeralStorage"></a>
+
+```go
+func ResetEphemeralStorage()
 ```
 
 ##### `ResetFuncCode` <a name="ResetFuncCode" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetFuncCode"></a>
@@ -580,6 +626,12 @@ func ResetGpuMemory()
 
 ```go
 func ResetHandler()
+```
+
+##### `ResetHeartbeatHandler` <a name="ResetHeartbeatHandler" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetHeartbeatHandler"></a>
+
+```go
+func ResetHeartbeatHandler()
 ```
 
 ##### `ResetId` <a name="ResetId" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetId"></a>
@@ -622,6 +674,12 @@ func ResetLogTopicId()
 
 ```go
 func ResetLogTopicName()
+```
+
+##### `ResetLtsCustomTag` <a name="ResetLtsCustomTag" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetLtsCustomTag"></a>
+
+```go
+func ResetLtsCustomTag()
 ```
 
 ##### `ResetMaxInstanceNum` <a name="ResetMaxInstanceNum" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetMaxInstanceNum"></a>
@@ -676,6 +734,18 @@ func ResetPreStopTimeout()
 
 ```go
 func ResetReservedInstances()
+```
+
+##### `ResetRestoreHookHandler` <a name="ResetRestoreHookHandler" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetRestoreHookHandler"></a>
+
+```go
+func ResetRestoreHookHandler()
+```
+
+##### `ResetRestoreHookTimeout` <a name="ResetRestoreHookTimeout" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetRestoreHookTimeout"></a>
+
+```go
+func ResetRestoreHookTimeout()
 ```
 
 ##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.resetTags"></a>
@@ -811,7 +881,7 @@ The construct id used in the generated config for the FgsFunctionV2 to import.
 
 The id of the existing FgsFunctionV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -844,13 +914,9 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.allowEphemeralStorage">AllowEphemeralStorage</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.apigRouteEnable">ApigRouteEnable</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.customImage">CustomImage</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference">FgsFunctionV2CustomImageOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.dnsList">DnsList</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableAuthInHeader">EnableAuthInHeader</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.ephemeralStorage">EphemeralStorage</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.extendConfig">ExtendConfig</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.funcMounts">FuncMounts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2FuncMountsList">FgsFunctionV2FuncMountsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.gpuType">GpuType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.heartbeatHandler">HeartbeatHandler</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.isStatefulFunction">IsStatefulFunction</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.networkController">NetworkController</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerOutputReference">FgsFunctionV2NetworkControllerOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.region">Region</a></code> | <code>*string</code> | *No description.* |
@@ -865,17 +931,24 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.codeFilenameInput">CodeFilenameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.codeTypeInput">CodeTypeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.codeUrlInput">CodeUrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.concurrencyNumInput">ConcurrencyNumInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.customImageInput">CustomImageInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage">FgsFunctionV2CustomImage</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.dependListInput">DependListInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.dnsListInput">DnsListInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableAuthInHeaderInput">EnableAuthInHeaderInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableClassIsolationInput">EnableClassIsolationInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableDynamicMemoryInput">EnableDynamicMemoryInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableLtsLogInput">EnableLtsLogInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.encryptedUserDataInput">EncryptedUserDataInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enterpriseProjectIdInput">EnterpriseProjectIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.ephemeralStorageInput">EphemeralStorageInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.funcCodeInput">FuncCodeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.funcMountsInput">FuncMountsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.functiongraphVersionInput">FunctiongraphVersionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.gpuMemoryInput">GpuMemoryInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.handlerInput">HandlerInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.heartbeatHandlerInput">HeartbeatHandlerInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.initializerHandlerInput">InitializerHandlerInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.initializerTimeoutInput">InitializerTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
@@ -883,6 +956,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.logGroupNameInput">LogGroupNameInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.logTopicIdInput">LogTopicIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.logTopicNameInput">LogTopicNameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.ltsCustomTagInput">LtsCustomTagInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.maxInstanceNumInput">MaxInstanceNumInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.memorySizeInput">MemorySizeInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.mountUserGroupIdInput">MountUserGroupIdInput</a></code> | <code>*f64</code> | *No description.* |
@@ -894,6 +968,8 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.preStopHandlerInput">PreStopHandlerInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.preStopTimeoutInput">PreStopTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.reservedInstancesInput">ReservedInstancesInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.restoreHookHandlerInput">RestoreHookHandlerInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.restoreHookTimeoutInput">RestoreHookTimeoutInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.runtimeInput">RuntimeInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.tagsInput">TagsInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.timeoutInput">TimeoutInput</a></code> | <code>*f64</code> | *No description.* |
@@ -907,15 +983,22 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.codeFilename">CodeFilename</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.codeType">CodeType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.codeUrl">CodeUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.concurrencyNum">ConcurrencyNum</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.dependList">DependList</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.description">Description</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.dnsList">DnsList</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableAuthInHeader">EnableAuthInHeader</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableClassIsolation">EnableClassIsolation</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableDynamicMemory">EnableDynamicMemory</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableLtsLog">EnableLtsLog</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.encryptedUserData">EncryptedUserData</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enterpriseProjectId">EnterpriseProjectId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.ephemeralStorage">EphemeralStorage</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.funcCode">FuncCode</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.functiongraphVersion">FunctiongraphVersion</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.gpuMemory">GpuMemory</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.handler">Handler</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.heartbeatHandler">HeartbeatHandler</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.initializerHandler">InitializerHandler</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.initializerTimeout">InitializerTimeout</a></code> | <code>*f64</code> | *No description.* |
@@ -923,6 +1006,7 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.logTopicId">LogTopicId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.logTopicName">LogTopicName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.ltsCustomTag">LtsCustomTag</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.maxInstanceNum">MaxInstanceNum</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.memorySize">MemorySize</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.mountUserGroupId">MountUserGroupId</a></code> | <code>*f64</code> | *No description.* |
@@ -932,6 +1016,8 @@ Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.peeringCidr">PeeringCidr</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.preStopHandler">PreStopHandler</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.preStopTimeout">PreStopTimeout</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.restoreHookHandler">RestoreHookHandler</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.restoreHookTimeout">RestoreHookTimeout</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.runtime">Runtime</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.tags">Tags</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.timeout">Timeout</a></code> | <code>*f64</code> | *No description.* |
@@ -1112,36 +1198,6 @@ func CustomImage() FgsFunctionV2CustomImageOutputReference
 
 ---
 
-##### `DnsList`<sup>Required</sup> <a name="DnsList" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.dnsList"></a>
-
-```go
-func DnsList() *string
-```
-
-- *Type:* *string
-
----
-
-##### `EnableAuthInHeader`<sup>Required</sup> <a name="EnableAuthInHeader" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableAuthInHeader"></a>
-
-```go
-func EnableAuthInHeader() IResolvable
-```
-
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
-
----
-
-##### `EphemeralStorage`<sup>Required</sup> <a name="EphemeralStorage" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.ephemeralStorage"></a>
-
-```go
-func EphemeralStorage() *f64
-```
-
-- *Type:* *f64
-
----
-
 ##### `ExtendConfig`<sup>Required</sup> <a name="ExtendConfig" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.extendConfig"></a>
 
 ```go
@@ -1166,16 +1222,6 @@ func FuncMounts() FgsFunctionV2FuncMountsList
 
 ```go
 func GpuType() *string
-```
-
-- *Type:* *string
-
----
-
-##### `HeartbeatHandler`<sup>Required</sup> <a name="HeartbeatHandler" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.heartbeatHandler"></a>
-
-```go
-func HeartbeatHandler() *string
 ```
 
 - *Type:* *string
@@ -1322,6 +1368,16 @@ func CodeUrlInput() *string
 
 ---
 
+##### `ConcurrencyNumInput`<sup>Optional</sup> <a name="ConcurrencyNumInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.concurrencyNumInput"></a>
+
+```go
+func ConcurrencyNumInput() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `CustomImageInput`<sup>Optional</sup> <a name="CustomImageInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.customImageInput"></a>
 
 ```go
@@ -1352,6 +1408,26 @@ func DescriptionInput() *string
 
 ---
 
+##### `DnsListInput`<sup>Optional</sup> <a name="DnsListInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.dnsListInput"></a>
+
+```go
+func DnsListInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EnableAuthInHeaderInput`<sup>Optional</sup> <a name="EnableAuthInHeaderInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableAuthInHeaderInput"></a>
+
+```go
+func EnableAuthInHeaderInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `EnableClassIsolationInput`<sup>Optional</sup> <a name="EnableClassIsolationInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableClassIsolationInput"></a>
 
 ```go
@@ -1372,6 +1448,16 @@ func EnableDynamicMemoryInput() interface{}
 
 ---
 
+##### `EnableLtsLogInput`<sup>Optional</sup> <a name="EnableLtsLogInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableLtsLogInput"></a>
+
+```go
+func EnableLtsLogInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `EncryptedUserDataInput`<sup>Optional</sup> <a name="EncryptedUserDataInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.encryptedUserDataInput"></a>
 
 ```go
@@ -1379,6 +1465,26 @@ func EncryptedUserDataInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `EnterpriseProjectIdInput`<sup>Optional</sup> <a name="EnterpriseProjectIdInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enterpriseProjectIdInput"></a>
+
+```go
+func EnterpriseProjectIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EphemeralStorageInput`<sup>Optional</sup> <a name="EphemeralStorageInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.ephemeralStorageInput"></a>
+
+```go
+func EphemeralStorageInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -1426,6 +1532,16 @@ func GpuMemoryInput() *f64
 
 ```go
 func HandlerInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `HeartbeatHandlerInput`<sup>Optional</sup> <a name="HeartbeatHandlerInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.heartbeatHandlerInput"></a>
+
+```go
+func HeartbeatHandlerInput() *string
 ```
 
 - *Type:* *string
@@ -1499,6 +1615,16 @@ func LogTopicNameInput() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `LtsCustomTagInput`<sup>Optional</sup> <a name="LtsCustomTagInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.ltsCustomTagInput"></a>
+
+```go
+func LtsCustomTagInput() *map[string]*string
+```
+
+- *Type:* *map[string]*string
 
 ---
 
@@ -1609,6 +1735,26 @@ func ReservedInstancesInput() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+##### `RestoreHookHandlerInput`<sup>Optional</sup> <a name="RestoreHookHandlerInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.restoreHookHandlerInput"></a>
+
+```go
+func RestoreHookHandlerInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RestoreHookTimeoutInput`<sup>Optional</sup> <a name="RestoreHookTimeoutInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.restoreHookTimeoutInput"></a>
+
+```go
+func RestoreHookTimeoutInput() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -1742,6 +1888,16 @@ func CodeUrl() *string
 
 ---
 
+##### `ConcurrencyNum`<sup>Required</sup> <a name="ConcurrencyNum" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.concurrencyNum"></a>
+
+```go
+func ConcurrencyNum() *f64
+```
+
+- *Type:* *f64
+
+---
+
 ##### `DependList`<sup>Required</sup> <a name="DependList" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.dependList"></a>
 
 ```go
@@ -1759,6 +1915,26 @@ func Description() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `DnsList`<sup>Required</sup> <a name="DnsList" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.dnsList"></a>
+
+```go
+func DnsList() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EnableAuthInHeader`<sup>Required</sup> <a name="EnableAuthInHeader" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableAuthInHeader"></a>
+
+```go
+func EnableAuthInHeader() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -1782,6 +1958,16 @@ func EnableDynamicMemory() interface{}
 
 ---
 
+##### `EnableLtsLog`<sup>Required</sup> <a name="EnableLtsLog" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enableLtsLog"></a>
+
+```go
+func EnableLtsLog() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `EncryptedUserData`<sup>Required</sup> <a name="EncryptedUserData" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.encryptedUserData"></a>
 
 ```go
@@ -1789,6 +1975,26 @@ func EncryptedUserData() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `EnterpriseProjectId`<sup>Required</sup> <a name="EnterpriseProjectId" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.enterpriseProjectId"></a>
+
+```go
+func EnterpriseProjectId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `EphemeralStorage`<sup>Required</sup> <a name="EphemeralStorage" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.ephemeralStorage"></a>
+
+```go
+func EphemeralStorage() *f64
+```
+
+- *Type:* *f64
 
 ---
 
@@ -1826,6 +2032,16 @@ func GpuMemory() *f64
 
 ```go
 func Handler() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `HeartbeatHandler`<sup>Required</sup> <a name="HeartbeatHandler" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.heartbeatHandler"></a>
+
+```go
+func HeartbeatHandler() *string
 ```
 
 - *Type:* *string
@@ -1899,6 +2115,16 @@ func LogTopicName() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `LtsCustomTag`<sup>Required</sup> <a name="LtsCustomTag" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.ltsCustomTag"></a>
+
+```go
+func LtsCustomTag() *map[string]*string
+```
+
+- *Type:* *map[string]*string
 
 ---
 
@@ -1986,6 +2212,26 @@ func PreStopHandler() *string
 
 ```go
 func PreStopTimeout() *f64
+```
+
+- *Type:* *f64
+
+---
+
+##### `RestoreHookHandler`<sup>Required</sup> <a name="RestoreHookHandler" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.restoreHookHandler"></a>
+
+```go
+func RestoreHookHandler() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `RestoreHookTimeout`<sup>Required</sup> <a name="RestoreHookTimeout" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.property.restoreHookTimeout"></a>
+
+```go
+func RestoreHookTimeout() *f64
 ```
 
 - *Type:* *f64
@@ -2087,17 +2333,24 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	CodeFilename: *string,
 	CodeType: *string,
 	CodeUrl: *string,
+	ConcurrencyNum: *f64,
 	CustomImage: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.fgsFunctionV2.FgsFunctionV2CustomImage,
 	DependList: *[]*string,
 	Description: *string,
+	DnsList: *string,
+	EnableAuthInHeader: interface{},
 	EnableClassIsolation: interface{},
 	EnableDynamicMemory: interface{},
+	EnableLtsLog: interface{},
 	EncryptedUserData: *string,
+	EnterpriseProjectId: *string,
+	EphemeralStorage: *f64,
 	FuncCode: *string,
 	FuncMounts: interface{},
 	FunctiongraphVersion: *string,
 	GpuMemory: *f64,
 	Handler: *string,
+	HeartbeatHandler: *string,
 	Id: *string,
 	InitializerHandler: *string,
 	InitializerTimeout: *f64,
@@ -2105,6 +2358,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	LogGroupName: *string,
 	LogTopicId: *string,
 	LogTopicName: *string,
+	LtsCustomTag: *map[string]*string,
 	MaxInstanceNum: *string,
 	MountUserGroupId: *f64,
 	MountUserId: *f64,
@@ -2114,6 +2368,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	PreStopHandler: *string,
 	PreStopTimeout: *f64,
 	ReservedInstances: interface{},
+	RestoreHookHandler: *string,
+	RestoreHookTimeout: *f64,
 	Tags: *map[string]*string,
 	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.fgsFunctionV2.FgsFunctionV2Timeouts,
 	UserData: *string,
@@ -2133,48 +2389,58 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.memorySize">MemorySize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#memory_size FgsFunctionV2#memory_size}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#name FgsFunctionV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.runtime">Runtime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#runtime FgsFunctionV2#runtime}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#timeout FgsFunctionV2#timeout}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.agency">Agency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#agency FgsFunctionV2#agency}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.app">App</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#app FgsFunctionV2#app}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.appAgency">AppAgency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#app_agency FgsFunctionV2#app_agency}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.codeFilename">CodeFilename</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#code_filename FgsFunctionV2#code_filename}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.codeType">CodeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#code_type FgsFunctionV2#code_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.codeUrl">CodeUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#code_url FgsFunctionV2#code_url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.memorySize">MemorySize</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#memory_size FgsFunctionV2#memory_size}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#name FgsFunctionV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.runtime">Runtime</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#runtime FgsFunctionV2#runtime}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.timeout">Timeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#timeout FgsFunctionV2#timeout}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.agency">Agency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#agency FgsFunctionV2#agency}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.app">App</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#app FgsFunctionV2#app}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.appAgency">AppAgency</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#app_agency FgsFunctionV2#app_agency}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.codeFilename">CodeFilename</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#code_filename FgsFunctionV2#code_filename}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.codeType">CodeType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#code_type FgsFunctionV2#code_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.codeUrl">CodeUrl</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#code_url FgsFunctionV2#code_url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.concurrencyNum">ConcurrencyNum</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#concurrency_num FgsFunctionV2#concurrency_num}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.customImage">CustomImage</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage">FgsFunctionV2CustomImage</a></code> | custom_image block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.dependList">DependList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#depend_list FgsFunctionV2#depend_list}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#description FgsFunctionV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.enableClassIsolation">EnableClassIsolation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#enable_class_isolation FgsFunctionV2#enable_class_isolation}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.enableDynamicMemory">EnableDynamicMemory</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#enable_dynamic_memory FgsFunctionV2#enable_dynamic_memory}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.encryptedUserData">EncryptedUserData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#encrypted_user_data FgsFunctionV2#encrypted_user_data}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.funcCode">FuncCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#func_code FgsFunctionV2#func_code}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.dependList">DependList</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#depend_list FgsFunctionV2#depend_list}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#description FgsFunctionV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.dnsList">DnsList</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#dns_list FgsFunctionV2#dns_list}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.enableAuthInHeader">EnableAuthInHeader</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#enable_auth_in_header FgsFunctionV2#enable_auth_in_header}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.enableClassIsolation">EnableClassIsolation</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#enable_class_isolation FgsFunctionV2#enable_class_isolation}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.enableDynamicMemory">EnableDynamicMemory</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#enable_dynamic_memory FgsFunctionV2#enable_dynamic_memory}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.enableLtsLog">EnableLtsLog</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#enable_lts_log FgsFunctionV2#enable_lts_log}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.encryptedUserData">EncryptedUserData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#encrypted_user_data FgsFunctionV2#encrypted_user_data}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.enterpriseProjectId">EnterpriseProjectId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#enterprise_project_id FgsFunctionV2#enterprise_project_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.ephemeralStorage">EphemeralStorage</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#ephemeral_storage FgsFunctionV2#ephemeral_storage}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.funcCode">FuncCode</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#func_code FgsFunctionV2#func_code}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.funcMounts">FuncMounts</a></code> | <code>interface{}</code> | func_mounts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.functiongraphVersion">FunctiongraphVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#functiongraph_version FgsFunctionV2#functiongraph_version}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.gpuMemory">GpuMemory</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#gpu_memory FgsFunctionV2#gpu_memory}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.handler">Handler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#handler FgsFunctionV2#handler}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#id FgsFunctionV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.initializerHandler">InitializerHandler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#initializer_handler FgsFunctionV2#initializer_handler}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.initializerTimeout">InitializerTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#initializer_timeout FgsFunctionV2#initializer_timeout}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.logGroupId">LogGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#log_group_id FgsFunctionV2#log_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#log_group_name FgsFunctionV2#log_group_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.logTopicId">LogTopicId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#log_topic_id FgsFunctionV2#log_topic_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.logTopicName">LogTopicName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#log_topic_name FgsFunctionV2#log_topic_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.maxInstanceNum">MaxInstanceNum</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#max_instance_num FgsFunctionV2#max_instance_num}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.mountUserGroupId">MountUserGroupId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#mount_user_group_id FgsFunctionV2#mount_user_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.mountUserId">MountUserId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#mount_user_id FgsFunctionV2#mount_user_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.functiongraphVersion">FunctiongraphVersion</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#functiongraph_version FgsFunctionV2#functiongraph_version}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.gpuMemory">GpuMemory</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#gpu_memory FgsFunctionV2#gpu_memory}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.handler">Handler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#handler FgsFunctionV2#handler}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.heartbeatHandler">HeartbeatHandler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#heartbeat_handler FgsFunctionV2#heartbeat_handler}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#id FgsFunctionV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.initializerHandler">InitializerHandler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#initializer_handler FgsFunctionV2#initializer_handler}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.initializerTimeout">InitializerTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#initializer_timeout FgsFunctionV2#initializer_timeout}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.logGroupId">LogGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#log_group_id FgsFunctionV2#log_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.logGroupName">LogGroupName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#log_group_name FgsFunctionV2#log_group_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.logTopicId">LogTopicId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#log_topic_id FgsFunctionV2#log_topic_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.logTopicName">LogTopicName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#log_topic_name FgsFunctionV2#log_topic_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.ltsCustomTag">LtsCustomTag</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#lts_custom_tag FgsFunctionV2#lts_custom_tag}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.maxInstanceNum">MaxInstanceNum</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#max_instance_num FgsFunctionV2#max_instance_num}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.mountUserGroupId">MountUserGroupId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#mount_user_group_id FgsFunctionV2#mount_user_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.mountUserId">MountUserId</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#mount_user_id FgsFunctionV2#mount_user_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.networkController">NetworkController</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkController">FgsFunctionV2NetworkController</a></code> | network_controller block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.networkId">NetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#network_id FgsFunctionV2#network_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.peeringCidr">PeeringCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#peering_cidr FgsFunctionV2#peering_cidr}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.preStopHandler">PreStopHandler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#pre_stop_handler FgsFunctionV2#pre_stop_handler}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.preStopTimeout">PreStopTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#pre_stop_timeout FgsFunctionV2#pre_stop_timeout}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.networkId">NetworkId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#network_id FgsFunctionV2#network_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.peeringCidr">PeeringCidr</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#peering_cidr FgsFunctionV2#peering_cidr}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.preStopHandler">PreStopHandler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#pre_stop_handler FgsFunctionV2#pre_stop_handler}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.preStopTimeout">PreStopTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#pre_stop_timeout FgsFunctionV2#pre_stop_timeout}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.reservedInstances">ReservedInstances</a></code> | <code>interface{}</code> | reserved_instances block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#tags FgsFunctionV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.restoreHookHandler">RestoreHookHandler</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#restore_hook_handler FgsFunctionV2#restore_hook_handler}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.restoreHookTimeout">RestoreHookTimeout</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#restore_hook_timeout FgsFunctionV2#restore_hook_timeout}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.tags">Tags</a></code> | <code>*map[string]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#tags FgsFunctionV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Timeouts">FgsFunctionV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.userData">UserData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#user_data FgsFunctionV2#user_data}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.userData">UserData</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#user_data FgsFunctionV2#user_data}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.versions">Versions</a></code> | <code>interface{}</code> | versions block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#vpc_id FgsFunctionV2#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#vpc_id FgsFunctionV2#vpc_id}. |
 
 ---
 
@@ -2256,7 +2522,7 @@ MemorySize *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#memory_size FgsFunctionV2#memory_size}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#memory_size FgsFunctionV2#memory_size}.
 
 ---
 
@@ -2268,7 +2534,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#name FgsFunctionV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#name FgsFunctionV2#name}.
 
 ---
 
@@ -2280,7 +2546,7 @@ Runtime *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#runtime FgsFunctionV2#runtime}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#runtime FgsFunctionV2#runtime}.
 
 ---
 
@@ -2292,7 +2558,7 @@ Timeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#timeout FgsFunctionV2#timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#timeout FgsFunctionV2#timeout}.
 
 ---
 
@@ -2304,7 +2570,7 @@ Agency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#agency FgsFunctionV2#agency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#agency FgsFunctionV2#agency}.
 
 ---
 
@@ -2316,7 +2582,7 @@ App *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#app FgsFunctionV2#app}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#app FgsFunctionV2#app}.
 
 ---
 
@@ -2328,7 +2594,7 @@ AppAgency *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#app_agency FgsFunctionV2#app_agency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#app_agency FgsFunctionV2#app_agency}.
 
 ---
 
@@ -2340,7 +2606,7 @@ CodeFilename *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#code_filename FgsFunctionV2#code_filename}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#code_filename FgsFunctionV2#code_filename}.
 
 ---
 
@@ -2352,7 +2618,7 @@ CodeType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#code_type FgsFunctionV2#code_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#code_type FgsFunctionV2#code_type}.
 
 ---
 
@@ -2364,7 +2630,19 @@ CodeUrl *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#code_url FgsFunctionV2#code_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#code_url FgsFunctionV2#code_url}.
+
+---
+
+##### `ConcurrencyNum`<sup>Optional</sup> <a name="ConcurrencyNum" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.concurrencyNum"></a>
+
+```go
+ConcurrencyNum *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#concurrency_num FgsFunctionV2#concurrency_num}.
 
 ---
 
@@ -2378,7 +2656,7 @@ CustomImage FgsFunctionV2CustomImage
 
 custom_image block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#custom_image FgsFunctionV2#custom_image}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#custom_image FgsFunctionV2#custom_image}
 
 ---
 
@@ -2390,7 +2668,7 @@ DependList *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#depend_list FgsFunctionV2#depend_list}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#depend_list FgsFunctionV2#depend_list}.
 
 ---
 
@@ -2402,7 +2680,31 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#description FgsFunctionV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#description FgsFunctionV2#description}.
+
+---
+
+##### `DnsList`<sup>Optional</sup> <a name="DnsList" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.dnsList"></a>
+
+```go
+DnsList *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#dns_list FgsFunctionV2#dns_list}.
+
+---
+
+##### `EnableAuthInHeader`<sup>Optional</sup> <a name="EnableAuthInHeader" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.enableAuthInHeader"></a>
+
+```go
+EnableAuthInHeader interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#enable_auth_in_header FgsFunctionV2#enable_auth_in_header}.
 
 ---
 
@@ -2414,7 +2716,7 @@ EnableClassIsolation interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#enable_class_isolation FgsFunctionV2#enable_class_isolation}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#enable_class_isolation FgsFunctionV2#enable_class_isolation}.
 
 ---
 
@@ -2426,7 +2728,19 @@ EnableDynamicMemory interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#enable_dynamic_memory FgsFunctionV2#enable_dynamic_memory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#enable_dynamic_memory FgsFunctionV2#enable_dynamic_memory}.
+
+---
+
+##### `EnableLtsLog`<sup>Optional</sup> <a name="EnableLtsLog" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.enableLtsLog"></a>
+
+```go
+EnableLtsLog interface{}
+```
+
+- *Type:* interface{}
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#enable_lts_log FgsFunctionV2#enable_lts_log}.
 
 ---
 
@@ -2438,7 +2752,31 @@ EncryptedUserData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#encrypted_user_data FgsFunctionV2#encrypted_user_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#encrypted_user_data FgsFunctionV2#encrypted_user_data}.
+
+---
+
+##### `EnterpriseProjectId`<sup>Optional</sup> <a name="EnterpriseProjectId" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.enterpriseProjectId"></a>
+
+```go
+EnterpriseProjectId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#enterprise_project_id FgsFunctionV2#enterprise_project_id}.
+
+---
+
+##### `EphemeralStorage`<sup>Optional</sup> <a name="EphemeralStorage" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.ephemeralStorage"></a>
+
+```go
+EphemeralStorage *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#ephemeral_storage FgsFunctionV2#ephemeral_storage}.
 
 ---
 
@@ -2450,7 +2788,7 @@ FuncCode *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#func_code FgsFunctionV2#func_code}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#func_code FgsFunctionV2#func_code}.
 
 ---
 
@@ -2464,7 +2802,7 @@ FuncMounts interface{}
 
 func_mounts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#func_mounts FgsFunctionV2#func_mounts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#func_mounts FgsFunctionV2#func_mounts}
 
 ---
 
@@ -2476,7 +2814,7 @@ FunctiongraphVersion *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#functiongraph_version FgsFunctionV2#functiongraph_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#functiongraph_version FgsFunctionV2#functiongraph_version}.
 
 ---
 
@@ -2488,7 +2826,7 @@ GpuMemory *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#gpu_memory FgsFunctionV2#gpu_memory}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#gpu_memory FgsFunctionV2#gpu_memory}.
 
 ---
 
@@ -2500,7 +2838,19 @@ Handler *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#handler FgsFunctionV2#handler}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#handler FgsFunctionV2#handler}.
+
+---
+
+##### `HeartbeatHandler`<sup>Optional</sup> <a name="HeartbeatHandler" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.heartbeatHandler"></a>
+
+```go
+HeartbeatHandler *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#heartbeat_handler FgsFunctionV2#heartbeat_handler}.
 
 ---
 
@@ -2512,7 +2862,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#id FgsFunctionV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#id FgsFunctionV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2527,7 +2877,7 @@ InitializerHandler *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#initializer_handler FgsFunctionV2#initializer_handler}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#initializer_handler FgsFunctionV2#initializer_handler}.
 
 ---
 
@@ -2539,7 +2889,7 @@ InitializerTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#initializer_timeout FgsFunctionV2#initializer_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#initializer_timeout FgsFunctionV2#initializer_timeout}.
 
 ---
 
@@ -2551,7 +2901,7 @@ LogGroupId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#log_group_id FgsFunctionV2#log_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#log_group_id FgsFunctionV2#log_group_id}.
 
 ---
 
@@ -2563,7 +2913,7 @@ LogGroupName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#log_group_name FgsFunctionV2#log_group_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#log_group_name FgsFunctionV2#log_group_name}.
 
 ---
 
@@ -2575,7 +2925,7 @@ LogTopicId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#log_topic_id FgsFunctionV2#log_topic_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#log_topic_id FgsFunctionV2#log_topic_id}.
 
 ---
 
@@ -2587,7 +2937,19 @@ LogTopicName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#log_topic_name FgsFunctionV2#log_topic_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#log_topic_name FgsFunctionV2#log_topic_name}.
+
+---
+
+##### `LtsCustomTag`<sup>Optional</sup> <a name="LtsCustomTag" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.ltsCustomTag"></a>
+
+```go
+LtsCustomTag *map[string]*string
+```
+
+- *Type:* *map[string]*string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#lts_custom_tag FgsFunctionV2#lts_custom_tag}.
 
 ---
 
@@ -2599,7 +2961,7 @@ MaxInstanceNum *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#max_instance_num FgsFunctionV2#max_instance_num}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#max_instance_num FgsFunctionV2#max_instance_num}.
 
 ---
 
@@ -2611,7 +2973,7 @@ MountUserGroupId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#mount_user_group_id FgsFunctionV2#mount_user_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#mount_user_group_id FgsFunctionV2#mount_user_group_id}.
 
 ---
 
@@ -2623,7 +2985,7 @@ MountUserId *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#mount_user_id FgsFunctionV2#mount_user_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#mount_user_id FgsFunctionV2#mount_user_id}.
 
 ---
 
@@ -2637,7 +2999,7 @@ NetworkController FgsFunctionV2NetworkController
 
 network_controller block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#network_controller FgsFunctionV2#network_controller}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#network_controller FgsFunctionV2#network_controller}
 
 ---
 
@@ -2649,7 +3011,7 @@ NetworkId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#network_id FgsFunctionV2#network_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#network_id FgsFunctionV2#network_id}.
 
 ---
 
@@ -2661,7 +3023,7 @@ PeeringCidr *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#peering_cidr FgsFunctionV2#peering_cidr}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#peering_cidr FgsFunctionV2#peering_cidr}.
 
 ---
 
@@ -2673,7 +3035,7 @@ PreStopHandler *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#pre_stop_handler FgsFunctionV2#pre_stop_handler}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#pre_stop_handler FgsFunctionV2#pre_stop_handler}.
 
 ---
 
@@ -2685,7 +3047,7 @@ PreStopTimeout *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#pre_stop_timeout FgsFunctionV2#pre_stop_timeout}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#pre_stop_timeout FgsFunctionV2#pre_stop_timeout}.
 
 ---
 
@@ -2699,7 +3061,31 @@ ReservedInstances interface{}
 
 reserved_instances block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#reserved_instances FgsFunctionV2#reserved_instances}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#reserved_instances FgsFunctionV2#reserved_instances}
+
+---
+
+##### `RestoreHookHandler`<sup>Optional</sup> <a name="RestoreHookHandler" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.restoreHookHandler"></a>
+
+```go
+RestoreHookHandler *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#restore_hook_handler FgsFunctionV2#restore_hook_handler}.
+
+---
+
+##### `RestoreHookTimeout`<sup>Optional</sup> <a name="RestoreHookTimeout" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.property.restoreHookTimeout"></a>
+
+```go
+RestoreHookTimeout *f64
+```
+
+- *Type:* *f64
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#restore_hook_timeout FgsFunctionV2#restore_hook_timeout}.
 
 ---
 
@@ -2711,7 +3097,7 @@ Tags *map[string]*string
 
 - *Type:* *map[string]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#tags FgsFunctionV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#tags FgsFunctionV2#tags}.
 
 ---
 
@@ -2725,7 +3111,7 @@ Timeouts FgsFunctionV2Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#timeouts FgsFunctionV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#timeouts FgsFunctionV2#timeouts}
 
 ---
 
@@ -2737,7 +3123,7 @@ UserData *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#user_data FgsFunctionV2#user_data}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#user_data FgsFunctionV2#user_data}.
 
 ---
 
@@ -2751,7 +3137,7 @@ Versions interface{}
 
 versions block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#versions FgsFunctionV2#versions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#versions FgsFunctionV2#versions}
 
 ---
 
@@ -2763,7 +3149,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#vpc_id FgsFunctionV2#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#vpc_id FgsFunctionV2#vpc_id}.
 
 ---
 
@@ -2778,6 +3164,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	Url: *string,
 	Args: *string,
 	Command: *string,
+	UserGroupId: *string,
+	UserId: *string,
 	WorkingDir: *string,
 }
 ```
@@ -2786,10 +3174,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#url FgsFunctionV2#url}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.property.args">Args</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#args FgsFunctionV2#args}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.property.command">Command</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#command FgsFunctionV2#command}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.property.workingDir">WorkingDir</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#working_dir FgsFunctionV2#working_dir}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.property.url">Url</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#url FgsFunctionV2#url}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.property.args">Args</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#args FgsFunctionV2#args}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.property.command">Command</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#command FgsFunctionV2#command}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.property.userGroupId">UserGroupId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#user_group_id FgsFunctionV2#user_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.property.userId">UserId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#user_id FgsFunctionV2#user_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.property.workingDir">WorkingDir</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#working_dir FgsFunctionV2#working_dir}. |
 
 ---
 
@@ -2801,7 +3191,7 @@ Url *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#url FgsFunctionV2#url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#url FgsFunctionV2#url}.
 
 ---
 
@@ -2813,7 +3203,7 @@ Args *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#args FgsFunctionV2#args}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#args FgsFunctionV2#args}.
 
 ---
 
@@ -2825,7 +3215,31 @@ Command *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#command FgsFunctionV2#command}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#command FgsFunctionV2#command}.
+
+---
+
+##### `UserGroupId`<sup>Optional</sup> <a name="UserGroupId" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.property.userGroupId"></a>
+
+```go
+UserGroupId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#user_group_id FgsFunctionV2#user_group_id}.
+
+---
+
+##### `UserId`<sup>Optional</sup> <a name="UserId" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.property.userId"></a>
+
+```go
+UserId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#user_id FgsFunctionV2#user_id}.
 
 ---
 
@@ -2837,7 +3251,7 @@ WorkingDir *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#working_dir FgsFunctionV2#working_dir}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#working_dir FgsFunctionV2#working_dir}.
 
 ---
 
@@ -2860,10 +3274,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2FuncMounts.property.localMountPath">LocalMountPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#local_mount_path FgsFunctionV2#local_mount_path}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2FuncMounts.property.mountResource">MountResource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#mount_resource FgsFunctionV2#mount_resource}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2FuncMounts.property.mountSharePath">MountSharePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#mount_share_path FgsFunctionV2#mount_share_path}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2FuncMounts.property.mountType">MountType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#mount_type FgsFunctionV2#mount_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2FuncMounts.property.localMountPath">LocalMountPath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#local_mount_path FgsFunctionV2#local_mount_path}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2FuncMounts.property.mountResource">MountResource</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#mount_resource FgsFunctionV2#mount_resource}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2FuncMounts.property.mountSharePath">MountSharePath</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#mount_share_path FgsFunctionV2#mount_share_path}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2FuncMounts.property.mountType">MountType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#mount_type FgsFunctionV2#mount_type}. |
 
 ---
 
@@ -2875,7 +3289,7 @@ LocalMountPath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#local_mount_path FgsFunctionV2#local_mount_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#local_mount_path FgsFunctionV2#local_mount_path}.
 
 ---
 
@@ -2887,7 +3301,7 @@ MountResource *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#mount_resource FgsFunctionV2#mount_resource}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#mount_resource FgsFunctionV2#mount_resource}.
 
 ---
 
@@ -2899,7 +3313,7 @@ MountSharePath *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#mount_share_path FgsFunctionV2#mount_share_path}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#mount_share_path FgsFunctionV2#mount_share_path}.
 
 ---
 
@@ -2911,7 +3325,7 @@ MountType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#mount_type FgsFunctionV2#mount_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#mount_type FgsFunctionV2#mount_type}.
 
 ---
 
@@ -2932,7 +3346,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkController.property.disablePublicNetwork">DisablePublicNetwork</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#disable_public_network FgsFunctionV2#disable_public_network}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkController.property.disablePublicNetwork">DisablePublicNetwork</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#disable_public_network FgsFunctionV2#disable_public_network}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkController.property.triggerAccessVpcs">TriggerAccessVpcs</a></code> | <code>interface{}</code> | trigger_access_vpcs block. |
 
 ---
@@ -2945,7 +3359,7 @@ DisablePublicNetwork interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#disable_public_network FgsFunctionV2#disable_public_network}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#disable_public_network FgsFunctionV2#disable_public_network}.
 
 ---
 
@@ -2959,7 +3373,7 @@ TriggerAccessVpcs interface{}
 
 trigger_access_vpcs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#trigger_access_vpcs FgsFunctionV2#trigger_access_vpcs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#trigger_access_vpcs FgsFunctionV2#trigger_access_vpcs}
 
 ---
 
@@ -2980,8 +3394,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerTriggerAccessVpcs.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#vpc_id FgsFunctionV2#vpc_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerTriggerAccessVpcs.property.vpcName">VpcName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#vpc_name FgsFunctionV2#vpc_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerTriggerAccessVpcs.property.vpcId">VpcId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#vpc_id FgsFunctionV2#vpc_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerTriggerAccessVpcs.property.vpcName">VpcName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#vpc_name FgsFunctionV2#vpc_name}. |
 
 ---
 
@@ -2993,7 +3407,7 @@ VpcId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#vpc_id FgsFunctionV2#vpc_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#vpc_id FgsFunctionV2#vpc_id}.
 
 ---
 
@@ -3005,7 +3419,7 @@ VpcName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#vpc_name FgsFunctionV2#vpc_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#vpc_name FgsFunctionV2#vpc_name}.
 
 ---
 
@@ -3029,10 +3443,10 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstances.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#count FgsFunctionV2#count}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstances.property.qualifierName">QualifierName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#qualifier_name FgsFunctionV2#qualifier_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstances.property.qualifierType">QualifierType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#qualifier_type FgsFunctionV2#qualifier_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstances.property.idleMode">IdleMode</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#idle_mode FgsFunctionV2#idle_mode}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstances.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#count FgsFunctionV2#count}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstances.property.qualifierName">QualifierName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#qualifier_name FgsFunctionV2#qualifier_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstances.property.qualifierType">QualifierType</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#qualifier_type FgsFunctionV2#qualifier_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstances.property.idleMode">IdleMode</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#idle_mode FgsFunctionV2#idle_mode}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstances.property.tacticsConfig">TacticsConfig</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfig">FgsFunctionV2ReservedInstancesTacticsConfig</a></code> | tactics_config block. |
 
 ---
@@ -3045,7 +3459,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#count FgsFunctionV2#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#count FgsFunctionV2#count}.
 
 ---
 
@@ -3057,7 +3471,7 @@ QualifierName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#qualifier_name FgsFunctionV2#qualifier_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#qualifier_name FgsFunctionV2#qualifier_name}.
 
 ---
 
@@ -3069,7 +3483,7 @@ QualifierType *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#qualifier_type FgsFunctionV2#qualifier_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#qualifier_type FgsFunctionV2#qualifier_type}.
 
 ---
 
@@ -3081,7 +3495,7 @@ IdleMode interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#idle_mode FgsFunctionV2#idle_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#idle_mode FgsFunctionV2#idle_mode}.
 
 ---
 
@@ -3095,7 +3509,7 @@ TacticsConfig FgsFunctionV2ReservedInstancesTacticsConfig
 
 tactics_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#tactics_config FgsFunctionV2#tactics_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#tactics_config FgsFunctionV2#tactics_config}
 
 ---
 
@@ -3129,7 +3543,7 @@ CronConfigs interface{}
 
 cron_configs block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#cron_configs FgsFunctionV2#cron_configs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#cron_configs FgsFunctionV2#cron_configs}
 
 ---
 
@@ -3153,11 +3567,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#count FgsFunctionV2#count}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs.property.cron">Cron</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#cron FgsFunctionV2#cron}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs.property.expiredTime">ExpiredTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#expired_time FgsFunctionV2#expired_time}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#name FgsFunctionV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs.property.startTime">StartTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#start_time FgsFunctionV2#start_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs.property.count">Count</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#count FgsFunctionV2#count}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs.property.cron">Cron</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#cron FgsFunctionV2#cron}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs.property.expiredTime">ExpiredTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#expired_time FgsFunctionV2#expired_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#name FgsFunctionV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs.property.startTime">StartTime</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#start_time FgsFunctionV2#start_time}. |
 
 ---
 
@@ -3169,7 +3583,7 @@ Count *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#count FgsFunctionV2#count}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#count FgsFunctionV2#count}.
 
 ---
 
@@ -3181,7 +3595,7 @@ Cron *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#cron FgsFunctionV2#cron}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#cron FgsFunctionV2#cron}.
 
 ---
 
@@ -3193,7 +3607,7 @@ ExpiredTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#expired_time FgsFunctionV2#expired_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#expired_time FgsFunctionV2#expired_time}.
 
 ---
 
@@ -3205,7 +3619,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#name FgsFunctionV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#name FgsFunctionV2#name}.
 
 ---
 
@@ -3217,7 +3631,7 @@ StartTime *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#start_time FgsFunctionV2#start_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#start_time FgsFunctionV2#start_time}.
 
 ---
 
@@ -3238,8 +3652,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#create FgsFunctionV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#delete FgsFunctionV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Timeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#create FgsFunctionV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Timeouts.property.delete">Delete</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#delete FgsFunctionV2#delete}. |
 
 ---
 
@@ -3251,7 +3665,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#create FgsFunctionV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#create FgsFunctionV2#create}.
 
 ---
 
@@ -3263,7 +3677,7 @@ Delete *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#delete FgsFunctionV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#delete FgsFunctionV2#delete}.
 
 ---
 
@@ -3277,6 +3691,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 &fgsfunctionv2.FgsFunctionV2Versions {
 	Name: *string,
 	Aliases: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.fgsFunctionV2.FgsFunctionV2VersionsAliases,
+	Description: *string,
 }
 ```
 
@@ -3284,8 +3699,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Versions.property.name">Name</a></code> | <code>*string</code> | The version name. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Versions.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#name FgsFunctionV2#name}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Versions.property.aliases">Aliases</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsAliases">FgsFunctionV2VersionsAliases</a></code> | aliases block. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Versions.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#description FgsFunctionV2#description}. |
 
 ---
 
@@ -3297,9 +3713,7 @@ Name *string
 
 - *Type:* *string
 
-The version name.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#name FgsFunctionV2#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#name FgsFunctionV2#name}.
 
 ---
 
@@ -3313,7 +3727,19 @@ Aliases FgsFunctionV2VersionsAliases
 
 aliases block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#aliases FgsFunctionV2#aliases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#aliases FgsFunctionV2#aliases}
+
+---
+
+##### `Description`<sup>Optional</sup> <a name="Description" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Versions.property.description"></a>
+
+```go
+Description *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#description FgsFunctionV2#description}.
 
 ---
 
@@ -3334,8 +3760,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsAliases.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#name FgsFunctionV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsAliases.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#description FgsFunctionV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsAliases.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#name FgsFunctionV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsAliases.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#description FgsFunctionV2#description}. |
 
 ---
 
@@ -3347,7 +3773,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#name FgsFunctionV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#name FgsFunctionV2#name}.
 
 ---
 
@@ -3359,7 +3785,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/fgs_function_v2#description FgsFunctionV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/fgs_function_v2#description FgsFunctionV2#description}.
 
 ---
 
@@ -3417,6 +3843,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.resetArgs">ResetArgs</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.resetCommand">ResetCommand</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.resetUserGroupId">ResetUserGroupId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.resetUserId">ResetUserId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.resetWorkingDir">ResetWorkingDir</a></code> | *No description.* |
 
 ---
@@ -3583,6 +4011,18 @@ func ResetArgs()
 func ResetCommand()
 ```
 
+##### `ResetUserGroupId` <a name="ResetUserGroupId" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.resetUserGroupId"></a>
+
+```go
+func ResetUserGroupId()
+```
+
+##### `ResetUserId` <a name="ResetUserId" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.resetUserId"></a>
+
+```go
+func ResetUserId()
+```
+
 ##### `ResetWorkingDir` <a name="ResetWorkingDir" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.resetWorkingDir"></a>
 
 ```go
@@ -3599,10 +4039,14 @@ func ResetWorkingDir()
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.argsInput">ArgsInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.commandInput">CommandInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.urlInput">UrlInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.userGroupIdInput">UserGroupIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.userIdInput">UserIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.workingDirInput">WorkingDirInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.args">Args</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.command">Command</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.url">Url</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.userGroupId">UserGroupId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.userId">UserId</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.workingDir">WorkingDir</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage">FgsFunctionV2CustomImage</a></code> | *No description.* |
 
@@ -3662,6 +4106,26 @@ func UrlInput() *string
 
 ---
 
+##### `UserGroupIdInput`<sup>Optional</sup> <a name="UserGroupIdInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.userGroupIdInput"></a>
+
+```go
+func UserGroupIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UserIdInput`<sup>Optional</sup> <a name="UserIdInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.userIdInput"></a>
+
+```go
+func UserIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `WorkingDirInput`<sup>Optional</sup> <a name="WorkingDirInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.workingDirInput"></a>
 
 ```go
@@ -3696,6 +4160,26 @@ func Command() *string
 
 ```go
 func Url() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UserGroupId`<sup>Required</sup> <a name="UserGroupId" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.userGroupId"></a>
+
+```go
+func UserGroupId() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `UserId`<sup>Required</sup> <a name="UserId" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.property.userId"></a>
+
+```go
+func UserId() *string
 ```
 
 - *Type:* *string
@@ -7272,6 +7756,7 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.putAliases">PutAliases</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.resetAliases">ResetAliases</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.resetDescription">ResetDescription</a></code> | *No description.* |
 
 ---
 
@@ -7443,6 +7928,12 @@ func PutAliases(value FgsFunctionV2VersionsAliases)
 func ResetAliases()
 ```
 
+##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.resetDescription"></a>
+
+```go
+func ResetDescription()
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -7452,7 +7943,9 @@ func ResetAliases()
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.property.aliases">Aliases</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsAliasesOutputReference">FgsFunctionV2VersionsAliasesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.property.aliasesInput">AliasesInput</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsAliases">FgsFunctionV2VersionsAliases</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.property.descriptionInput">DescriptionInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.property.description">Description</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
@@ -7502,10 +7995,30 @@ func AliasesInput() FgsFunctionV2VersionsAliases
 
 ---
 
+##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.property.descriptionInput"></a>
+
+```go
+func DescriptionInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.property.nameInput"></a>
 
 ```go
 func NameInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Description`<sup>Required</sup> <a name="Description" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.property.description"></a>
+
+```go
+func Description() *string
 ```
 
 - *Type:* *string

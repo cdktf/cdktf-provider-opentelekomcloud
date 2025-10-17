@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudSmnMessageTemplatesV2 <a name="DataOpentelekomcloudSmnMessageTemplatesV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2 opentelekomcloud_smn_message_templates_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2 opentelekomcloud_smn_message_templates_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer"></a>
 
@@ -37,10 +37,10 @@ DataOpentelekomcloudSmnMessageTemplatesV2.Builder.create(Construct scope, java.l
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#id DataOpentelekomcloudSmnMessageTemplatesV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#name DataOpentelekomcloudSmnMessageTemplatesV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer.parameter.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#protocol DataOpentelekomcloudSmnMessageTemplatesV2#protocol}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer.parameter.templateId">templateId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#template_id DataOpentelekomcloudSmnMessageTemplatesV2#template_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#id DataOpentelekomcloudSmnMessageTemplatesV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#name DataOpentelekomcloudSmnMessageTemplatesV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer.parameter.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#protocol DataOpentelekomcloudSmnMessageTemplatesV2#protocol}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer.parameter.templateId">templateId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#template_id DataOpentelekomcloudSmnMessageTemplatesV2#template_id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#id DataOpentelekomcloudSmnMessageTemplatesV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#id DataOpentelekomcloudSmnMessageTemplatesV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -119,7 +119,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#name DataOpentelekomcloudSmnMessageTemplatesV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#name DataOpentelekomcloudSmnMessageTemplatesV2#name}.
 
 ---
 
@@ -127,7 +127,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#protocol DataOpentelekomcloudSmnMessageTemplatesV2#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#protocol DataOpentelekomcloudSmnMessageTemplatesV2#protocol}.
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#template_id DataOpentelekomcloudSmnMessageTemplatesV2#template_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#template_id DataOpentelekomcloudSmnMessageTemplatesV2#template_id}.
 
 ---
 
@@ -486,7 +486,7 @@ The construct id used in the generated config for the DataOpentelekomcloudSmnMes
 
 The id of the existing DataOpentelekomcloudSmnMessageTemplatesV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -791,10 +791,10 @@ DataOpentelekomcloudSmnMessageTemplatesV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#id DataOpentelekomcloudSmnMessageTemplatesV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#name DataOpentelekomcloudSmnMessageTemplatesV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Config.property.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#protocol DataOpentelekomcloudSmnMessageTemplatesV2#protocol}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Config.property.templateId">templateId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#template_id DataOpentelekomcloudSmnMessageTemplatesV2#template_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#id DataOpentelekomcloudSmnMessageTemplatesV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#name DataOpentelekomcloudSmnMessageTemplatesV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Config.property.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#protocol DataOpentelekomcloudSmnMessageTemplatesV2#protocol}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Config.property.templateId">templateId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#template_id DataOpentelekomcloudSmnMessageTemplatesV2#template_id}. |
 
 ---
 
@@ -876,7 +876,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#id DataOpentelekomcloudSmnMessageTemplatesV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#id DataOpentelekomcloudSmnMessageTemplatesV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -891,7 +891,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#name DataOpentelekomcloudSmnMessageTemplatesV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#name DataOpentelekomcloudSmnMessageTemplatesV2#name}.
 
 ---
 
@@ -903,7 +903,7 @@ public java.lang.String getProtocol();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#protocol DataOpentelekomcloudSmnMessageTemplatesV2#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#protocol DataOpentelekomcloudSmnMessageTemplatesV2#protocol}.
 
 ---
 
@@ -915,7 +915,7 @@ public java.lang.String getTemplateId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_message_templates_v2#template_id DataOpentelekomcloudSmnMessageTemplatesV2#template_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_message_templates_v2#template_id DataOpentelekomcloudSmnMessageTemplatesV2#template_id}.
 
 ---
 

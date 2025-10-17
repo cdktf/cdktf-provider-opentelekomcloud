@@ -4,7 +4,7 @@
 
 ### VpcSecgroupV3 <a name="VpcSecgroupV3" id="@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3 opentelekomcloud_vpc_secgroup_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3 opentelekomcloud_vpc_secgroup_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer"></a>
 
@@ -41,11 +41,11 @@ vpcSecgroupV3.VpcSecgroupV3(
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#name VpcSecgroupV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#description VpcSecgroupV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.enterpriseProjectId">enterprise_project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#enterprise_project_id VpcSecgroupV3#enterprise_project_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#id VpcSecgroupV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#tags VpcSecgroupV3#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#name VpcSecgroupV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#description VpcSecgroupV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.enterpriseProjectId">enterprise_project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#enterprise_project_id VpcSecgroupV3#enterprise_project_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#id VpcSecgroupV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#tags VpcSecgroupV3#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Timeouts">VpcSecgroupV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#name VpcSecgroupV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#name VpcSecgroupV3#name}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#description VpcSecgroupV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#description VpcSecgroupV3#description}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#enterprise_project_id VpcSecgroupV3#enterprise_project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#enterprise_project_id VpcSecgroupV3#enterprise_project_id}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#id VpcSecgroupV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#id VpcSecgroupV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -149,7 +149,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#tags VpcSecgroupV3#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#tags VpcSecgroupV3#tags}.
 
 ---
 
@@ -159,7 +159,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#timeouts VpcSecgroupV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#timeouts VpcSecgroupV3#timeouts}
 
 ---
 
@@ -536,7 +536,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#delete VpcSecgroupV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#delete VpcSecgroupV3#delete}.
 
 ---
 
@@ -684,7 +684,7 @@ The construct id used in the generated config for the VpcSecgroupV3 to import.
 
 The id of the existing VpcSecgroupV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1079,11 +1079,11 @@ vpcSecgroupV3.VpcSecgroupV3Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#name VpcSecgroupV3#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#description VpcSecgroupV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.enterpriseProjectId">enterprise_project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#enterprise_project_id VpcSecgroupV3#enterprise_project_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#id VpcSecgroupV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#tags VpcSecgroupV3#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#name VpcSecgroupV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#description VpcSecgroupV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.enterpriseProjectId">enterprise_project_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#enterprise_project_id VpcSecgroupV3#enterprise_project_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#id VpcSecgroupV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.tags">tags</a></code> | <code>typing.Mapping[str]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#tags VpcSecgroupV3#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Timeouts">VpcSecgroupV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1166,7 +1166,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#name VpcSecgroupV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#name VpcSecgroupV3#name}.
 
 ---
 
@@ -1178,7 +1178,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#description VpcSecgroupV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#description VpcSecgroupV3#description}.
 
 ---
 
@@ -1190,7 +1190,7 @@ enterprise_project_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#enterprise_project_id VpcSecgroupV3#enterprise_project_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#enterprise_project_id VpcSecgroupV3#enterprise_project_id}.
 
 ---
 
@@ -1202,7 +1202,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#id VpcSecgroupV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#id VpcSecgroupV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1217,7 +1217,7 @@ tags: typing.Mapping[str]
 
 - *Type:* typing.Mapping[str]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#tags VpcSecgroupV3#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#tags VpcSecgroupV3#tags}.
 
 ---
 
@@ -1231,7 +1231,7 @@ timeouts: VpcSecgroupV3Timeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#timeouts VpcSecgroupV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#timeouts VpcSecgroupV3#timeouts}
 
 ---
 
@@ -1251,7 +1251,7 @@ vpcSecgroupV3.VpcSecgroupV3Timeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#delete VpcSecgroupV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupV3.VpcSecgroupV3Timeouts.property.delete">delete</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#delete VpcSecgroupV3#delete}. |
 
 ---
 
@@ -1263,7 +1263,7 @@ delete: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/vpc_secgroup_v3#delete VpcSecgroupV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/vpc_secgroup_v3#delete VpcSecgroupV3#delete}.
 
 ---
 

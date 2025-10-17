@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudSmnSubscriptionV2 <a name="DataOpentelekomcloudSmnSubscriptionV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_subscription_v2 opentelekomcloud_smn_subscription_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_subscription_v2 opentelekomcloud_smn_subscription_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2.Initializer.parameter.subscriptionUrn">subscription_urn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_subscription_v2#subscription_urn DataOpentelekomcloudSmnSubscriptionV2#subscription_urn}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_subscription_v2#id DataOpentelekomcloudSmnSubscriptionV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2.Initializer.parameter.subscriptionUrn">subscription_urn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_subscription_v2#subscription_urn DataOpentelekomcloudSmnSubscriptionV2#subscription_urn}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_subscription_v2#id DataOpentelekomcloudSmnSubscriptionV2#id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_subscription_v2#subscription_urn DataOpentelekomcloudSmnSubscriptionV2#subscription_urn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_subscription_v2#subscription_urn DataOpentelekomcloudSmnSubscriptionV2#subscription_urn}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_subscription_v2#id DataOpentelekomcloudSmnSubscriptionV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_subscription_v2#id DataOpentelekomcloudSmnSubscriptionV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -483,7 +483,7 @@ The construct id used in the generated config for the DataOpentelekomcloudSmnSub
 
 The id of the existing DataOpentelekomcloudSmnSubscriptionV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_subscription_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_subscription_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -797,8 +797,8 @@ dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2Confi
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2Config.property.subscriptionUrn">subscription_urn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_subscription_v2#subscription_urn DataOpentelekomcloudSmnSubscriptionV2#subscription_urn}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_subscription_v2#id DataOpentelekomcloudSmnSubscriptionV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2Config.property.subscriptionUrn">subscription_urn</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_subscription_v2#subscription_urn DataOpentelekomcloudSmnSubscriptionV2#subscription_urn}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnSubscriptionV2.DataOpentelekomcloudSmnSubscriptionV2Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_subscription_v2#id DataOpentelekomcloudSmnSubscriptionV2#id}. |
 
 ---
 
@@ -880,7 +880,7 @@ subscription_urn: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_subscription_v2#subscription_urn DataOpentelekomcloudSmnSubscriptionV2#subscription_urn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_subscription_v2#subscription_urn DataOpentelekomcloudSmnSubscriptionV2#subscription_urn}.
 
 ---
 
@@ -892,7 +892,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/data-sources/smn_subscription_v2#id DataOpentelekomcloudSmnSubscriptionV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/smn_subscription_v2#id DataOpentelekomcloudSmnSubscriptionV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
