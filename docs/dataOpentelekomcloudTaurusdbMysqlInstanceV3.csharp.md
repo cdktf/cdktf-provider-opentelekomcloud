@@ -1,0 +1,2425 @@
+# `dataOpentelekomcloudTaurusdbMysqlInstanceV3` Submodule <a name="`dataOpentelekomcloudTaurusdbMysqlInstanceV3` Submodule" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### DataOpentelekomcloudTaurusdbMysqlInstanceV3 <a name="DataOpentelekomcloudTaurusdbMysqlInstanceV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3"></a>
+
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_instance_v3 opentelekomcloud_taurusdb_mysql_instance_v3}.
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new DataOpentelekomcloudTaurusdbMysqlInstanceV3(Construct Scope, string Id, DataOpentelekomcloudTaurusdbMysqlInstanceV3Config Config = null);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.Initializer.parameter.scope">Scope</a></code> | <code>Constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.Initializer.parameter.id">Id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.Initializer.parameter.config">Config</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config">DataOpentelekomcloudTaurusdbMysqlInstanceV3Config</a></code> | *No description.* |
+
+---
+
+##### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.Initializer.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config">DataOpentelekomcloudTaurusdbMysqlInstanceV3Config</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.resetName">ResetName</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.resetRegion">ResetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.resetSubnetId">ResetSubnetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.resetVpcId">ResetVpcId</a></code> | *No description.* |
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Returns a string representation of this construct.
+
+##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.addOverride"></a>
+
+```csharp
+private void AddOverride(string Path, object Value)
+```
+
+###### `Path`<sup>Required</sup> <a name="Path" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.addOverride.parameter.value"></a>
+
+- *Type:* object
+
+---
+
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.overrideLogicalId"></a>
+
+```csharp
+private void OverrideLogicalId(string NewLogicalId)
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `NewLogicalId`<sup>Required</sup> <a name="NewLogicalId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.resetOverrideLogicalId"></a>
+
+```csharp
+private void ResetOverrideLogicalId()
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.toHclTerraform"></a>
+
+```csharp
+private object ToHclTerraform()
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.toMetadata"></a>
+
+```csharp
+private object ToMetadata()
+```
+
+##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.toTerraform"></a>
+
+```csharp
+private object ToTerraform()
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `ResetId` <a name="ResetId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.resetId"></a>
+
+```csharp
+private void ResetId()
+```
+
+##### `ResetName` <a name="ResetName" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.resetName"></a>
+
+```csharp
+private void ResetName()
+```
+
+##### `ResetRegion` <a name="ResetRegion" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.resetRegion"></a>
+
+```csharp
+private void ResetRegion()
+```
+
+##### `ResetSubnetId` <a name="ResetSubnetId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.resetSubnetId"></a>
+
+```csharp
+private void ResetSubnetId()
+```
+
+##### `ResetVpcId` <a name="ResetVpcId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.resetVpcId"></a>
+
+```csharp
+private void ResetVpcId()
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataOpentelekomcloudTaurusdbMysqlInstanceV3 resource upon running "cdktf plan <stack-name>". |
+
+---
+
+##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.isConstruct"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+DataOpentelekomcloudTaurusdbMysqlInstanceV3.IsConstruct(object X);
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.isConstruct.parameter.x"></a>
+
+- *Type:* object
+
+Any object.
+
+---
+
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.isTerraformElement"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+DataOpentelekomcloudTaurusdbMysqlInstanceV3.IsTerraformElement(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.isTerraformElement.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.isTerraformDataSource"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+DataOpentelekomcloudTaurusdbMysqlInstanceV3.IsTerraformDataSource(object X);
+```
+
+###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.generateConfigForImport"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+DataOpentelekomcloudTaurusdbMysqlInstanceV3.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTF code for importing a DataOpentelekomcloudTaurusdbMysqlInstanceV3 resource upon running "cdktf plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataOpentelekomcloudTaurusdbMysqlInstanceV3 to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataOpentelekomcloudTaurusdbMysqlInstanceV3 that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_instance_v3#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataOpentelekomcloudTaurusdbMysqlInstanceV3 to import is found.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.node">Node</a></code> | <code>Constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.cdktfStack">CdktfStack</a></code> | <code>HashiCorp.Cdktf.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.availabilityZoneMode">AvailabilityZoneMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.backupStrategy">BackupStrategy</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList">DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.configurationId">ConfigurationId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.datastore">Datastore</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList">DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.dbUserName">DbUserName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.flavor">Flavor</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.masterAvailabilityZone">MasterAvailabilityZone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.mode">Mode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.nodes">Nodes</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList">DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.port">Port</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.privateWriteIp">PrivateWriteIp</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.readReplicas">ReadReplicas</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.securityGroupId">SecurityGroupId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.status">Status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.timeZone">TimeZone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.subnetIdInput">SubnetIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.vpcIdInput">VpcIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.region">Region</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.subnetId">SubnetId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.vpcId">VpcId</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.node"></a>
+
+```csharp
+public Node Node { get; }
+```
+
+- *Type:* Constructs.Node
+
+The tree node.
+
+---
+
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.cdktfStack"></a>
+
+```csharp
+public TerraformStack CdktfStack { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformStack
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.friendlyUniqueId"></a>
+
+```csharp
+public string FriendlyUniqueId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.terraformMetaArguments"></a>
+
+```csharp
+public System.Collections.Generic.IDictionary<string, object> TerraformMetaArguments { get; }
+```
+
+- *Type:* System.Collections.Generic.IDictionary<string, object>
+
+---
+
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.terraformResourceType"></a>
+
+```csharp
+public string TerraformResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.terraformGeneratorMetadata"></a>
+
+```csharp
+public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProviderGeneratorMetadata
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.count"></a>
+
+```csharp
+public double|TerraformCount Count { get; }
+```
+
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.dependsOn"></a>
+
+```csharp
+public string[] DependsOn { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `AvailabilityZoneMode`<sup>Required</sup> <a name="AvailabilityZoneMode" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.availabilityZoneMode"></a>
+
+```csharp
+public string AvailabilityZoneMode { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `BackupStrategy`<sup>Required</sup> <a name="BackupStrategy" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.backupStrategy"></a>
+
+```csharp
+public DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList BackupStrategy { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList">DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList</a>
+
+---
+
+##### `ConfigurationId`<sup>Required</sup> <a name="ConfigurationId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.configurationId"></a>
+
+```csharp
+public string ConfigurationId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Datastore`<sup>Required</sup> <a name="Datastore" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.datastore"></a>
+
+```csharp
+public DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList Datastore { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList">DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList</a>
+
+---
+
+##### `DbUserName`<sup>Required</sup> <a name="DbUserName" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.dbUserName"></a>
+
+```csharp
+public string DbUserName { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Flavor`<sup>Required</sup> <a name="Flavor" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.flavor"></a>
+
+```csharp
+public string Flavor { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `MasterAvailabilityZone`<sup>Required</sup> <a name="MasterAvailabilityZone" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.masterAvailabilityZone"></a>
+
+```csharp
+public string MasterAvailabilityZone { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Mode`<sup>Required</sup> <a name="Mode" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.mode"></a>
+
+```csharp
+public string Mode { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Nodes`<sup>Required</sup> <a name="Nodes" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.nodes"></a>
+
+```csharp
+public DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList Nodes { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList">DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList</a>
+
+---
+
+##### `Port`<sup>Required</sup> <a name="Port" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.port"></a>
+
+```csharp
+public double Port { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `PrivateWriteIp`<sup>Required</sup> <a name="PrivateWriteIp" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.privateWriteIp"></a>
+
+```csharp
+public string PrivateWriteIp { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `ReadReplicas`<sup>Required</sup> <a name="ReadReplicas" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.readReplicas"></a>
+
+```csharp
+public double ReadReplicas { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `SecurityGroupId`<sup>Required</sup> <a name="SecurityGroupId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.securityGroupId"></a>
+
+```csharp
+public string SecurityGroupId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.status"></a>
+
+```csharp
+public string Status { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TimeZone`<sup>Required</sup> <a name="TimeZone" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.timeZone"></a>
+
+```csharp
+public string TimeZone { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.idInput"></a>
+
+```csharp
+public string IdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.nameInput"></a>
+
+```csharp
+public string NameInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `RegionInput`<sup>Optional</sup> <a name="RegionInput" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.regionInput"></a>
+
+```csharp
+public string RegionInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SubnetIdInput`<sup>Optional</sup> <a name="SubnetIdInput" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.subnetIdInput"></a>
+
+```csharp
+public string SubnetIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `VpcIdInput`<sup>Optional</sup> <a name="VpcIdInput" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.vpcIdInput"></a>
+
+```csharp
+public string VpcIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.name"></a>
+
+```csharp
+public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Region`<sup>Required</sup> <a name="Region" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.region"></a>
+
+```csharp
+public string Region { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `SubnetId`<sup>Required</sup> <a name="SubnetId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.subnetId"></a>
+
+```csharp
+public string SubnetId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `VpcId`<sup>Required</sup> <a name="VpcId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.vpcId"></a>
+
+```csharp
+public string VpcId { get; }
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.tfResourceType">TfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3.property.tfResourceType"></a>
+
+```csharp
+public string TfResourceType { get; }
+```
+
+- *Type:* string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategy <a name="DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategy" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategy"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategy.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategy {
+
+};
+```
+
+
+### DataOpentelekomcloudTaurusdbMysqlInstanceV3Config <a name="DataOpentelekomcloudTaurusdbMysqlInstanceV3Config" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new DataOpentelekomcloudTaurusdbMysqlInstanceV3Config {
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
+    ITerraformDependable[] DependsOn = null,
+    ITerraformIterator ForEach = null,
+    TerraformResourceLifecycle Lifecycle = null,
+    TerraformProvider Provider = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string Id = null,
+    string Name = null,
+    string Region = null,
+    string SubnetId = null,
+    string VpcId = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_instance_v3#id DataOpentelekomcloudTaurusdbMysqlInstanceV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_instance_v3#name DataOpentelekomcloudTaurusdbMysqlInstanceV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.region">Region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_instance_v3#region DataOpentelekomcloudTaurusdbMysqlInstanceV3#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.subnetId">SubnetId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_instance_v3#subnet_id DataOpentelekomcloudTaurusdbMysqlInstanceV3#subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.vpcId">VpcId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_instance_v3#vpc_id DataOpentelekomcloudTaurusdbMysqlInstanceV3#vpc_id}. |
+
+---
+
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.connection"></a>
+
+```csharp
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
+
+---
+
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.count"></a>
+
+```csharp
+public double|TerraformCount Count { get; set; }
+```
+
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
+
+---
+
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.dependsOn"></a>
+
+```csharp
+public ITerraformDependable[] DependsOn { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformDependable[]
+
+---
+
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.forEach"></a>
+
+```csharp
+public ITerraformIterator ForEach { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.ITerraformIterator
+
+---
+
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.lifecycle"></a>
+
+```csharp
+public TerraformResourceLifecycle Lifecycle { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformResourceLifecycle
+
+---
+
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.provider"></a>
+
+```csharp
+public TerraformProvider Provider { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+---
+
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.provisioners"></a>
+
+```csharp
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
+```
+
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
+
+---
+
+##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.id"></a>
+
+```csharp
+public string Id { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_instance_v3#id DataOpentelekomcloudTaurusdbMysqlInstanceV3#id}.
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `Name`<sup>Optional</sup> <a name="Name" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.name"></a>
+
+```csharp
+public string Name { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_instance_v3#name DataOpentelekomcloudTaurusdbMysqlInstanceV3#name}.
+
+---
+
+##### `Region`<sup>Optional</sup> <a name="Region" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.region"></a>
+
+```csharp
+public string Region { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_instance_v3#region DataOpentelekomcloudTaurusdbMysqlInstanceV3#region}.
+
+---
+
+##### `SubnetId`<sup>Optional</sup> <a name="SubnetId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.subnetId"></a>
+
+```csharp
+public string SubnetId { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_instance_v3#subnet_id DataOpentelekomcloudTaurusdbMysqlInstanceV3#subnet_id}.
+
+---
+
+##### `VpcId`<sup>Optional</sup> <a name="VpcId" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Config.property.vpcId"></a>
+
+```csharp
+public string VpcId { get; set; }
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_instance_v3#vpc_id DataOpentelekomcloudTaurusdbMysqlInstanceV3#vpc_id}.
+
+---
+
+### DataOpentelekomcloudTaurusdbMysqlInstanceV3Datastore <a name="DataOpentelekomcloudTaurusdbMysqlInstanceV3Datastore" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Datastore"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Datastore.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new DataOpentelekomcloudTaurusdbMysqlInstanceV3Datastore {
+
+};
+```
+
+
+### DataOpentelekomcloudTaurusdbMysqlInstanceV3Nodes <a name="DataOpentelekomcloudTaurusdbMysqlInstanceV3Nodes" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Nodes"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Nodes.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new DataOpentelekomcloudTaurusdbMysqlInstanceV3Nodes {
+
+};
+```
+
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList <a name="DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.get"></a>
+
+```csharp
+private DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference <a name="DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.property.keepDays">KeepDays</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.property.startTime">StartTime</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategy">DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategy</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `KeepDays`<sup>Required</sup> <a name="KeepDays" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.property.keepDays"></a>
+
+```csharp
+public double KeepDays { get; }
+```
+
+- *Type:* double
+
+---
+
+##### `StartTime`<sup>Required</sup> <a name="StartTime" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.property.startTime"></a>
+
+```csharp
+public string StartTime { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategyOutputReference.property.internalValue"></a>
+
+```csharp
+public DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategy InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategy">DataOpentelekomcloudTaurusdbMysqlInstanceV3BackupStrategy</a>
+
+---
+
+
+### DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList <a name="DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.get"></a>
+
+```csharp
+private DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference <a name="DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.property.engine">Engine</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.property.version">Version</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Datastore">DataOpentelekomcloudTaurusdbMysqlInstanceV3Datastore</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Engine`<sup>Required</sup> <a name="Engine" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.property.engine"></a>
+
+```csharp
+public string Engine { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Version`<sup>Required</sup> <a name="Version" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.property.version"></a>
+
+```csharp
+public string Version { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3DatastoreOutputReference.property.internalValue"></a>
+
+```csharp
+public DataOpentelekomcloudTaurusdbMysqlInstanceV3Datastore InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Datastore">DataOpentelekomcloudTaurusdbMysqlInstanceV3Datastore</a>
+
+---
+
+
+### DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList <a name="DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList(IInterpolatingParent TerraformResource, string TerraformAttribute, bool WrapsSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.Initializer.parameter.wrapsSet">WrapsSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `WrapsSet`<sup>Required</sup> <a name="WrapsSet" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.allWithMapKey"></a>
+
+```csharp
+private DynamicListTerraformIterator AllWithMapKey(string MapKeyAttributeName)
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `MapKeyAttributeName`<sup>Required</sup> <a name="MapKeyAttributeName" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.get"></a>
+
+```csharp
+private DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference Get(double Index)
+```
+
+###### `Index`<sup>Required</sup> <a name="Index" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.get.parameter.index"></a>
+
+- *Type:* double
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesList.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+
+### DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference <a name="DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Opentelekomcloud;
+
+new DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute, double ComplexObjectIndex, bool ComplexObjectIsFromSet);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.Initializer.parameter.complexObjectIndex">ComplexObjectIndex</a></code> | <code>double</code> | the index of this item in the list. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.Initializer.parameter.complexObjectIsFromSet">ComplexObjectIsFromSet</a></code> | <code>bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `ComplexObjectIndex`<sup>Required</sup> <a name="ComplexObjectIndex" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* double
+
+the index of this item in the list.
+
+---
+
+##### `ComplexObjectIsFromSet`<sup>Required</sup> <a name="ComplexObjectIsFromSet" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.availabilityZone">AvailabilityZone</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.privateReadIp">PrivateReadIp</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.status">Status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.type">Type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Nodes">DataOpentelekomcloudTaurusdbMysqlInstanceV3Nodes</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `AvailabilityZone`<sup>Required</sup> <a name="AvailabilityZone" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.availabilityZone"></a>
+
+```csharp
+public string AvailabilityZone { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.name"></a>
+
+```csharp
+public string Name { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `PrivateReadIp`<sup>Required</sup> <a name="PrivateReadIp" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.privateReadIp"></a>
+
+```csharp
+public string PrivateReadIp { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.status"></a>
+
+```csharp
+public string Status { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.type"></a>
+
+```csharp
+public string Type { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3NodesOutputReference.property.internalValue"></a>
+
+```csharp
+public DataOpentelekomcloudTaurusdbMysqlInstanceV3Nodes InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlInstanceV3.DataOpentelekomcloudTaurusdbMysqlInstanceV3Nodes">DataOpentelekomcloudTaurusdbMysqlInstanceV3Nodes</a>
+
+---
+
+
+

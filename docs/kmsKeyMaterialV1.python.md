@@ -4,7 +4,7 @@
 
 ### KmsKeyMaterialV1 <a name="KmsKeyMaterialV1" id="@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1 opentelekomcloud_kms_key_material_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1 opentelekomcloud_kms_key_material_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer"></a>
 
@@ -40,11 +40,11 @@ kmsKeyMaterialV1.KmsKeyMaterialV1(
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.encryptedKeyMaterial">encrypted_key_material</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#encrypted_key_material KmsKeyMaterialV1#encrypted_key_material}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.importToken">import_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#import_token KmsKeyMaterialV1#import_token}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.keyId">key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#key_id KmsKeyMaterialV1#key_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.expirationTime">expiration_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#expiration_time KmsKeyMaterialV1#expiration_time}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#id KmsKeyMaterialV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.encryptedKeyMaterial">encrypted_key_material</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#encrypted_key_material KmsKeyMaterialV1#encrypted_key_material}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.importToken">import_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#import_token KmsKeyMaterialV1#import_token}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.keyId">key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#key_id KmsKeyMaterialV1#key_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.expirationTime">expiration_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#expiration_time KmsKeyMaterialV1#expiration_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#id KmsKeyMaterialV1#id}. |
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#encrypted_key_material KmsKeyMaterialV1#encrypted_key_material}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#encrypted_key_material KmsKeyMaterialV1#encrypted_key_material}.
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#import_token KmsKeyMaterialV1#import_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#import_token KmsKeyMaterialV1#import_token}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#key_id KmsKeyMaterialV1#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#key_id KmsKeyMaterialV1#key_id}.
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#expiration_time KmsKeyMaterialV1#expiration_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#expiration_time KmsKeyMaterialV1#expiration_time}.
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#id KmsKeyMaterialV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#id KmsKeyMaterialV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -634,7 +634,7 @@ The construct id used in the generated config for the KmsKeyMaterialV1 to import
 
 The id of the existing KmsKeyMaterialV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -995,11 +995,11 @@ kmsKeyMaterialV1.KmsKeyMaterialV1Config(
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.encryptedKeyMaterial">encrypted_key_material</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#encrypted_key_material KmsKeyMaterialV1#encrypted_key_material}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.importToken">import_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#import_token KmsKeyMaterialV1#import_token}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.keyId">key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#key_id KmsKeyMaterialV1#key_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.expirationTime">expiration_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#expiration_time KmsKeyMaterialV1#expiration_time}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#id KmsKeyMaterialV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.encryptedKeyMaterial">encrypted_key_material</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#encrypted_key_material KmsKeyMaterialV1#encrypted_key_material}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.importToken">import_token</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#import_token KmsKeyMaterialV1#import_token}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.keyId">key_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#key_id KmsKeyMaterialV1#key_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.expirationTime">expiration_time</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#expiration_time KmsKeyMaterialV1#expiration_time}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#id KmsKeyMaterialV1#id}. |
 
 ---
 
@@ -1081,7 +1081,7 @@ encrypted_key_material: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#encrypted_key_material KmsKeyMaterialV1#encrypted_key_material}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#encrypted_key_material KmsKeyMaterialV1#encrypted_key_material}.
 
 ---
 
@@ -1093,7 +1093,7 @@ import_token: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#import_token KmsKeyMaterialV1#import_token}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#import_token KmsKeyMaterialV1#import_token}.
 
 ---
 
@@ -1105,7 +1105,7 @@ key_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#key_id KmsKeyMaterialV1#key_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#key_id KmsKeyMaterialV1#key_id}.
 
 ---
 
@@ -1117,7 +1117,7 @@ expiration_time: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#expiration_time KmsKeyMaterialV1#expiration_time}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#expiration_time KmsKeyMaterialV1#expiration_time}.
 
 ---
 
@@ -1129,7 +1129,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.49/docs/resources/kms_key_material_v1#id KmsKeyMaterialV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/resources/kms_key_material_v1#id KmsKeyMaterialV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
