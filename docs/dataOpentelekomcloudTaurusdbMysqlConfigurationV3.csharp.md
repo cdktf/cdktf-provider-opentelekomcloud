@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudTaurusdbMysqlConfigurationV3 <a name="DataOpentelekomcloudTaurusdbMysqlConfigurationV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlConfigurationV3.DataOpentelekomcloudTaurusdbMysqlConfigurationV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_configuration_v3 opentelekomcloud_taurusdb_mysql_configuration_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_configuration_v3 opentelekomcloud_taurusdb_mysql_configuration_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlConfigurationV3.DataOpentelekomcloudTaurusdbMysqlConfigurationV3.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOpentelekomcloudTaurus
 
 The id of the existing DataOpentelekomcloudTaurusdbMysqlConfigurationV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_configuration_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_configuration_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -671,8 +671,8 @@ new DataOpentelekomcloudTaurusdbMysqlConfigurationV3Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlConfigurationV3.DataOpentelekomcloudTaurusdbMysqlConfigurationV3Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlConfigurationV3.DataOpentelekomcloudTaurusdbMysqlConfigurationV3Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlConfigurationV3.DataOpentelekomcloudTaurusdbMysqlConfigurationV3Config.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlConfigurationV3.DataOpentelekomcloudTaurusdbMysqlConfigurationV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_configuration_v3#id DataOpentelekomcloudTaurusdbMysqlConfigurationV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlConfigurationV3.DataOpentelekomcloudTaurusdbMysqlConfigurationV3Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_configuration_v3#name DataOpentelekomcloudTaurusdbMysqlConfigurationV3#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlConfigurationV3.DataOpentelekomcloudTaurusdbMysqlConfigurationV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_configuration_v3#id DataOpentelekomcloudTaurusdbMysqlConfigurationV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlConfigurationV3.DataOpentelekomcloudTaurusdbMysqlConfigurationV3Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_configuration_v3#name DataOpentelekomcloudTaurusdbMysqlConfigurationV3#name}. |
 
 ---
 
@@ -754,7 +754,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_configuration_v3#id DataOpentelekomcloudTaurusdbMysqlConfigurationV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_configuration_v3#id DataOpentelekomcloudTaurusdbMysqlConfigurationV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -769,7 +769,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/taurusdb_mysql_configuration_v3#name DataOpentelekomcloudTaurusdbMysqlConfigurationV3#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/taurusdb_mysql_configuration_v3#name DataOpentelekomcloudTaurusdbMysqlConfigurationV3#name}.
 
 ---
 

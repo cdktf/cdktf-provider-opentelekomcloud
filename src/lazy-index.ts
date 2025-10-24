@@ -443,9 +443,12 @@ Object.defineProperty(exports, 'dataOpentelekomcloudSmnTopicSubscriptionV2', { g
 Object.defineProperty(exports, 'dataOpentelekomcloudSmnTopicV2', { get: function () { return require('./data-opentelekomcloud-smn-topic-v2'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlBackupsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-backups-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlConfigurationV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-configuration-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlConfigurationsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-configurations-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlEngineVersionsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-engine-versions-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlFlavorsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-flavors-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlInstanceV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-instance-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlProxiesV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-proxies-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlProxyFlavorsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-proxy-flavors-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsQuotasV1', { get: function () { return require('./data-opentelekomcloud-tms-quotas-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsResourceInstancesV1', { get: function () { return require('./data-opentelekomcloud-tms-resource-instances-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsResourceTagKeysV1', { get: function () { return require('./data-opentelekomcloud-tms-resource-tag-keys-v1'); } });
