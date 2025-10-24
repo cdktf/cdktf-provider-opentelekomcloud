@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudApigwGatewayFeaturesV2 <a name="DataOpentelekomcloudApigwGatewayFeaturesV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/apigw_gateway_features_v2 opentelekomcloud_apigw_gateway_features_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/apigw_gateway_features_v2 opentelekomcloud_apigw_gateway_features_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOpentelekomcloudApigwG
 
 The id of the existing DataOpentelekomcloudApigwGatewayFeaturesV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/apigw_gateway_features_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/apigw_gateway_features_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -661,9 +661,9 @@ const dataOpentelekomcloudApigwGatewayFeaturesV2Config: dataOpentelekomcloudApig
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.gatewayId">gatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/apigw_gateway_features_v2#gateway_id DataOpentelekomcloudApigwGatewayFeaturesV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/apigw_gateway_features_v2#id DataOpentelekomcloudApigwGatewayFeaturesV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/apigw_gateway_features_v2#name DataOpentelekomcloudApigwGatewayFeaturesV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.gatewayId">gatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/apigw_gateway_features_v2#gateway_id DataOpentelekomcloudApigwGatewayFeaturesV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/apigw_gateway_features_v2#id DataOpentelekomcloudApigwGatewayFeaturesV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwGatewayFeaturesV2.DataOpentelekomcloudApigwGatewayFeaturesV2Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/apigw_gateway_features_v2#name DataOpentelekomcloudApigwGatewayFeaturesV2#name}. |
 
 ---
 
@@ -745,7 +745,7 @@ public readonly gatewayId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/apigw_gateway_features_v2#gateway_id DataOpentelekomcloudApigwGatewayFeaturesV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/apigw_gateway_features_v2#gateway_id DataOpentelekomcloudApigwGatewayFeaturesV2#gateway_id}.
 
 ---
 
@@ -757,7 +757,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/apigw_gateway_features_v2#id DataOpentelekomcloudApigwGatewayFeaturesV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/apigw_gateway_features_v2#id DataOpentelekomcloudApigwGatewayFeaturesV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -772,7 +772,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/apigw_gateway_features_v2#name DataOpentelekomcloudApigwGatewayFeaturesV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/apigw_gateway_features_v2#name DataOpentelekomcloudApigwGatewayFeaturesV2#name}.
 
 ---
 

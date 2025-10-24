@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudTmsTagsV1 <a name="DataOpentelekomcloudTmsTagsV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsTagsV1.DataOpentelekomcloudTmsTagsV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_tags_v1 opentelekomcloud_tms_tags_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/tms_tags_v1 opentelekomcloud_tms_tags_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsTagsV1.DataOpentelekomcloudTmsTagsV1.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataOpentelekomcloudTmsTag
 
 The id of the existing DataOpentelekomcloudTmsTagsV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_tags_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/tms_tags_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -657,9 +657,9 @@ const dataOpentelekomcloudTmsTagsV1Config: dataOpentelekomcloudTmsTagsV1.DataOpe
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsTagsV1.DataOpentelekomcloudTmsTagsV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsTagsV1.DataOpentelekomcloudTmsTagsV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsTagsV1.DataOpentelekomcloudTmsTagsV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsTagsV1.DataOpentelekomcloudTmsTagsV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_tags_v1#id DataOpentelekomcloudTmsTagsV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsTagsV1.DataOpentelekomcloudTmsTagsV1Config.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_tags_v1#key DataOpentelekomcloudTmsTagsV1#key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsTagsV1.DataOpentelekomcloudTmsTagsV1Config.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_tags_v1#value DataOpentelekomcloudTmsTagsV1#value}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsTagsV1.DataOpentelekomcloudTmsTagsV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/tms_tags_v1#id DataOpentelekomcloudTmsTagsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsTagsV1.DataOpentelekomcloudTmsTagsV1Config.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/tms_tags_v1#key DataOpentelekomcloudTmsTagsV1#key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsTagsV1.DataOpentelekomcloudTmsTagsV1Config.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/tms_tags_v1#value DataOpentelekomcloudTmsTagsV1#value}. |
 
 ---
 
@@ -741,7 +741,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_tags_v1#id DataOpentelekomcloudTmsTagsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/tms_tags_v1#id DataOpentelekomcloudTmsTagsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -756,7 +756,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_tags_v1#key DataOpentelekomcloudTmsTagsV1#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/tms_tags_v1#key DataOpentelekomcloudTmsTagsV1#key}.
 
 ---
 
@@ -768,7 +768,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.50/docs/data-sources/tms_tags_v1#value DataOpentelekomcloudTmsTagsV1#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/tms_tags_v1#value DataOpentelekomcloudTmsTagsV1#value}.
 
 ---
 
