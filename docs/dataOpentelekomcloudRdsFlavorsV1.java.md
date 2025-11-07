@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudRdsFlavorsV1 <a name="DataOpentelekomcloudRdsFlavorsV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1 opentelekomcloud_rds_flavors_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1 opentelekomcloud_rds_flavors_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer"></a>
 
@@ -38,11 +38,11 @@ DataOpentelekomcloudRdsFlavorsV1.Builder.create(Construct scope, java.lang.Strin
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.datastoreName">datastoreName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#datastore_name DataOpentelekomcloudRdsFlavorsV1#datastore_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.datastoreVersion">datastoreVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#datastore_version DataOpentelekomcloudRdsFlavorsV1#datastore_version}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#id DataOpentelekomcloudRdsFlavorsV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#region DataOpentelekomcloudRdsFlavorsV1#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.speccode">speccode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#speccode DataOpentelekomcloudRdsFlavorsV1#speccode}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.datastoreName">datastoreName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#datastore_name DataOpentelekomcloudRdsFlavorsV1#datastore_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.datastoreVersion">datastoreVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#datastore_version DataOpentelekomcloudRdsFlavorsV1#datastore_version}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#id DataOpentelekomcloudRdsFlavorsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#region DataOpentelekomcloudRdsFlavorsV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1.Initializer.parameter.speccode">speccode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#speccode DataOpentelekomcloudRdsFlavorsV1#speccode}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#datastore_name DataOpentelekomcloudRdsFlavorsV1#datastore_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#datastore_name DataOpentelekomcloudRdsFlavorsV1#datastore_name}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#datastore_version DataOpentelekomcloudRdsFlavorsV1#datastore_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#datastore_version DataOpentelekomcloudRdsFlavorsV1#datastore_version}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#id DataOpentelekomcloudRdsFlavorsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#id DataOpentelekomcloudRdsFlavorsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -137,7 +137,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#region DataOpentelekomcloudRdsFlavorsV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#region DataOpentelekomcloudRdsFlavorsV1#region}.
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#speccode DataOpentelekomcloudRdsFlavorsV1#speccode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#speccode DataOpentelekomcloudRdsFlavorsV1#speccode}.
 
 ---
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DataOpentelekomcloudRdsFla
 
 The id of the existing DataOpentelekomcloudRdsFlavorsV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -828,11 +828,11 @@ DataOpentelekomcloudRdsFlavorsV1Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.datastoreName">datastoreName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#datastore_name DataOpentelekomcloudRdsFlavorsV1#datastore_name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.datastoreVersion">datastoreVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#datastore_version DataOpentelekomcloudRdsFlavorsV1#datastore_version}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#id DataOpentelekomcloudRdsFlavorsV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#region DataOpentelekomcloudRdsFlavorsV1#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.speccode">speccode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#speccode DataOpentelekomcloudRdsFlavorsV1#speccode}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.datastoreName">datastoreName</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#datastore_name DataOpentelekomcloudRdsFlavorsV1#datastore_name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.datastoreVersion">datastoreVersion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#datastore_version DataOpentelekomcloudRdsFlavorsV1#datastore_version}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#id DataOpentelekomcloudRdsFlavorsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#region DataOpentelekomcloudRdsFlavorsV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRdsFlavorsV1.DataOpentelekomcloudRdsFlavorsV1Config.property.speccode">speccode</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#speccode DataOpentelekomcloudRdsFlavorsV1#speccode}. |
 
 ---
 
@@ -914,7 +914,7 @@ public java.lang.String getDatastoreName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#datastore_name DataOpentelekomcloudRdsFlavorsV1#datastore_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#datastore_name DataOpentelekomcloudRdsFlavorsV1#datastore_name}.
 
 ---
 
@@ -926,7 +926,7 @@ public java.lang.String getDatastoreVersion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#datastore_version DataOpentelekomcloudRdsFlavorsV1#datastore_version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#datastore_version DataOpentelekomcloudRdsFlavorsV1#datastore_version}.
 
 ---
 
@@ -938,7 +938,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#id DataOpentelekomcloudRdsFlavorsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#id DataOpentelekomcloudRdsFlavorsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -953,7 +953,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#region DataOpentelekomcloudRdsFlavorsV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#region DataOpentelekomcloudRdsFlavorsV1#region}.
 
 ---
 
@@ -965,7 +965,7 @@ public java.lang.String getSpeccode();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/rds_flavors_v1#speccode DataOpentelekomcloudRdsFlavorsV1#speccode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rds_flavors_v1#speccode DataOpentelekomcloudRdsFlavorsV1#speccode}.
 
 ---
 

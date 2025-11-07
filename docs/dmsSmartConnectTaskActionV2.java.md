@@ -4,7 +4,7 @@
 
 ### DmsSmartConnectTaskActionV2 <a name="DmsSmartConnectTaskActionV2" id="@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2 opentelekomcloud_dms_smart_connect_task_action_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2 opentelekomcloud_dms_smart_connect_task_action_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer"></a>
 
@@ -38,10 +38,10 @@ DmsSmartConnectTaskActionV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer.parameter.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#action DmsSmartConnectTaskActionV2#action}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer.parameter.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#instance_id DmsSmartConnectTaskActionV2#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer.parameter.taskId">taskId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#task_id DmsSmartConnectTaskActionV2#task_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#id DmsSmartConnectTaskActionV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer.parameter.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#action DmsSmartConnectTaskActionV2#action}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer.parameter.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#instance_id DmsSmartConnectTaskActionV2#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer.parameter.taskId">taskId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#task_id DmsSmartConnectTaskActionV2#task_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#id DmsSmartConnectTaskActionV2#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Timeouts">DmsSmartConnectTaskActionV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#action DmsSmartConnectTaskActionV2#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#action DmsSmartConnectTaskActionV2#action}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#instance_id DmsSmartConnectTaskActionV2#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#instance_id DmsSmartConnectTaskActionV2#instance_id}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#task_id DmsSmartConnectTaskActionV2#task_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#task_id DmsSmartConnectTaskActionV2#task_id}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#id DmsSmartConnectTaskActionV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#id DmsSmartConnectTaskActionV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -147,7 +147,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#timeouts DmsSmartConnectTaskActionV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#timeouts DmsSmartConnectTaskActionV2#timeouts}
 
 ---
 
@@ -601,7 +601,7 @@ The construct id used in the generated config for the DmsSmartConnectTaskActionV
 
 The id of the existing DmsSmartConnectTaskActionV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -962,10 +962,10 @@ DmsSmartConnectTaskActionV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Config.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#action DmsSmartConnectTaskActionV2#action}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Config.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#instance_id DmsSmartConnectTaskActionV2#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Config.property.taskId">taskId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#task_id DmsSmartConnectTaskActionV2#task_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#id DmsSmartConnectTaskActionV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Config.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#action DmsSmartConnectTaskActionV2#action}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Config.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#instance_id DmsSmartConnectTaskActionV2#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Config.property.taskId">taskId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#task_id DmsSmartConnectTaskActionV2#task_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#id DmsSmartConnectTaskActionV2#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Timeouts">DmsSmartConnectTaskActionV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1048,7 +1048,7 @@ public java.lang.String getAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#action DmsSmartConnectTaskActionV2#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#action DmsSmartConnectTaskActionV2#action}.
 
 ---
 
@@ -1060,7 +1060,7 @@ public java.lang.String getInstanceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#instance_id DmsSmartConnectTaskActionV2#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#instance_id DmsSmartConnectTaskActionV2#instance_id}.
 
 ---
 
@@ -1072,7 +1072,7 @@ public java.lang.String getTaskId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#task_id DmsSmartConnectTaskActionV2#task_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#task_id DmsSmartConnectTaskActionV2#task_id}.
 
 ---
 
@@ -1084,7 +1084,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#id DmsSmartConnectTaskActionV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#id DmsSmartConnectTaskActionV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1101,7 +1101,7 @@ public DmsSmartConnectTaskActionV2Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#timeouts DmsSmartConnectTaskActionV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#timeouts DmsSmartConnectTaskActionV2#timeouts}
 
 ---
 
@@ -1121,7 +1121,7 @@ DmsSmartConnectTaskActionV2Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#create DmsSmartConnectTaskActionV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dmsSmartConnectTaskActionV2.DmsSmartConnectTaskActionV2Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#create DmsSmartConnectTaskActionV2#create}. |
 
 ---
 
@@ -1133,7 +1133,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/dms_smart_connect_task_action_v2#create DmsSmartConnectTaskActionV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/dms_smart_connect_task_action_v2#create DmsSmartConnectTaskActionV2#create}.
 
 ---
 

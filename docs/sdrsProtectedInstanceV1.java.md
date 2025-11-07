@@ -4,7 +4,7 @@
 
 ### SdrsProtectedInstanceV1 <a name="SdrsProtectedInstanceV1" id="@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1 opentelekomcloud_sdrs_protected_instance_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1 opentelekomcloud_sdrs_protected_instance_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer"></a>
 
@@ -44,16 +44,16 @@ SdrsProtectedInstanceV1.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.groupId">groupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#group_id SdrsProtectedInstanceV1#group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#name SdrsProtectedInstanceV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.serverId">serverId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#server_id SdrsProtectedInstanceV1#server_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.deleteTargetEip">deleteTargetEip</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#delete_target_eip SdrsProtectedInstanceV1#delete_target_eip}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.deleteTargetServer">deleteTargetServer</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#delete_target_server SdrsProtectedInstanceV1#delete_target_server}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#description SdrsProtectedInstanceV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#id SdrsProtectedInstanceV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.ipAddress">ipAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#ip_address SdrsProtectedInstanceV1#ip_address}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.subnetId">subnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#subnet_id SdrsProtectedInstanceV1#subnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#tags SdrsProtectedInstanceV1#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.groupId">groupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#group_id SdrsProtectedInstanceV1#group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#name SdrsProtectedInstanceV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.serverId">serverId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#server_id SdrsProtectedInstanceV1#server_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.deleteTargetEip">deleteTargetEip</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#delete_target_eip SdrsProtectedInstanceV1#delete_target_eip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.deleteTargetServer">deleteTargetServer</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#delete_target_server SdrsProtectedInstanceV1#delete_target_server}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#description SdrsProtectedInstanceV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#id SdrsProtectedInstanceV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.ipAddress">ipAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#ip_address SdrsProtectedInstanceV1#ip_address}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.subnetId">subnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#subnet_id SdrsProtectedInstanceV1#subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#tags SdrsProtectedInstanceV1#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Timeouts">SdrsProtectedInstanceV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#group_id SdrsProtectedInstanceV1#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#group_id SdrsProtectedInstanceV1#group_id}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#name SdrsProtectedInstanceV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#name SdrsProtectedInstanceV1#name}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#server_id SdrsProtectedInstanceV1#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#server_id SdrsProtectedInstanceV1#server_id}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#delete_target_eip SdrsProtectedInstanceV1#delete_target_eip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#delete_target_eip SdrsProtectedInstanceV1#delete_target_eip}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#delete_target_server SdrsProtectedInstanceV1#delete_target_server}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#delete_target_server SdrsProtectedInstanceV1#delete_target_server}.
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#description SdrsProtectedInstanceV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#description SdrsProtectedInstanceV1#description}.
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#id SdrsProtectedInstanceV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#id SdrsProtectedInstanceV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#ip_address SdrsProtectedInstanceV1#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#ip_address SdrsProtectedInstanceV1#ip_address}.
 
 ---
 
@@ -189,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#subnet_id SdrsProtectedInstanceV1#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#subnet_id SdrsProtectedInstanceV1#subnet_id}.
 
 ---
 
@@ -197,7 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#tags SdrsProtectedInstanceV1#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#tags SdrsProtectedInstanceV1#tags}.
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#timeouts SdrsProtectedInstanceV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#timeouts SdrsProtectedInstanceV1#timeouts}
 
 ---
 
@@ -703,7 +703,7 @@ The construct id used in the generated config for the SdrsProtectedInstanceV1 to
 
 The id of the existing SdrsProtectedInstanceV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1224,16 +1224,16 @@ SdrsProtectedInstanceV1Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.groupId">groupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#group_id SdrsProtectedInstanceV1#group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#name SdrsProtectedInstanceV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.serverId">serverId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#server_id SdrsProtectedInstanceV1#server_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.deleteTargetEip">deleteTargetEip</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#delete_target_eip SdrsProtectedInstanceV1#delete_target_eip}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.deleteTargetServer">deleteTargetServer</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#delete_target_server SdrsProtectedInstanceV1#delete_target_server}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#description SdrsProtectedInstanceV1#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#id SdrsProtectedInstanceV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.ipAddress">ipAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#ip_address SdrsProtectedInstanceV1#ip_address}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.subnetId">subnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#subnet_id SdrsProtectedInstanceV1#subnet_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#tags SdrsProtectedInstanceV1#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.groupId">groupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#group_id SdrsProtectedInstanceV1#group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#name SdrsProtectedInstanceV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.serverId">serverId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#server_id SdrsProtectedInstanceV1#server_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.deleteTargetEip">deleteTargetEip</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#delete_target_eip SdrsProtectedInstanceV1#delete_target_eip}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.deleteTargetServer">deleteTargetServer</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#delete_target_server SdrsProtectedInstanceV1#delete_target_server}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#description SdrsProtectedInstanceV1#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#id SdrsProtectedInstanceV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.ipAddress">ipAddress</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#ip_address SdrsProtectedInstanceV1#ip_address}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.subnetId">subnetId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#subnet_id SdrsProtectedInstanceV1#subnet_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#tags SdrsProtectedInstanceV1#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Timeouts">SdrsProtectedInstanceV1Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1316,7 +1316,7 @@ public java.lang.String getGroupId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#group_id SdrsProtectedInstanceV1#group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#group_id SdrsProtectedInstanceV1#group_id}.
 
 ---
 
@@ -1328,7 +1328,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#name SdrsProtectedInstanceV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#name SdrsProtectedInstanceV1#name}.
 
 ---
 
@@ -1340,7 +1340,7 @@ public java.lang.String getServerId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#server_id SdrsProtectedInstanceV1#server_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#server_id SdrsProtectedInstanceV1#server_id}.
 
 ---
 
@@ -1352,7 +1352,7 @@ public java.lang.Boolean|IResolvable getDeleteTargetEip();
 
 - *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#delete_target_eip SdrsProtectedInstanceV1#delete_target_eip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#delete_target_eip SdrsProtectedInstanceV1#delete_target_eip}.
 
 ---
 
@@ -1364,7 +1364,7 @@ public java.lang.Boolean|IResolvable getDeleteTargetServer();
 
 - *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#delete_target_server SdrsProtectedInstanceV1#delete_target_server}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#delete_target_server SdrsProtectedInstanceV1#delete_target_server}.
 
 ---
 
@@ -1376,7 +1376,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#description SdrsProtectedInstanceV1#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#description SdrsProtectedInstanceV1#description}.
 
 ---
 
@@ -1388,7 +1388,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#id SdrsProtectedInstanceV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#id SdrsProtectedInstanceV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1403,7 +1403,7 @@ public java.lang.String getIpAddress();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#ip_address SdrsProtectedInstanceV1#ip_address}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#ip_address SdrsProtectedInstanceV1#ip_address}.
 
 ---
 
@@ -1415,7 +1415,7 @@ public java.lang.String getSubnetId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#subnet_id SdrsProtectedInstanceV1#subnet_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#subnet_id SdrsProtectedInstanceV1#subnet_id}.
 
 ---
 
@@ -1427,7 +1427,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#tags SdrsProtectedInstanceV1#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#tags SdrsProtectedInstanceV1#tags}.
 
 ---
 
@@ -1441,7 +1441,7 @@ public SdrsProtectedInstanceV1Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#timeouts SdrsProtectedInstanceV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#timeouts SdrsProtectedInstanceV1#timeouts}
 
 ---
 
@@ -1462,8 +1462,8 @@ SdrsProtectedInstanceV1Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#create SdrsProtectedInstanceV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#delete SdrsProtectedInstanceV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#create SdrsProtectedInstanceV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.sdrsProtectedInstanceV1.SdrsProtectedInstanceV1Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#delete SdrsProtectedInstanceV1#delete}. |
 
 ---
 
@@ -1475,7 +1475,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#create SdrsProtectedInstanceV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#create SdrsProtectedInstanceV1#create}.
 
 ---
 
@@ -1487,7 +1487,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/sdrs_protected_instance_v1#delete SdrsProtectedInstanceV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/sdrs_protected_instance_v1#delete SdrsProtectedInstanceV1#delete}.
 
 ---
 

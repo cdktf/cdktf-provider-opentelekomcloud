@@ -4,7 +4,7 @@
 
 ### CssConfigurationV1 <a name="CssConfigurationV1" id="@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1 opentelekomcloud_css_configuration_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1 opentelekomcloud_css_configuration_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1.Initializer"></a>
 
@@ -564,7 +564,7 @@ The construct id used in the generated config for the CssConfigurationV1 to impo
 
 The id of the existing CssConfigurationV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1106,7 +1106,7 @@ new CssConfigurationV1Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1Config.property.httpCorsAllowOrigin">HttpCorsAllowOrigin</a></code> | <code>string</code> | Origin IP address allowed for cross-domain access, for example, **122.122.122.122:9200**. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1Config.property.httpCorsEnabled">HttpCorsEnabled</a></code> | <code>string</code> | Whether to allow cross-domain access. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1Config.property.httpCorsMaxAge">HttpCorsMaxAge</a></code> | <code>string</code> | Cache duration of the browser. The cache is automatically cleared after the time range you specify. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#id CssConfigurationV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#id CssConfigurationV1#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1Config.property.indicesQueriesCacheSize">IndicesQueriesCacheSize</a></code> | <code>string</code> | Cache size in the query phase. Value range: **1** to **100**. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1Config.property.reindexRemoteWhitelist">ReindexRemoteWhitelist</a></code> | <code>string</code> | Configured for migrating data from the current cluster to the target cluster through the reindex API. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1Config.property.threadPoolForceMergeSize">ThreadPoolForceMergeSize</a></code> | <code>string</code> | Queue size in the force merge thread pool. |
@@ -1194,7 +1194,7 @@ public string ClusterId { get; set; }
 
 The CSS cluster ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#cluster_id CssConfigurationV1#cluster_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#cluster_id CssConfigurationV1#cluster_id}
 
 ---
 
@@ -1208,7 +1208,7 @@ public string AutoCreateIndex { get; set; }
 
 Whether to auto-create index.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#auto_create_index CssConfigurationV1#auto_create_index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#auto_create_index CssConfigurationV1#auto_create_index}
 
 ---
 
@@ -1222,7 +1222,7 @@ public string HttpCorsAllowCredentials { get; set; }
 
 Whether to return the Access-Control-Allow-Credentials of the header during cross-domain access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#http_cors_allow_credentials CssConfigurationV1#http_cors_allow_credentials}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#http_cors_allow_credentials CssConfigurationV1#http_cors_allow_credentials}
 
 ---
 
@@ -1236,7 +1236,7 @@ public string HttpCorsAllowHeaders { get; set; }
 
 Headers allowed for cross-domain access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#http_cors_allow_headers CssConfigurationV1#http_cors_allow_headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#http_cors_allow_headers CssConfigurationV1#http_cors_allow_headers}
 
 ---
 
@@ -1250,7 +1250,7 @@ public string HttpCorsAllowMethods { get; set; }
 
 Methods allowed for cross-domain access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#http_cors_allow_methods CssConfigurationV1#http_cors_allow_methods}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#http_cors_allow_methods CssConfigurationV1#http_cors_allow_methods}
 
 ---
 
@@ -1264,7 +1264,7 @@ public string HttpCorsAllowOrigin { get; set; }
 
 Origin IP address allowed for cross-domain access, for example, **122.122.122.122:9200**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#http_cors_allow_origin CssConfigurationV1#http_cors_allow_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#http_cors_allow_origin CssConfigurationV1#http_cors_allow_origin}
 
 ---
 
@@ -1278,7 +1278,7 @@ public string HttpCorsEnabled { get; set; }
 
 Whether to allow cross-domain access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#http_cors_enabled CssConfigurationV1#http_cors_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#http_cors_enabled CssConfigurationV1#http_cors_enabled}
 
 ---
 
@@ -1292,7 +1292,7 @@ public string HttpCorsMaxAge { get; set; }
 
 Cache duration of the browser. The cache is automatically cleared after the time range you specify.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#http_cors_max_age CssConfigurationV1#http_cors_max_age}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#http_cors_max_age CssConfigurationV1#http_cors_max_age}
 
 ---
 
@@ -1304,7 +1304,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#id CssConfigurationV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#id CssConfigurationV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1321,7 +1321,7 @@ public string IndicesQueriesCacheSize { get; set; }
 
 Cache size in the query phase. Value range: **1** to **100**.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#indices_queries_cache_size CssConfigurationV1#indices_queries_cache_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#indices_queries_cache_size CssConfigurationV1#indices_queries_cache_size}
 
 ---
 
@@ -1335,7 +1335,7 @@ public string ReindexRemoteWhitelist { get; set; }
 
 Configured for migrating data from the current cluster to the target cluster through the reindex API.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#reindex_remote_whitelist CssConfigurationV1#reindex_remote_whitelist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#reindex_remote_whitelist CssConfigurationV1#reindex_remote_whitelist}
 
 ---
 
@@ -1349,7 +1349,7 @@ public string ThreadPoolForceMergeSize { get; set; }
 
 Queue size in the force merge thread pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#thread_pool_force_merge_size CssConfigurationV1#thread_pool_force_merge_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#thread_pool_force_merge_size CssConfigurationV1#thread_pool_force_merge_size}
 
 ---
 
@@ -1363,7 +1363,7 @@ public CssConfigurationV1Timeouts Timeouts { get; set; }
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#timeouts CssConfigurationV1#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#timeouts CssConfigurationV1#timeouts}
 
 ---
 
@@ -1384,8 +1384,8 @@ new CssConfigurationV1Timeouts {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#create CssConfigurationV1#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#delete CssConfigurationV1#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1Timeouts.property.create">Create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#create CssConfigurationV1#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.cssConfigurationV1.CssConfigurationV1Timeouts.property.delete">Delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#delete CssConfigurationV1#delete}. |
 
 ---
 
@@ -1397,7 +1397,7 @@ public string Create { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#create CssConfigurationV1#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#create CssConfigurationV1#create}.
 
 ---
 
@@ -1409,7 +1409,7 @@ public string Delete { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/css_configuration_v1#delete CssConfigurationV1#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/css_configuration_v1#delete CssConfigurationV1#delete}.
 
 ---
 

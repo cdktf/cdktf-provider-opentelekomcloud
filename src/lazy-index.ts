@@ -131,6 +131,7 @@ Object.defineProperty(exports, 'fwFirewallGroupV2', { get: function () { return 
 Object.defineProperty(exports, 'fwPolicyV2', { get: function () { return require('./fw-policy-v2'); } });
 Object.defineProperty(exports, 'fwRuleV2', { get: function () { return require('./fw-rule-v2'); } });
 Object.defineProperty(exports, 'gaussdbMysqlInstanceV3', { get: function () { return require('./gaussdb-mysql-instance-v3'); } });
+Object.defineProperty(exports, 'geminiInstanceV3', { get: function () { return require('./gemini-instance-v3'); } });
 Object.defineProperty(exports, 'hssHostGroupV5', { get: function () { return require('./hss-host-group-v5'); } });
 Object.defineProperty(exports, 'hssHostProtectionV5', { get: function () { return require('./hss-host-protection-v5'); } });
 Object.defineProperty(exports, 'identityAclV3', { get: function () { return require('./identity-acl-v3'); } });
@@ -445,10 +446,13 @@ Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlBackupsV3', { g
 Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlConfigurationV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-configuration-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlConfigurationsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-configurations-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlEngineVersionsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-engine-versions-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlErrorLogsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-error-logs-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlFlavorsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-flavors-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlInstanceV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-instance-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-project-quotas-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlProxiesV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-proxies-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlProxyFlavorsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-proxy-flavors-v3'); } });
+Object.defineProperty(exports, 'dataOpentelekomcloudTaurusdbMysqlSlowLogsV3', { get: function () { return require('./data-opentelekomcloud-taurusdb-mysql-slow-logs-v3'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsQuotasV1', { get: function () { return require('./data-opentelekomcloud-tms-quotas-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsResourceInstancesV1', { get: function () { return require('./data-opentelekomcloud-tms-resource-instances-v1'); } });
 Object.defineProperty(exports, 'dataOpentelekomcloudTmsResourceTagKeysV1', { get: function () { return require('./data-opentelekomcloud-tms-resource-tag-keys-v1'); } });
