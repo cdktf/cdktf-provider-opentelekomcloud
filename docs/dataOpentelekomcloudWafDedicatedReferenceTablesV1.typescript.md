@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudWafDedicatedReferenceTablesV1 <a name="DataOpentelekomcloudWafDedicatedReferenceTablesV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudWafDedicatedReferenceTablesV1.DataOpentelekomcloudWafDedicatedReferenceTablesV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/waf_dedicated_reference_tables_v1 opentelekomcloud_waf_dedicated_reference_tables_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/waf_dedicated_reference_tables_v1 opentelekomcloud_waf_dedicated_reference_tables_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudWafDedicatedReferenceTablesV1.DataOpentelekomcloudWafDedicatedReferenceTablesV1.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataOpentelekomcloudWafDed
 
 The id of the existing DataOpentelekomcloudWafDedicatedReferenceTablesV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/waf_dedicated_reference_tables_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/waf_dedicated_reference_tables_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -657,9 +657,9 @@ const dataOpentelekomcloudWafDedicatedReferenceTablesV1Config: dataOpentelekomcl
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudWafDedicatedReferenceTablesV1.DataOpentelekomcloudWafDedicatedReferenceTablesV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudWafDedicatedReferenceTablesV1.DataOpentelekomcloudWafDedicatedReferenceTablesV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudWafDedicatedReferenceTablesV1.DataOpentelekomcloudWafDedicatedReferenceTablesV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudWafDedicatedReferenceTablesV1.DataOpentelekomcloudWafDedicatedReferenceTablesV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/waf_dedicated_reference_tables_v1#id DataOpentelekomcloudWafDedicatedReferenceTablesV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudWafDedicatedReferenceTablesV1.DataOpentelekomcloudWafDedicatedReferenceTablesV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/waf_dedicated_reference_tables_v1#name DataOpentelekomcloudWafDedicatedReferenceTablesV1#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudWafDedicatedReferenceTablesV1.DataOpentelekomcloudWafDedicatedReferenceTablesV1Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/waf_dedicated_reference_tables_v1#region DataOpentelekomcloudWafDedicatedReferenceTablesV1#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudWafDedicatedReferenceTablesV1.DataOpentelekomcloudWafDedicatedReferenceTablesV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/waf_dedicated_reference_tables_v1#id DataOpentelekomcloudWafDedicatedReferenceTablesV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudWafDedicatedReferenceTablesV1.DataOpentelekomcloudWafDedicatedReferenceTablesV1Config.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/waf_dedicated_reference_tables_v1#name DataOpentelekomcloudWafDedicatedReferenceTablesV1#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudWafDedicatedReferenceTablesV1.DataOpentelekomcloudWafDedicatedReferenceTablesV1Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/waf_dedicated_reference_tables_v1#region DataOpentelekomcloudWafDedicatedReferenceTablesV1#region}. |
 
 ---
 
@@ -741,7 +741,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/waf_dedicated_reference_tables_v1#id DataOpentelekomcloudWafDedicatedReferenceTablesV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/waf_dedicated_reference_tables_v1#id DataOpentelekomcloudWafDedicatedReferenceTablesV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -756,7 +756,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/waf_dedicated_reference_tables_v1#name DataOpentelekomcloudWafDedicatedReferenceTablesV1#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/waf_dedicated_reference_tables_v1#name DataOpentelekomcloudWafDedicatedReferenceTablesV1#name}.
 
 ---
 
@@ -768,7 +768,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/data-sources/waf_dedicated_reference_tables_v1#region DataOpentelekomcloudWafDedicatedReferenceTablesV1#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/waf_dedicated_reference_tables_v1#region DataOpentelekomcloudWafDedicatedReferenceTablesV1#region}.
 
 ---
 

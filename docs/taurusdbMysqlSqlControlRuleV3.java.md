@@ -4,7 +4,7 @@
 
 ### TaurusdbMysqlSqlControlRuleV3 <a name="TaurusdbMysqlSqlControlRuleV3" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3 opentelekomcloud_taurusdb_mysql_sql_control_rule_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3 opentelekomcloud_taurusdb_mysql_sql_control_rule_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer"></a>
 
@@ -40,12 +40,12 @@ TaurusdbMysqlSqlControlRuleV3.Builder.create(Construct scope, java.lang.String i
 | <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#instance_id TaurusdbMysqlSqlControlRuleV3#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.maxConcurrency">maxConcurrency</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#max_concurrency TaurusdbMysqlSqlControlRuleV3#max_concurrency}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.nodeId">nodeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#node_id TaurusdbMysqlSqlControlRuleV3#node_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.pattern">pattern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#pattern TaurusdbMysqlSqlControlRuleV3#pattern}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.sqlType">sqlType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#sql_type TaurusdbMysqlSqlControlRuleV3#sql_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#id TaurusdbMysqlSqlControlRuleV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#instance_id TaurusdbMysqlSqlControlRuleV3#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.maxConcurrency">maxConcurrency</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#max_concurrency TaurusdbMysqlSqlControlRuleV3#max_concurrency}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.nodeId">nodeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#node_id TaurusdbMysqlSqlControlRuleV3#node_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.pattern">pattern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#pattern TaurusdbMysqlSqlControlRuleV3#pattern}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.sqlType">sqlType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#sql_type TaurusdbMysqlSqlControlRuleV3#sql_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#id TaurusdbMysqlSqlControlRuleV3#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Timeouts">TaurusdbMysqlSqlControlRuleV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#instance_id TaurusdbMysqlSqlControlRuleV3#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#instance_id TaurusdbMysqlSqlControlRuleV3#instance_id}.
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#max_concurrency TaurusdbMysqlSqlControlRuleV3#max_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#max_concurrency TaurusdbMysqlSqlControlRuleV3#max_concurrency}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#node_id TaurusdbMysqlSqlControlRuleV3#node_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#node_id TaurusdbMysqlSqlControlRuleV3#node_id}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#pattern TaurusdbMysqlSqlControlRuleV3#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#pattern TaurusdbMysqlSqlControlRuleV3#pattern}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#sql_type TaurusdbMysqlSqlControlRuleV3#sql_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#sql_type TaurusdbMysqlSqlControlRuleV3#sql_type}.
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#id TaurusdbMysqlSqlControlRuleV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#id TaurusdbMysqlSqlControlRuleV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -167,7 +167,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#timeouts TaurusdbMysqlSqlControlRuleV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#timeouts TaurusdbMysqlSqlControlRuleV3#timeouts}
 
 ---
 
@@ -621,7 +621,7 @@ The construct id used in the generated config for the TaurusdbMysqlSqlControlRul
 
 The id of the existing TaurusdbMysqlSqlControlRuleV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1017,12 +1017,12 @@ TaurusdbMysqlSqlControlRuleV3Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#instance_id TaurusdbMysqlSqlControlRuleV3#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.maxConcurrency">maxConcurrency</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#max_concurrency TaurusdbMysqlSqlControlRuleV3#max_concurrency}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.nodeId">nodeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#node_id TaurusdbMysqlSqlControlRuleV3#node_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.pattern">pattern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#pattern TaurusdbMysqlSqlControlRuleV3#pattern}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.sqlType">sqlType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#sql_type TaurusdbMysqlSqlControlRuleV3#sql_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#id TaurusdbMysqlSqlControlRuleV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#instance_id TaurusdbMysqlSqlControlRuleV3#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.maxConcurrency">maxConcurrency</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#max_concurrency TaurusdbMysqlSqlControlRuleV3#max_concurrency}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.nodeId">nodeId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#node_id TaurusdbMysqlSqlControlRuleV3#node_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.pattern">pattern</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#pattern TaurusdbMysqlSqlControlRuleV3#pattern}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.sqlType">sqlType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#sql_type TaurusdbMysqlSqlControlRuleV3#sql_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#id TaurusdbMysqlSqlControlRuleV3#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Timeouts">TaurusdbMysqlSqlControlRuleV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1105,7 +1105,7 @@ public java.lang.String getInstanceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#instance_id TaurusdbMysqlSqlControlRuleV3#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#instance_id TaurusdbMysqlSqlControlRuleV3#instance_id}.
 
 ---
 
@@ -1117,7 +1117,7 @@ public java.lang.Number getMaxConcurrency();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#max_concurrency TaurusdbMysqlSqlControlRuleV3#max_concurrency}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#max_concurrency TaurusdbMysqlSqlControlRuleV3#max_concurrency}.
 
 ---
 
@@ -1129,7 +1129,7 @@ public java.lang.String getNodeId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#node_id TaurusdbMysqlSqlControlRuleV3#node_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#node_id TaurusdbMysqlSqlControlRuleV3#node_id}.
 
 ---
 
@@ -1141,7 +1141,7 @@ public java.lang.String getPattern();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#pattern TaurusdbMysqlSqlControlRuleV3#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#pattern TaurusdbMysqlSqlControlRuleV3#pattern}.
 
 ---
 
@@ -1153,7 +1153,7 @@ public java.lang.String getSqlType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#sql_type TaurusdbMysqlSqlControlRuleV3#sql_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#sql_type TaurusdbMysqlSqlControlRuleV3#sql_type}.
 
 ---
 
@@ -1165,7 +1165,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#id TaurusdbMysqlSqlControlRuleV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#id TaurusdbMysqlSqlControlRuleV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1182,7 +1182,7 @@ public TaurusdbMysqlSqlControlRuleV3Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#timeouts TaurusdbMysqlSqlControlRuleV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#timeouts TaurusdbMysqlSqlControlRuleV3#timeouts}
 
 ---
 
@@ -1204,9 +1204,9 @@ TaurusdbMysqlSqlControlRuleV3Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#create TaurusdbMysqlSqlControlRuleV3#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#delete TaurusdbMysqlSqlControlRuleV3#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Timeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#update TaurusdbMysqlSqlControlRuleV3#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#create TaurusdbMysqlSqlControlRuleV3#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#delete TaurusdbMysqlSqlControlRuleV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.taurusdbMysqlSqlControlRuleV3.TaurusdbMysqlSqlControlRuleV3Timeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#update TaurusdbMysqlSqlControlRuleV3#update}. |
 
 ---
 
@@ -1218,7 +1218,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#create TaurusdbMysqlSqlControlRuleV3#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#create TaurusdbMysqlSqlControlRuleV3#create}.
 
 ---
 
@@ -1230,7 +1230,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#delete TaurusdbMysqlSqlControlRuleV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#delete TaurusdbMysqlSqlControlRuleV3#delete}.
 
 ---
 
@@ -1242,7 +1242,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.51/docs/resources/taurusdb_mysql_sql_control_rule_v3#update TaurusdbMysqlSqlControlRuleV3#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/taurusdb_mysql_sql_control_rule_v3#update TaurusdbMysqlSqlControlRuleV3#update}.
 
 ---
 
