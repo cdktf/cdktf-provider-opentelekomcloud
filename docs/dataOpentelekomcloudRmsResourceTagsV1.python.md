@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudRmsResourceTagsV1 <a name="DataOpentelekomcloudRmsResourceTagsV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_resource_tags_v1 opentelekomcloud_rms_resource_tags_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/rms_resource_tags_v1 opentelekomcloud_rms_resource_tags_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1(
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_resource_tags_v1#id DataOpentelekomcloudRmsResourceTagsV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_resource_tags_v1#key DataOpentelekomcloudRmsResourceTagsV1#key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/rms_resource_tags_v1#id DataOpentelekomcloudRmsResourceTagsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1.Initializer.parameter.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/rms_resource_tags_v1#key DataOpentelekomcloudRmsResourceTagsV1#key}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_resource_tags_v1#id DataOpentelekomcloudRmsResourceTagsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/rms_resource_tags_v1#id DataOpentelekomcloudRmsResourceTagsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -117,7 +117,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_resource_tags_v1#key DataOpentelekomcloudRmsResourceTagsV1#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/rms_resource_tags_v1#key DataOpentelekomcloudRmsResourceTagsV1#key}.
 
 ---
 
@@ -490,7 +490,7 @@ The construct id used in the generated config for the DataOpentelekomcloudRmsRes
 
 The id of the existing DataOpentelekomcloudRmsResourceTagsV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_resource_tags_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/rms_resource_tags_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,8 +749,8 @@ dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1Confi
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_resource_tags_v1#id DataOpentelekomcloudRmsResourceTagsV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1Config.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_resource_tags_v1#key DataOpentelekomcloudRmsResourceTagsV1#key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/rms_resource_tags_v1#id DataOpentelekomcloudRmsResourceTagsV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsResourceTagsV1.DataOpentelekomcloudRmsResourceTagsV1Config.property.key">key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/rms_resource_tags_v1#key DataOpentelekomcloudRmsResourceTagsV1#key}. |
 
 ---
 
@@ -832,7 +832,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_resource_tags_v1#id DataOpentelekomcloudRmsResourceTagsV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/rms_resource_tags_v1#id DataOpentelekomcloudRmsResourceTagsV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -847,7 +847,7 @@ key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/rms_resource_tags_v1#key DataOpentelekomcloudRmsResourceTagsV1#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/rms_resource_tags_v1#key DataOpentelekomcloudRmsResourceTagsV1#key}.
 
 ---
 
