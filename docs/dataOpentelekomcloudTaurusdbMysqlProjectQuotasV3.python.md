@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3 <a name="DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_project_quotas_v3 opentelekomcloud_taurusdb_mysql_project_quotas_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_project_quotas_v3 opentelekomcloud_taurusdb_mysql_project_quotas_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMys
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_project_quotas_v3#id DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_project_quotas_v3#type DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_project_quotas_v3#id DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.Initializer.parameter.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_project_quotas_v3#type DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#type}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_project_quotas_v3#id DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_project_quotas_v3#id DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -117,7 +117,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_project_quotas_v3#type DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_project_quotas_v3#type DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#type}.
 
 ---
 
@@ -490,7 +490,7 @@ The construct id used in the generated config for the DataOpentelekomcloudTaurus
 
 The id of the existing DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_project_quotas_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_project_quotas_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -760,8 +760,8 @@ dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMys
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_project_quotas_v3#id DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3Config.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_project_quotas_v3#type DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_project_quotas_v3#id DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlProjectQuotasV3.DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3Config.property.type">type</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_project_quotas_v3#type DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#type}. |
 
 ---
 
@@ -843,7 +843,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_project_quotas_v3#id DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_project_quotas_v3#id DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -858,7 +858,7 @@ type: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/taurusdb_mysql_project_quotas_v3#type DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_project_quotas_v3#type DataOpentelekomcloudTaurusdbMysqlProjectQuotasV3#type}.
 
 ---
 

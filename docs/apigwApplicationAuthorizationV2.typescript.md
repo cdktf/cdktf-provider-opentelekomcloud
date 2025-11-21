@@ -4,7 +4,7 @@
 
 ### ApigwApplicationAuthorizationV2 <a name="ApigwApplicationAuthorizationV2" id="@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2 opentelekomcloud_apigw_application_authorization_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2 opentelekomcloud_apigw_application_authorization_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2.Initializer"></a>
 
@@ -494,7 +494,7 @@ The construct id used in the generated config for the ApigwApplicationAuthorizat
 
 The id of the existing ApigwApplicationAuthorizationV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -853,11 +853,11 @@ const apigwApplicationAuthorizationV2Config: apigwApplicationAuthorizationV2.Api
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.apiIds">apiIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#api_ids ApigwApplicationAuthorizationV2#api_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.applicationId">applicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#application_id ApigwApplicationAuthorizationV2#application_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.envId">envId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#env_id ApigwApplicationAuthorizationV2#env_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.gatewayId">gatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#gateway_id ApigwApplicationAuthorizationV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#id ApigwApplicationAuthorizationV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.apiIds">apiIds</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#api_ids ApigwApplicationAuthorizationV2#api_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.applicationId">applicationId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#application_id ApigwApplicationAuthorizationV2#application_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.envId">envId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#env_id ApigwApplicationAuthorizationV2#env_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.gatewayId">gatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#gateway_id ApigwApplicationAuthorizationV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#id ApigwApplicationAuthorizationV2#id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Timeouts">ApigwApplicationAuthorizationV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -940,7 +940,7 @@ public readonly apiIds: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#api_ids ApigwApplicationAuthorizationV2#api_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#api_ids ApigwApplicationAuthorizationV2#api_ids}.
 
 ---
 
@@ -952,7 +952,7 @@ public readonly applicationId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#application_id ApigwApplicationAuthorizationV2#application_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#application_id ApigwApplicationAuthorizationV2#application_id}.
 
 ---
 
@@ -964,7 +964,7 @@ public readonly envId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#env_id ApigwApplicationAuthorizationV2#env_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#env_id ApigwApplicationAuthorizationV2#env_id}.
 
 ---
 
@@ -976,7 +976,7 @@ public readonly gatewayId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#gateway_id ApigwApplicationAuthorizationV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#gateway_id ApigwApplicationAuthorizationV2#gateway_id}.
 
 ---
 
@@ -988,7 +988,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#id ApigwApplicationAuthorizationV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#id ApigwApplicationAuthorizationV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1005,7 +1005,7 @@ public readonly timeouts: ApigwApplicationAuthorizationV2Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#timeouts ApigwApplicationAuthorizationV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#timeouts ApigwApplicationAuthorizationV2#timeouts}
 
 ---
 
@@ -1023,9 +1023,9 @@ const apigwApplicationAuthorizationV2Timeouts: apigwApplicationAuthorizationV2.A
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#create ApigwApplicationAuthorizationV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#delete ApigwApplicationAuthorizationV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#update ApigwApplicationAuthorizationV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#create ApigwApplicationAuthorizationV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#delete ApigwApplicationAuthorizationV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwApplicationAuthorizationV2.ApigwApplicationAuthorizationV2Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#update ApigwApplicationAuthorizationV2#update}. |
 
 ---
 
@@ -1037,7 +1037,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#create ApigwApplicationAuthorizationV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#create ApigwApplicationAuthorizationV2#create}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#delete ApigwApplicationAuthorizationV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#delete ApigwApplicationAuthorizationV2#delete}.
 
 ---
 
@@ -1061,7 +1061,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/resources/apigw_application_authorization_v2#update ApigwApplicationAuthorizationV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_application_authorization_v2#update ApigwApplicationAuthorizationV2#update}.
 
 ---
 

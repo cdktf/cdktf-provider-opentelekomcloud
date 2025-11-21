@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudEnterpriseVpnConnectionV5 <a name="DataOpentelekomcloudEnterpriseVpnConnectionV5" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/enterprise_vpn_connection_v5 opentelekomcloud_enterprise_vpn_connection_v5}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/enterprise_vpn_connection_v5 opentelekomcloud_enterprise_vpn_connection_v5}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataOpentelekomcloudEnterp
 
 The id of the existing DataOpentelekomcloudEnterpriseVpnConnectionV5 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/enterprise_vpn_connection_v5#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/enterprise_vpn_connection_v5#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,8 +807,8 @@ new DataOpentelekomcloudEnterpriseVpnConnectionV5Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/enterprise_vpn_connection_v5#id DataOpentelekomcloudEnterpriseVpnConnectionV5#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/enterprise_vpn_connection_v5#tags DataOpentelekomcloudEnterpriseVpnConnectionV5#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/enterprise_vpn_connection_v5#id DataOpentelekomcloudEnterpriseVpnConnectionV5#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudEnterpriseVpnConnectionV5.DataOpentelekomcloudEnterpriseVpnConnectionV5Config.property.tags">Tags</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/enterprise_vpn_connection_v5#tags DataOpentelekomcloudEnterpriseVpnConnectionV5#tags}. |
 
 ---
 
@@ -890,7 +890,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/enterprise_vpn_connection_v5#id DataOpentelekomcloudEnterpriseVpnConnectionV5#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/enterprise_vpn_connection_v5#id DataOpentelekomcloudEnterpriseVpnConnectionV5#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -905,7 +905,7 @@ public System.Collections.Generic.IDictionary<string, string> Tags { get; set; }
 
 - *Type:* System.Collections.Generic.IDictionary<string, string>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.52/docs/data-sources/enterprise_vpn_connection_v5#tags DataOpentelekomcloudEnterpriseVpnConnectionV5#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/enterprise_vpn_connection_v5#tags DataOpentelekomcloudEnterpriseVpnConnectionV5#tags}.
 
 ---
 
