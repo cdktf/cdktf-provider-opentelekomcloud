@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudApigwEnvironmentsV2 <a name="DataOpentelekomcloudApigwEnvironmentsV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2 opentelekomcloud_apigw_environments_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2 opentelekomcloud_apigw_environments_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.Initializer"></a>
 
@@ -36,9 +36,9 @@ DataOpentelekomcloudApigwEnvironmentsV2.Builder.create(Construct scope, java.lan
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.Initializer.parameter.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#instance_id DataOpentelekomcloudApigwEnvironmentsV2#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#id DataOpentelekomcloudApigwEnvironmentsV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#name DataOpentelekomcloudApigwEnvironmentsV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.Initializer.parameter.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#instance_id DataOpentelekomcloudApigwEnvironmentsV2#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#id DataOpentelekomcloudApigwEnvironmentsV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#name DataOpentelekomcloudApigwEnvironmentsV2#name}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#instance_id DataOpentelekomcloudApigwEnvironmentsV2#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#instance_id DataOpentelekomcloudApigwEnvironmentsV2#instance_id}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#id DataOpentelekomcloudApigwEnvironmentsV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#id DataOpentelekomcloudApigwEnvironmentsV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#name DataOpentelekomcloudApigwEnvironmentsV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#name DataOpentelekomcloudApigwEnvironmentsV2#name}.
 
 ---
 
@@ -462,7 +462,7 @@ The construct id used in the generated config for the DataOpentelekomcloudApigwE
 
 The id of the existing DataOpentelekomcloudApigwEnvironmentsV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -755,9 +755,9 @@ DataOpentelekomcloudApigwEnvironmentsV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2Config.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#instance_id DataOpentelekomcloudApigwEnvironmentsV2#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#id DataOpentelekomcloudApigwEnvironmentsV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#name DataOpentelekomcloudApigwEnvironmentsV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2Config.property.instanceId">instanceId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#instance_id DataOpentelekomcloudApigwEnvironmentsV2#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#id DataOpentelekomcloudApigwEnvironmentsV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#name DataOpentelekomcloudApigwEnvironmentsV2#name}. |
 
 ---
 
@@ -839,7 +839,7 @@ public java.lang.String getInstanceId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#instance_id DataOpentelekomcloudApigwEnvironmentsV2#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#instance_id DataOpentelekomcloudApigwEnvironmentsV2#instance_id}.
 
 ---
 
@@ -851,7 +851,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#id DataOpentelekomcloudApigwEnvironmentsV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#id DataOpentelekomcloudApigwEnvironmentsV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -866,7 +866,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/apigw_environments_v2#name DataOpentelekomcloudApigwEnvironmentsV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/apigw_environments_v2#name DataOpentelekomcloudApigwEnvironmentsV2#name}.
 
 ---
 

@@ -187,6 +187,7 @@ The following submodules are available:
 - [dataOpentelekomcloudRdsFlavorsV1](./dataOpentelekomcloudRdsFlavorsV1.java.md)
 - [dataOpentelekomcloudRdsFlavorsV3](./dataOpentelekomcloudRdsFlavorsV3.java.md)
 - [dataOpentelekomcloudRdsInstanceV3](./dataOpentelekomcloudRdsInstanceV3.java.md)
+- [dataOpentelekomcloudRdsMajorVersionsV3](./dataOpentelekomcloudRdsMajorVersionsV3.java.md)
 - [dataOpentelekomcloudRdsVersionsV3](./dataOpentelekomcloudRdsVersionsV3.java.md)
 - [dataOpentelekomcloudRmsAdvancedQueriesV1](./dataOpentelekomcloudRmsAdvancedQueriesV1.java.md)
 - [dataOpentelekomcloudRmsAdvancedQuerySchemasV1](./dataOpentelekomcloudRmsAdvancedQuerySchemasV1.java.md)

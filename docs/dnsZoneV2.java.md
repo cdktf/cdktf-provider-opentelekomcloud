@@ -4,7 +4,7 @@
 
 ### DnsZoneV2 <a name="DnsZoneV2" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2 opentelekomcloud_dns_zone_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2 opentelekomcloud_dns_zone_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer"></a>
 
@@ -44,17 +44,17 @@ DnsZoneV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#name DnsZoneV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#description DnsZoneV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.email">email</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#email DnsZoneV2#email}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#id DnsZoneV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#region DnsZoneV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#name DnsZoneV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#description DnsZoneV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.email">email</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#email DnsZoneV2#email}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#id DnsZoneV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#region DnsZoneV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.router">router</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Router">DnsZoneV2Router</a>></code> | router block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#tags DnsZoneV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#tags DnsZoneV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts">DnsZoneV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.ttl">ttl</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#ttl DnsZoneV2#ttl}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#type DnsZoneV2#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.valueSpecs">valueSpecs</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#value_specs DnsZoneV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.ttl">ttl</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#ttl DnsZoneV2#ttl}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#type DnsZoneV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2.Initializer.parameter.valueSpecs">valueSpecs</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#value_specs DnsZoneV2#value_specs}. |
 
 ---
 
@@ -122,7 +122,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#name DnsZoneV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#name DnsZoneV2#name}.
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#description DnsZoneV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#description DnsZoneV2#description}.
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#email DnsZoneV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#email DnsZoneV2#email}.
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#id DnsZoneV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#id DnsZoneV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -157,7 +157,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#region DnsZoneV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#region DnsZoneV2#region}.
 
 ---
 
@@ -167,7 +167,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 router block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#router DnsZoneV2#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#router DnsZoneV2#router}
 
 ---
 
@@ -175,7 +175,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#tags DnsZoneV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#tags DnsZoneV2#tags}.
 
 ---
 
@@ -185,7 +185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#timeouts DnsZoneV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#timeouts DnsZoneV2#timeouts}
 
 ---
 
@@ -193,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#ttl DnsZoneV2#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#ttl DnsZoneV2#ttl}.
 
 ---
 
@@ -201,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#type DnsZoneV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#type DnsZoneV2#type}.
 
 ---
 
@@ -209,7 +209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#value_specs DnsZoneV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#value_specs DnsZoneV2#value_specs}.
 
 ---
 
@@ -732,7 +732,7 @@ The construct id used in the generated config for the DnsZoneV2 to import.
 
 The id of the existing DnsZoneV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1220,17 +1220,17 @@ DnsZoneV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#name DnsZoneV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#description DnsZoneV2#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.email">email</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#email DnsZoneV2#email}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#id DnsZoneV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#region DnsZoneV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#name DnsZoneV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#description DnsZoneV2#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.email">email</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#email DnsZoneV2#email}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#id DnsZoneV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.region">region</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#region DnsZoneV2#region}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.router">router</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Router">DnsZoneV2Router</a>></code> | router block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#tags DnsZoneV2#tags}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.tags">tags</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#tags DnsZoneV2#tags}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts">DnsZoneV2Timeouts</a></code> | timeouts block. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.ttl">ttl</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#ttl DnsZoneV2#ttl}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#type DnsZoneV2#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.valueSpecs">valueSpecs</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#value_specs DnsZoneV2#value_specs}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.ttl">ttl</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#ttl DnsZoneV2#ttl}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.type">type</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#type DnsZoneV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Config.property.valueSpecs">valueSpecs</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#value_specs DnsZoneV2#value_specs}. |
 
 ---
 
@@ -1312,7 +1312,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#name DnsZoneV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#name DnsZoneV2#name}.
 
 ---
 
@@ -1324,7 +1324,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#description DnsZoneV2#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#description DnsZoneV2#description}.
 
 ---
 
@@ -1336,7 +1336,7 @@ public java.lang.String getEmail();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#email DnsZoneV2#email}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#email DnsZoneV2#email}.
 
 ---
 
@@ -1348,7 +1348,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#id DnsZoneV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#id DnsZoneV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1363,7 +1363,7 @@ public java.lang.String getRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#region DnsZoneV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#region DnsZoneV2#region}.
 
 ---
 
@@ -1377,7 +1377,7 @@ public IResolvable|java.util.List<DnsZoneV2Router> getRouter();
 
 router block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#router DnsZoneV2#router}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#router DnsZoneV2#router}
 
 ---
 
@@ -1389,7 +1389,7 @@ public java.util.Map<java.lang.String, java.lang.String> getTags();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#tags DnsZoneV2#tags}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#tags DnsZoneV2#tags}.
 
 ---
 
@@ -1403,7 +1403,7 @@ public DnsZoneV2Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#timeouts DnsZoneV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#timeouts DnsZoneV2#timeouts}
 
 ---
 
@@ -1415,7 +1415,7 @@ public java.lang.Number getTtl();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#ttl DnsZoneV2#ttl}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#ttl DnsZoneV2#ttl}.
 
 ---
 
@@ -1427,7 +1427,7 @@ public java.lang.String getType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#type DnsZoneV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#type DnsZoneV2#type}.
 
 ---
 
@@ -1439,7 +1439,7 @@ public java.util.Map<java.lang.String, java.lang.String> getValueSpecs();
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#value_specs DnsZoneV2#value_specs}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#value_specs DnsZoneV2#value_specs}.
 
 ---
 
@@ -1460,8 +1460,8 @@ DnsZoneV2Router.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Router.property.routerId">routerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#router_id DnsZoneV2#router_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Router.property.routerRegion">routerRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#router_region DnsZoneV2#router_region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Router.property.routerId">routerId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#router_id DnsZoneV2#router_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Router.property.routerRegion">routerRegion</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#router_region DnsZoneV2#router_region}. |
 
 ---
 
@@ -1473,7 +1473,7 @@ public java.lang.String getRouterId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#router_id DnsZoneV2#router_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#router_id DnsZoneV2#router_id}.
 
 ---
 
@@ -1485,7 +1485,7 @@ public java.lang.String getRouterRegion();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#router_region DnsZoneV2#router_region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#router_region DnsZoneV2#router_region}.
 
 ---
 
@@ -1507,9 +1507,9 @@ DnsZoneV2Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#create DnsZoneV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#delete DnsZoneV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#update DnsZoneV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.property.create">create</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#create DnsZoneV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#delete DnsZoneV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dnsZoneV2.DnsZoneV2Timeouts.property.update">update</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#update DnsZoneV2#update}. |
 
 ---
 
@@ -1521,7 +1521,7 @@ public java.lang.String getCreate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#create DnsZoneV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#create DnsZoneV2#create}.
 
 ---
 
@@ -1533,7 +1533,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#delete DnsZoneV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#delete DnsZoneV2#delete}.
 
 ---
 
@@ -1545,7 +1545,7 @@ public java.lang.String getUpdate();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/dns_zone_v2#update DnsZoneV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/dns_zone_v2#update DnsZoneV2#update}.
 
 ---
 

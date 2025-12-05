@@ -4,7 +4,7 @@
 
 ### LbL7RuleV2 <a name="LbL7RuleV2" id="@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2 opentelekomcloud_lb_l7rule_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2 opentelekomcloud_lb_l7rule_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2.Initializer"></a>
 
@@ -522,7 +522,7 @@ The construct id used in the generated config for the LbL7RuleV2 to import.
 
 The id of the existing LbL7RuleV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -969,15 +969,15 @@ const lbL7RuleV2Config: lbL7RuleV2.LbL7RuleV2Config = { ... }
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.compareType">compareType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#compare_type LbL7RuleV2#compare_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.l7PolicyId">l7PolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#l7policy_id LbL7RuleV2#l7policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#type LbL7RuleV2#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#value LbL7RuleV2#value}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.adminStateUp">adminStateUp</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#admin_state_up LbL7RuleV2#admin_state_up}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#id LbL7RuleV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#key LbL7RuleV2#key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#region LbL7RuleV2#region}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.tenantId">tenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#tenant_id LbL7RuleV2#tenant_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.compareType">compareType</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#compare_type LbL7RuleV2#compare_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.l7PolicyId">l7PolicyId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#l7policy_id LbL7RuleV2#l7policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.type">type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#type LbL7RuleV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.value">value</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#value LbL7RuleV2#value}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.adminStateUp">adminStateUp</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#admin_state_up LbL7RuleV2#admin_state_up}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#id LbL7RuleV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#key LbL7RuleV2#key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.region">region</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#region LbL7RuleV2#region}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.tenantId">tenantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#tenant_id LbL7RuleV2#tenant_id}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Timeouts">LbL7RuleV2Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1060,7 +1060,7 @@ public readonly compareType: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#compare_type LbL7RuleV2#compare_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#compare_type LbL7RuleV2#compare_type}.
 
 ---
 
@@ -1072,7 +1072,7 @@ public readonly l7PolicyId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#l7policy_id LbL7RuleV2#l7policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#l7policy_id LbL7RuleV2#l7policy_id}.
 
 ---
 
@@ -1084,7 +1084,7 @@ public readonly type: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#type LbL7RuleV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#type LbL7RuleV2#type}.
 
 ---
 
@@ -1096,7 +1096,7 @@ public readonly value: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#value LbL7RuleV2#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#value LbL7RuleV2#value}.
 
 ---
 
@@ -1108,7 +1108,7 @@ public readonly adminStateUp: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#admin_state_up LbL7RuleV2#admin_state_up}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#admin_state_up LbL7RuleV2#admin_state_up}.
 
 ---
 
@@ -1120,7 +1120,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#id LbL7RuleV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#id LbL7RuleV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1135,7 +1135,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#key LbL7RuleV2#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#key LbL7RuleV2#key}.
 
 ---
 
@@ -1147,7 +1147,7 @@ public readonly region: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#region LbL7RuleV2#region}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#region LbL7RuleV2#region}.
 
 ---
 
@@ -1159,7 +1159,7 @@ public readonly tenantId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#tenant_id LbL7RuleV2#tenant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#tenant_id LbL7RuleV2#tenant_id}.
 
 ---
 
@@ -1173,7 +1173,7 @@ public readonly timeouts: LbL7RuleV2Timeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#timeouts LbL7RuleV2#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#timeouts LbL7RuleV2#timeouts}
 
 ---
 
@@ -1191,9 +1191,9 @@ const lbL7RuleV2Timeouts: lbL7RuleV2.LbL7RuleV2Timeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#create LbL7RuleV2#create}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#delete LbL7RuleV2#delete}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#update LbL7RuleV2#update}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Timeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#create LbL7RuleV2#create}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Timeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#delete LbL7RuleV2#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.lbL7RuleV2.LbL7RuleV2Timeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#update LbL7RuleV2#update}. |
 
 ---
 
@@ -1205,7 +1205,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#create LbL7RuleV2#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#create LbL7RuleV2#create}.
 
 ---
 
@@ -1217,7 +1217,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#delete LbL7RuleV2#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#delete LbL7RuleV2#delete}.
 
 ---
 
@@ -1229,7 +1229,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/lb_l7rule_v2#update LbL7RuleV2#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/lb_l7rule_v2#update LbL7RuleV2#update}.
 
 ---
 

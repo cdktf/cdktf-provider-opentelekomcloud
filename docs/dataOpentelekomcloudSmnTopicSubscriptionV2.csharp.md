@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudSmnTopicSubscriptionV2 <a name="DataOpentelekomcloudSmnTopicSubscriptionV2" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/smn_topic_subscription_v2 opentelekomcloud_smn_topic_subscription_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/smn_topic_subscription_v2 opentelekomcloud_smn_topic_subscription_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataOpentelekomcloudSmnTop
 
 The id of the existing DataOpentelekomcloudSmnTopicSubscriptionV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/smn_topic_subscription_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/smn_topic_subscription_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -724,10 +724,10 @@ new DataOpentelekomcloudSmnTopicSubscriptionV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2Config.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2Config.property.topicUrn">TopicUrn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/smn_topic_subscription_v2#topic_urn DataOpentelekomcloudSmnTopicSubscriptionV2#topic_urn}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2Config.property.endpoint">Endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/smn_topic_subscription_v2#endpoint DataOpentelekomcloudSmnTopicSubscriptionV2#endpoint}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/smn_topic_subscription_v2#id DataOpentelekomcloudSmnTopicSubscriptionV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2Config.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/smn_topic_subscription_v2#protocol DataOpentelekomcloudSmnTopicSubscriptionV2#protocol}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2Config.property.topicUrn">TopicUrn</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/smn_topic_subscription_v2#topic_urn DataOpentelekomcloudSmnTopicSubscriptionV2#topic_urn}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2Config.property.endpoint">Endpoint</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/smn_topic_subscription_v2#endpoint DataOpentelekomcloudSmnTopicSubscriptionV2#endpoint}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/smn_topic_subscription_v2#id DataOpentelekomcloudSmnTopicSubscriptionV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2Config.property.protocol">Protocol</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/smn_topic_subscription_v2#protocol DataOpentelekomcloudSmnTopicSubscriptionV2#protocol}. |
 
 ---
 
@@ -809,7 +809,7 @@ public string TopicUrn { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/smn_topic_subscription_v2#topic_urn DataOpentelekomcloudSmnTopicSubscriptionV2#topic_urn}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/smn_topic_subscription_v2#topic_urn DataOpentelekomcloudSmnTopicSubscriptionV2#topic_urn}.
 
 ---
 
@@ -821,7 +821,7 @@ public string Endpoint { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/smn_topic_subscription_v2#endpoint DataOpentelekomcloudSmnTopicSubscriptionV2#endpoint}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/smn_topic_subscription_v2#endpoint DataOpentelekomcloudSmnTopicSubscriptionV2#endpoint}.
 
 ---
 
@@ -833,7 +833,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/smn_topic_subscription_v2#id DataOpentelekomcloudSmnTopicSubscriptionV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/smn_topic_subscription_v2#id DataOpentelekomcloudSmnTopicSubscriptionV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -848,7 +848,7 @@ public string Protocol { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/smn_topic_subscription_v2#protocol DataOpentelekomcloudSmnTopicSubscriptionV2#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/smn_topic_subscription_v2#protocol DataOpentelekomcloudSmnTopicSubscriptionV2#protocol}.
 
 ---
 
