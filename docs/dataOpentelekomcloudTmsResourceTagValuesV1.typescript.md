@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudTmsResourceTagValuesV1 <a name="DataOpentelekomcloudTmsResourceTagValuesV1" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/tms_resource_tag_values_v1 opentelekomcloud_tms_resource_tag_values_v1}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/tms_resource_tag_values_v1 opentelekomcloud_tms_resource_tag_values_v1}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataOpentelekomcloudTmsRes
 
 The id of the existing DataOpentelekomcloudTmsResourceTagValuesV1 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/tms_resource_tag_values_v1#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/tms_resource_tag_values_v1#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -650,9 +650,9 @@ const dataOpentelekomcloudTmsResourceTagValuesV1Config: dataOpentelekomcloudTmsR
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1Config.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1Config.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/tms_resource_tag_values_v1#key DataOpentelekomcloudTmsResourceTagValuesV1#key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/tms_resource_tag_values_v1#id DataOpentelekomcloudTmsResourceTagValuesV1#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1Config.property.regionId">regionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/tms_resource_tag_values_v1#region_id DataOpentelekomcloudTmsResourceTagValuesV1#region_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1Config.property.key">key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/tms_resource_tag_values_v1#key DataOpentelekomcloudTmsResourceTagValuesV1#key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1Config.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/tms_resource_tag_values_v1#id DataOpentelekomcloudTmsResourceTagValuesV1#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1Config.property.regionId">regionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/tms_resource_tag_values_v1#region_id DataOpentelekomcloudTmsResourceTagValuesV1#region_id}. |
 
 ---
 
@@ -734,7 +734,7 @@ public readonly key: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/tms_resource_tag_values_v1#key DataOpentelekomcloudTmsResourceTagValuesV1#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/tms_resource_tag_values_v1#key DataOpentelekomcloudTmsResourceTagValuesV1#key}.
 
 ---
 
@@ -746,7 +746,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/tms_resource_tag_values_v1#id DataOpentelekomcloudTmsResourceTagValuesV1#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/tms_resource_tag_values_v1#id DataOpentelekomcloudTmsResourceTagValuesV1#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -761,7 +761,7 @@ public readonly regionId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/tms_resource_tag_values_v1#region_id DataOpentelekomcloudTmsResourceTagValuesV1#region_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/tms_resource_tag_values_v1#region_id DataOpentelekomcloudTmsResourceTagValuesV1#region_id}.
 
 ---
 

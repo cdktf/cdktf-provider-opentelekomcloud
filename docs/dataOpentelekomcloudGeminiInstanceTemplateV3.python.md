@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudGeminiInstanceTemplateV3 <a name="DataOpentelekomcloudGeminiInstanceTemplateV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3 opentelekomcloud_gemini_instance_template_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3 opentelekomcloud_gemini_instance_template_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceT
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3#instance_id DataOpentelekomcloudGeminiInstanceTemplateV3#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3#id DataOpentelekomcloudGeminiInstanceTemplateV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3.Initializer.parameter.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3#instance_id DataOpentelekomcloudGeminiInstanceTemplateV3#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3#id DataOpentelekomcloudGeminiInstanceTemplateV3#id}. |
 
 ---
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3#instance_id DataOpentelekomcloudGeminiInstanceTemplateV3#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3#instance_id DataOpentelekomcloudGeminiInstanceTemplateV3#instance_id}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3#id DataOpentelekomcloudGeminiInstanceTemplateV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3#id DataOpentelekomcloudGeminiInstanceTemplateV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -483,7 +483,7 @@ The construct id used in the generated config for the DataOpentelekomcloudGemini
 
 The id of the existing DataOpentelekomcloudGeminiInstanceTemplateV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,8 +808,8 @@ dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceT
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3Config.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3Config.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3Config.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3Config.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3#instance_id DataOpentelekomcloudGeminiInstanceTemplateV3#instance_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3#id DataOpentelekomcloudGeminiInstanceTemplateV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3Config.property.instanceId">instance_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3#instance_id DataOpentelekomcloudGeminiInstanceTemplateV3#instance_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiInstanceTemplateV3.DataOpentelekomcloudGeminiInstanceTemplateV3Config.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3#id DataOpentelekomcloudGeminiInstanceTemplateV3#id}. |
 
 ---
 
@@ -891,7 +891,7 @@ instance_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3#instance_id DataOpentelekomcloudGeminiInstanceTemplateV3#instance_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3#instance_id DataOpentelekomcloudGeminiInstanceTemplateV3#instance_id}.
 
 ---
 
@@ -903,7 +903,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/gemini_instance_template_v3#id DataOpentelekomcloudGeminiInstanceTemplateV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/gemini_instance_template_v3#id DataOpentelekomcloudGeminiInstanceTemplateV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -4,7 +4,7 @@
 
 ### DataOpentelekomcloudTaurusdbMysqlFlavorsV3 <a name="DataOpentelekomcloudTaurusdbMysqlFlavorsV3" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_flavors_v3 opentelekomcloud_taurusdb_mysql_flavors_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/taurusdb_mysql_flavors_v3 opentelekomcloud_taurusdb_mysql_flavors_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3.Initializer"></a>
 
@@ -393,7 +393,7 @@ The construct id used in the generated config for the DataOpentelekomcloudTaurus
 
 The id of the existing DataOpentelekomcloudTaurusdbMysqlFlavorsV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_flavors_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/taurusdb_mysql_flavors_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -709,10 +709,10 @@ new DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config.property.availabilityZoneMode">AvailabilityZoneMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_flavors_v3#availability_zone_mode DataOpentelekomcloudTaurusdbMysqlFlavorsV3#availability_zone_mode}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config.property.engine">Engine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_flavors_v3#engine DataOpentelekomcloudTaurusdbMysqlFlavorsV3#engine}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_flavors_v3#id DataOpentelekomcloudTaurusdbMysqlFlavorsV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config.property.version">Version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_flavors_v3#version DataOpentelekomcloudTaurusdbMysqlFlavorsV3#version}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config.property.availabilityZoneMode">AvailabilityZoneMode</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/taurusdb_mysql_flavors_v3#availability_zone_mode DataOpentelekomcloudTaurusdbMysqlFlavorsV3#availability_zone_mode}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config.property.engine">Engine</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/taurusdb_mysql_flavors_v3#engine DataOpentelekomcloudTaurusdbMysqlFlavorsV3#engine}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/taurusdb_mysql_flavors_v3#id DataOpentelekomcloudTaurusdbMysqlFlavorsV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config.property.version">Version</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/taurusdb_mysql_flavors_v3#version DataOpentelekomcloudTaurusdbMysqlFlavorsV3#version}. |
 
 ---
 
@@ -794,7 +794,7 @@ public string AvailabilityZoneMode { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_flavors_v3#availability_zone_mode DataOpentelekomcloudTaurusdbMysqlFlavorsV3#availability_zone_mode}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/taurusdb_mysql_flavors_v3#availability_zone_mode DataOpentelekomcloudTaurusdbMysqlFlavorsV3#availability_zone_mode}.
 
 ---
 
@@ -806,7 +806,7 @@ public string Engine { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_flavors_v3#engine DataOpentelekomcloudTaurusdbMysqlFlavorsV3#engine}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/taurusdb_mysql_flavors_v3#engine DataOpentelekomcloudTaurusdbMysqlFlavorsV3#engine}.
 
 ---
 
@@ -818,7 +818,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_flavors_v3#id DataOpentelekomcloudTaurusdbMysqlFlavorsV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/taurusdb_mysql_flavors_v3#id DataOpentelekomcloudTaurusdbMysqlFlavorsV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -833,7 +833,7 @@ public string Version { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/data-sources/taurusdb_mysql_flavors_v3#version DataOpentelekomcloudTaurusdbMysqlFlavorsV3#version}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/data-sources/taurusdb_mysql_flavors_v3#version DataOpentelekomcloudTaurusdbMysqlFlavorsV3#version}.
 
 ---
 

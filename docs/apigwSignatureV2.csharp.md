@@ -4,7 +4,7 @@
 
 ### ApigwSignatureV2 <a name="ApigwSignatureV2" id="@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2 opentelekomcloud_apigw_signature_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2 opentelekomcloud_apigw_signature_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2.Initializer"></a>
 
@@ -495,7 +495,7 @@ The construct id used in the generated config for the ApigwSignatureV2 to import
 
 The id of the existing ApigwSignatureV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -913,13 +913,13 @@ new ApigwSignatureV2Config {
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.gatewayId">GatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#gateway_id ApigwSignatureV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#name ApigwSignatureV2#name}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#type ApigwSignatureV2#type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.algorithm">Algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#algorithm ApigwSignatureV2#algorithm}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#id ApigwSignatureV2#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#key ApigwSignatureV2#key}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.secret">Secret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#secret ApigwSignatureV2#secret}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.gatewayId">GatewayId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#gateway_id ApigwSignatureV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.name">Name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#name ApigwSignatureV2#name}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.type">Type</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#type ApigwSignatureV2#type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.algorithm">Algorithm</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#algorithm ApigwSignatureV2#algorithm}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#id ApigwSignatureV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.key">Key</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#key ApigwSignatureV2#key}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwSignatureV2.ApigwSignatureV2Config.property.secret">Secret</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#secret ApigwSignatureV2#secret}. |
 
 ---
 
@@ -1001,7 +1001,7 @@ public string GatewayId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#gateway_id ApigwSignatureV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#gateway_id ApigwSignatureV2#gateway_id}.
 
 ---
 
@@ -1013,7 +1013,7 @@ public string Name { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#name ApigwSignatureV2#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#name ApigwSignatureV2#name}.
 
 ---
 
@@ -1025,7 +1025,7 @@ public string Type { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#type ApigwSignatureV2#type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#type ApigwSignatureV2#type}.
 
 ---
 
@@ -1037,7 +1037,7 @@ public string Algorithm { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#algorithm ApigwSignatureV2#algorithm}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#algorithm ApigwSignatureV2#algorithm}.
 
 ---
 
@@ -1049,7 +1049,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#id ApigwSignatureV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#id ApigwSignatureV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1064,7 +1064,7 @@ public string Key { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#key ApigwSignatureV2#key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#key ApigwSignatureV2#key}.
 
 ---
 
@@ -1076,7 +1076,7 @@ public string Secret { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_signature_v2#secret ApigwSignatureV2#secret}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_signature_v2#secret ApigwSignatureV2#secret}.
 
 ---
 

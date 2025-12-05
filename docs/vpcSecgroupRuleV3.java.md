@@ -4,7 +4,7 @@
 
 ### VpcSecgroupRuleV3 <a name="VpcSecgroupRuleV3" id="@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3 opentelekomcloud_vpc_secgroup_rule_v3}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3 opentelekomcloud_vpc_secgroup_rule_v3}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer"></a>
 
@@ -45,17 +45,17 @@ VpcSecgroupRuleV3.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.direction">direction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#direction VpcSecgroupRuleV3#direction}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.securityGroupId">securityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#security_group_id VpcSecgroupRuleV3#security_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#action VpcSecgroupRuleV3#action}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#description VpcSecgroupRuleV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.etherType">etherType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#ether_type VpcSecgroupRuleV3#ether_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#id VpcSecgroupRuleV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.multiPort">multiPort</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#multi_port VpcSecgroupRuleV3#multi_port}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#priority VpcSecgroupRuleV3#priority}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#protocol VpcSecgroupRuleV3#protocol}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.remoteGroupId">remoteGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#remote_group_id VpcSecgroupRuleV3#remote_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.remoteIpPrefix">remoteIpPrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#remote_ip_prefix VpcSecgroupRuleV3#remote_ip_prefix}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.direction">direction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#direction VpcSecgroupRuleV3#direction}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.securityGroupId">securityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#security_group_id VpcSecgroupRuleV3#security_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#action VpcSecgroupRuleV3#action}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#description VpcSecgroupRuleV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.etherType">etherType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#ether_type VpcSecgroupRuleV3#ether_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#id VpcSecgroupRuleV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.multiPort">multiPort</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#multi_port VpcSecgroupRuleV3#multi_port}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#priority VpcSecgroupRuleV3#priority}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#protocol VpcSecgroupRuleV3#protocol}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.remoteGroupId">remoteGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#remote_group_id VpcSecgroupRuleV3#remote_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.remoteIpPrefix">remoteIpPrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#remote_ip_prefix VpcSecgroupRuleV3#remote_ip_prefix}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Timeouts">VpcSecgroupRuleV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -124,7 +124,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#direction VpcSecgroupRuleV3#direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#direction VpcSecgroupRuleV3#direction}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#security_group_id VpcSecgroupRuleV3#security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#security_group_id VpcSecgroupRuleV3#security_group_id}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#action VpcSecgroupRuleV3#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#action VpcSecgroupRuleV3#action}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#description VpcSecgroupRuleV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#description VpcSecgroupRuleV3#description}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#ether_type VpcSecgroupRuleV3#ether_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#ether_type VpcSecgroupRuleV3#ether_type}.
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#id VpcSecgroupRuleV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#id VpcSecgroupRuleV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -175,7 +175,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#multi_port VpcSecgroupRuleV3#multi_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#multi_port VpcSecgroupRuleV3#multi_port}.
 
 ---
 
@@ -183,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#priority VpcSecgroupRuleV3#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#priority VpcSecgroupRuleV3#priority}.
 
 ---
 
@@ -191,7 +191,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#protocol VpcSecgroupRuleV3#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#protocol VpcSecgroupRuleV3#protocol}.
 
 ---
 
@@ -199,7 +199,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#remote_group_id VpcSecgroupRuleV3#remote_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#remote_group_id VpcSecgroupRuleV3#remote_group_id}.
 
 ---
 
@@ -207,7 +207,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#remote_ip_prefix VpcSecgroupRuleV3#remote_ip_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#remote_ip_prefix VpcSecgroupRuleV3#remote_ip_prefix}.
 
 ---
 
@@ -217,7 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#timeouts VpcSecgroupRuleV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#timeouts VpcSecgroupRuleV3#timeouts}
 
 ---
 
@@ -727,7 +727,7 @@ The construct id used in the generated config for the VpcSecgroupRuleV3 to impor
 
 The id of the existing VpcSecgroupRuleV3 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1271,17 +1271,17 @@ VpcSecgroupRuleV3Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.direction">direction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#direction VpcSecgroupRuleV3#direction}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.securityGroupId">securityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#security_group_id VpcSecgroupRuleV3#security_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#action VpcSecgroupRuleV3#action}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#description VpcSecgroupRuleV3#description}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.etherType">etherType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#ether_type VpcSecgroupRuleV3#ether_type}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#id VpcSecgroupRuleV3#id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.multiPort">multiPort</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#multi_port VpcSecgroupRuleV3#multi_port}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#priority VpcSecgroupRuleV3#priority}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#protocol VpcSecgroupRuleV3#protocol}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.remoteGroupId">remoteGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#remote_group_id VpcSecgroupRuleV3#remote_group_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.remoteIpPrefix">remoteIpPrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#remote_ip_prefix VpcSecgroupRuleV3#remote_ip_prefix}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.direction">direction</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#direction VpcSecgroupRuleV3#direction}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.securityGroupId">securityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#security_group_id VpcSecgroupRuleV3#security_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.action">action</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#action VpcSecgroupRuleV3#action}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#description VpcSecgroupRuleV3#description}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.etherType">etherType</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#ether_type VpcSecgroupRuleV3#ether_type}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#id VpcSecgroupRuleV3#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.multiPort">multiPort</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#multi_port VpcSecgroupRuleV3#multi_port}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.priority">priority</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#priority VpcSecgroupRuleV3#priority}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.protocol">protocol</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#protocol VpcSecgroupRuleV3#protocol}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.remoteGroupId">remoteGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#remote_group_id VpcSecgroupRuleV3#remote_group_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.remoteIpPrefix">remoteIpPrefix</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#remote_ip_prefix VpcSecgroupRuleV3#remote_ip_prefix}. |
 | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Config.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Timeouts">VpcSecgroupRuleV3Timeouts</a></code> | timeouts block. |
 
 ---
@@ -1364,7 +1364,7 @@ public java.lang.String getDirection();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#direction VpcSecgroupRuleV3#direction}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#direction VpcSecgroupRuleV3#direction}.
 
 ---
 
@@ -1376,7 +1376,7 @@ public java.lang.String getSecurityGroupId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#security_group_id VpcSecgroupRuleV3#security_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#security_group_id VpcSecgroupRuleV3#security_group_id}.
 
 ---
 
@@ -1388,7 +1388,7 @@ public java.lang.String getAction();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#action VpcSecgroupRuleV3#action}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#action VpcSecgroupRuleV3#action}.
 
 ---
 
@@ -1400,7 +1400,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#description VpcSecgroupRuleV3#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#description VpcSecgroupRuleV3#description}.
 
 ---
 
@@ -1412,7 +1412,7 @@ public java.lang.String getEtherType();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#ether_type VpcSecgroupRuleV3#ether_type}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#ether_type VpcSecgroupRuleV3#ether_type}.
 
 ---
 
@@ -1424,7 +1424,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#id VpcSecgroupRuleV3#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#id VpcSecgroupRuleV3#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1439,7 +1439,7 @@ public java.lang.String getMultiPort();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#multi_port VpcSecgroupRuleV3#multi_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#multi_port VpcSecgroupRuleV3#multi_port}.
 
 ---
 
@@ -1451,7 +1451,7 @@ public java.lang.Number getPriority();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#priority VpcSecgroupRuleV3#priority}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#priority VpcSecgroupRuleV3#priority}.
 
 ---
 
@@ -1463,7 +1463,7 @@ public java.lang.String getProtocol();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#protocol VpcSecgroupRuleV3#protocol}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#protocol VpcSecgroupRuleV3#protocol}.
 
 ---
 
@@ -1475,7 +1475,7 @@ public java.lang.String getRemoteGroupId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#remote_group_id VpcSecgroupRuleV3#remote_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#remote_group_id VpcSecgroupRuleV3#remote_group_id}.
 
 ---
 
@@ -1487,7 +1487,7 @@ public java.lang.String getRemoteIpPrefix();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#remote_ip_prefix VpcSecgroupRuleV3#remote_ip_prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#remote_ip_prefix VpcSecgroupRuleV3#remote_ip_prefix}.
 
 ---
 
@@ -1501,7 +1501,7 @@ public VpcSecgroupRuleV3Timeouts getTimeouts();
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#timeouts VpcSecgroupRuleV3#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#timeouts VpcSecgroupRuleV3#timeouts}
 
 ---
 
@@ -1521,7 +1521,7 @@ VpcSecgroupRuleV3Timeouts.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#delete VpcSecgroupRuleV3#delete}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.vpcSecgroupRuleV3.VpcSecgroupRuleV3Timeouts.property.delete">delete</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#delete VpcSecgroupRuleV3#delete}. |
 
 ---
 
@@ -1533,7 +1533,7 @@ public java.lang.String getDelete();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/vpc_secgroup_rule_v3#delete VpcSecgroupRuleV3#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/vpc_secgroup_rule_v3#delete VpcSecgroupRuleV3#delete}.
 
 ---
 

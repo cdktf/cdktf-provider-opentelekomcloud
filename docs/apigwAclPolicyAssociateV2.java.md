@@ -4,7 +4,7 @@
 
 ### ApigwAclPolicyAssociateV2 <a name="ApigwAclPolicyAssociateV2" id="@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2"></a>
 
-Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2 opentelekomcloud_apigw_acl_policy_associate_v2}.
+Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2 opentelekomcloud_apigw_acl_policy_associate_v2}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2.Initializer"></a>
 
@@ -37,10 +37,10 @@ ApigwAclPolicyAssociateV2.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2.Initializer.parameter.gatewayId">gatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#gateway_id ApigwAclPolicyAssociateV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2.Initializer.parameter.policyId">policyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#policy_id ApigwAclPolicyAssociateV2#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2.Initializer.parameter.publishIds">publishIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#publish_ids ApigwAclPolicyAssociateV2#publish_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#id ApigwAclPolicyAssociateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2.Initializer.parameter.gatewayId">gatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#gateway_id ApigwAclPolicyAssociateV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2.Initializer.parameter.policyId">policyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#policy_id ApigwAclPolicyAssociateV2#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2.Initializer.parameter.publishIds">publishIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#publish_ids ApigwAclPolicyAssociateV2#publish_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#id ApigwAclPolicyAssociateV2#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#gateway_id ApigwAclPolicyAssociateV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#gateway_id ApigwAclPolicyAssociateV2#gateway_id}.
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#policy_id ApigwAclPolicyAssociateV2#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#policy_id ApigwAclPolicyAssociateV2#policy_id}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#publish_ids ApigwAclPolicyAssociateV2#publish_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#publish_ids ApigwAclPolicyAssociateV2#publish_ids}.
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#id ApigwAclPolicyAssociateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#id ApigwAclPolicyAssociateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -569,7 +569,7 @@ The construct id used in the generated config for the ApigwAclPolicyAssociateV2 
 
 The id of the existing ApigwAclPolicyAssociateV2 that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -896,10 +896,10 @@ ApigwAclPolicyAssociateV2Config.builder()
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2Config.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2Config.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2Config.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2Config.property.gatewayId">gatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#gateway_id ApigwAclPolicyAssociateV2#gateway_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2Config.property.policyId">policyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#policy_id ApigwAclPolicyAssociateV2#policy_id}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2Config.property.publishIds">publishIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#publish_ids ApigwAclPolicyAssociateV2#publish_ids}. |
-| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#id ApigwAclPolicyAssociateV2#id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2Config.property.gatewayId">gatewayId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#gateway_id ApigwAclPolicyAssociateV2#gateway_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2Config.property.policyId">policyId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#policy_id ApigwAclPolicyAssociateV2#policy_id}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2Config.property.publishIds">publishIds</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#publish_ids ApigwAclPolicyAssociateV2#publish_ids}. |
+| <code><a href="#@cdktf/provider-opentelekomcloud.apigwAclPolicyAssociateV2.ApigwAclPolicyAssociateV2Config.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#id ApigwAclPolicyAssociateV2#id}. |
 
 ---
 
@@ -981,7 +981,7 @@ public java.lang.String getGatewayId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#gateway_id ApigwAclPolicyAssociateV2#gateway_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#gateway_id ApigwAclPolicyAssociateV2#gateway_id}.
 
 ---
 
@@ -993,7 +993,7 @@ public java.lang.String getPolicyId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#policy_id ApigwAclPolicyAssociateV2#policy_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#policy_id ApigwAclPolicyAssociateV2#policy_id}.
 
 ---
 
@@ -1005,7 +1005,7 @@ public java.util.List<java.lang.String> getPublishIds();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#publish_ids ApigwAclPolicyAssociateV2#publish_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#publish_ids ApigwAclPolicyAssociateV2#publish_ids}.
 
 ---
 
@@ -1017,7 +1017,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.53/docs/resources/apigw_acl_policy_associate_v2#id ApigwAclPolicyAssociateV2#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opentelekomcloud/opentelekomcloud/1.36.54/docs/resources/apigw_acl_policy_associate_v2#id ApigwAclPolicyAssociateV2#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
