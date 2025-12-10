@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.NewApigwVpcChannelV2(scope Construct, id *string, config ApigwVpcChannelV2Config) ApigwVpcChannelV2
 ```
@@ -479,7 +479,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.ApigwVpcChannelV2_IsConstruct(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.ApigwVpcChannelV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ apigwvpcchannelv2.ApigwVpcChannelV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.ApigwVpcChannelV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -539,7 +539,7 @@ apigwvpcchannelv2.ApigwVpcChannelV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.ApigwVpcChannelV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1043,7 +1043,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 &apigwvpcchannelv2.ApigwVpcChannelV2Config {
 	Connection: interface{},
@@ -1057,12 +1057,12 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/api
 	LbAlgorithm: *f64,
 	Name: *string,
 	Port: *f64,
-	HealthCheck: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2HealthCheck,
+	HealthCheck: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.apigwVpcChannelV2.ApigwVpcChannelV2HealthCheck,
 	Id: *string,
 	Member: interface{},
 	MemberGroup: interface{},
 	MemberType: *string,
-	Microservice: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2Microservice,
+	Microservice: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.apigwVpcChannelV2.ApigwVpcChannelV2Microservice,
 	Type: *f64,
 }
 ```
@@ -1310,7 +1310,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2HealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 &apigwvpcchannelv2.ApigwVpcChannelV2HealthCheck {
 	Interval: *f64,
@@ -1482,7 +1482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2Member.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 &apigwvpcchannelv2.ApigwVpcChannelV2Member {
 	GroupName: *string,
@@ -1615,7 +1615,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2MemberGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 &apigwvpcchannelv2.ApigwVpcChannelV2MemberGroup {
 	Name: *string,
@@ -1717,11 +1717,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2Microservice.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 &apigwvpcchannelv2.ApigwVpcChannelV2Microservice {
-	CceConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2MicroserviceCceConfig,
-	CseConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2MicroserviceCseConfig,
+	CceConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.apigwVpcChannelV2.ApigwVpcChannelV2MicroserviceCceConfig,
+	CseConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.apigwVpcChannelV2.ApigwVpcChannelV2MicroserviceCseConfig,
 }
 ```
 
@@ -1767,7 +1767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2MicroserviceCceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 &apigwvpcchannelv2.ApigwVpcChannelV2MicroserviceCceConfig {
 	ClusterId: *string,
@@ -1869,7 +1869,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2MicroserviceCseConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 &apigwvpcchannelv2.ApigwVpcChannelV2MicroserviceCseConfig {
 	EngineId: *string,
@@ -1917,7 +1917,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2HealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.NewApigwVpcChannelV2HealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigwVpcChannelV2HealthCheckOutputReference
 ```
@@ -2450,7 +2450,7 @@ func InternalValue() ApigwVpcChannelV2HealthCheck
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2MemberGroupList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.NewApigwVpcChannelV2MemberGroupList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigwVpcChannelV2MemberGroupList
 ```
@@ -2610,7 +2610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2MemberGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.NewApigwVpcChannelV2MemberGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigwVpcChannelV2MemberGroupOutputReference
 ```
@@ -3044,7 +3044,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2MemberList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.NewApigwVpcChannelV2MemberList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ApigwVpcChannelV2MemberList
 ```
@@ -3204,7 +3204,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2MemberOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.NewApigwVpcChannelV2MemberOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ApigwVpcChannelV2MemberOutputReference
 ```
@@ -3703,7 +3703,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2MicroserviceCceConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.NewApigwVpcChannelV2MicroserviceCceConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigwVpcChannelV2MicroserviceCceConfigOutputReference
 ```
@@ -4105,7 +4105,7 @@ func InternalValue() ApigwVpcChannelV2MicroserviceCceConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2MicroserviceCseConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.NewApigwVpcChannelV2MicroserviceCseConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigwVpcChannelV2MicroserviceCseConfigOutputReference
 ```
@@ -4398,7 +4398,7 @@ func InternalValue() ApigwVpcChannelV2MicroserviceCseConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.apigwVpcChannelV2.ApigwVpcChannelV2MicroserviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/apigwvpcchannelv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/apigwvpcchannelv2"
 
 apigwvpcchannelv2.NewApigwVpcChannelV2MicroserviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ApigwVpcChannelV2MicroserviceOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlbackupv3"
 
 taurusdbmysqlbackupv3.NewTaurusdbMysqlBackupV3(scope Construct, id *string, config TaurusdbMysqlBackupV3Config) TaurusdbMysqlBackupV3
 ```
@@ -412,7 +412,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlbackupv3"
 
 taurusdbmysqlbackupv3.TaurusdbMysqlBackupV3_IsConstruct(x interface{}) *bool
 ```
@@ -444,7 +444,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlbackupv3"
 
 taurusdbmysqlbackupv3.TaurusdbMysqlBackupV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ taurusdbmysqlbackupv3.TaurusdbMysqlBackupV3_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlbackupv3"
 
 taurusdbmysqlbackupv3.TaurusdbMysqlBackupV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ taurusdbmysqlbackupv3.TaurusdbMysqlBackupV3_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlbackupv3"
 
 taurusdbmysqlbackupv3.TaurusdbMysqlBackupV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -877,7 +877,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlbackupv3"
 
 &taurusdbmysqlbackupv3.TaurusdbMysqlBackupV3Config {
 	Connection: interface{},
@@ -891,7 +891,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/tau
 	Name: *string,
 	Description: *string,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3Timeouts,
 }
 ```
 
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3Datastore.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlbackupv3"
 
 &taurusdbmysqlbackupv3.TaurusdbMysqlBackupV3Datastore {
 
@@ -1067,7 +1067,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/tau
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlbackupv3"
 
 &taurusdbmysqlbackupv3.TaurusdbMysqlBackupV3Timeouts {
 	Create: *string,
@@ -1101,7 +1101,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3DatastoreList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlbackupv3"
 
 taurusdbmysqlbackupv3.NewTaurusdbMysqlBackupV3DatastoreList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TaurusdbMysqlBackupV3DatastoreList
 ```
@@ -1250,7 +1250,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3DatastoreOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlbackupv3"
 
 taurusdbmysqlbackupv3.NewTaurusdbMysqlBackupV3DatastoreOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TaurusdbMysqlBackupV3DatastoreOutputReference
 ```
@@ -1539,7 +1539,7 @@ func InternalValue() TaurusdbMysqlBackupV3Datastore
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlBackupV3.TaurusdbMysqlBackupV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlbackupv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlbackupv3"
 
 taurusdbmysqlbackupv3.NewTaurusdbMysqlBackupV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TaurusdbMysqlBackupV3TimeoutsOutputReference
 ```

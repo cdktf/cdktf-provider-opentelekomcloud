@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.NewDataOpentelekomcloudErRouteTablesV3(scope Construct, id *string, config DataOpentelekomcloudErRouteTablesV3Config) DataOpentelekomcloudErRouteTablesV3
 ```
@@ -304,7 +304,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.DataOpentelekomcloudErRouteTablesV3_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.DataOpentelekomcloudErRouteTablesV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomclouderroutetablesv3.DataOpentelekomcloudErRouteTablesV3_IsTerraf
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.DataOpentelekomcloudErRouteTablesV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataopentelekomclouderroutetablesv3.DataOpentelekomcloudErRouteTablesV3_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.DataOpentelekomcloudErRouteTablesV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 &dataopentelekomclouderroutetablesv3.DataOpentelekomcloudErRouteTablesV3Config {
 	Connection: interface{},
@@ -867,7 +867,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTables.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 &dataopentelekomclouderroutetablesv3.DataOpentelekomcloudErRouteTablesV3RouteTables {
 
@@ -880,7 +880,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 &dataopentelekomclouderroutetablesv3.DataOpentelekomcloudErRouteTablesV3RouteTablesAssociations {
 
@@ -893,7 +893,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesPropagations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 &dataopentelekomclouderroutetablesv3.DataOpentelekomcloudErRouteTablesV3RouteTablesPropagations {
 
@@ -906,7 +906,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 &dataopentelekomclouderroutetablesv3.DataOpentelekomcloudErRouteTablesV3RouteTablesRoutes {
 
@@ -919,7 +919,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 &dataopentelekomclouderroutetablesv3.DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachments {
 
@@ -934,7 +934,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesAssociationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.NewDataOpentelekomcloudErRouteTablesV3RouteTablesAssociationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudErRouteTablesV3RouteTablesAssociationsList
 ```
@@ -1083,7 +1083,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesAssociationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.NewDataOpentelekomcloudErRouteTablesV3RouteTablesAssociationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudErRouteTablesV3RouteTablesAssociationsOutputReference
 ```
@@ -1383,7 +1383,7 @@ func InternalValue() DataOpentelekomcloudErRouteTablesV3RouteTablesAssociations
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.NewDataOpentelekomcloudErRouteTablesV3RouteTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudErRouteTablesV3RouteTablesList
 ```
@@ -1532,7 +1532,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.NewDataOpentelekomcloudErRouteTablesV3RouteTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudErRouteTablesV3RouteTablesOutputReference
 ```
@@ -1898,7 +1898,7 @@ func InternalValue() DataOpentelekomcloudErRouteTablesV3RouteTables
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesPropagationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.NewDataOpentelekomcloudErRouteTablesV3RouteTablesPropagationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudErRouteTablesV3RouteTablesPropagationsList
 ```
@@ -2047,7 +2047,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesPropagationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.NewDataOpentelekomcloudErRouteTablesV3RouteTablesPropagationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudErRouteTablesV3RouteTablesPropagationsOutputReference
 ```
@@ -2347,7 +2347,7 @@ func InternalValue() DataOpentelekomcloudErRouteTablesV3RouteTablesPropagations
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.NewDataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachmentsList
 ```
@@ -2496,7 +2496,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.NewDataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachmentsOutputReference
 ```
@@ -2796,7 +2796,7 @@ func InternalValue() DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesAttachm
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.NewDataOpentelekomcloudErRouteTablesV3RouteTablesRoutesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesList
 ```
@@ -2945,7 +2945,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErRouteTablesV3.DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderroutetablesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderroutetablesv3"
 
 dataopentelekomclouderroutetablesv3.NewDataOpentelekomcloudErRouteTablesV3RouteTablesRoutesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudErRouteTablesV3RouteTablesRoutesOutputReference
 ```

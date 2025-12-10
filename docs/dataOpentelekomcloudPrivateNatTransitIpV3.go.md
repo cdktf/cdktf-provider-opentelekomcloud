@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatTransitIpV3.DataOpentelekomcloudPrivateNatTransitIpV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenattransitipv3"
 
 dataopentelekomcloudprivatenattransitipv3.NewDataOpentelekomcloudPrivateNatTransitIpV3(scope Construct, id *string, config DataOpentelekomcloudPrivateNatTransitIpV3Config) DataOpentelekomcloudPrivateNatTransitIpV3
 ```
@@ -297,7 +297,7 @@ func ResetVirsubnetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatTransitIpV3.DataOpentelekomcloudPrivateNatTransitIpV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenattransitipv3"
 
 dataopentelekomcloudprivatenattransitipv3.DataOpentelekomcloudPrivateNatTransitIpV3_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatTransitIpV3.DataOpentelekomcloudPrivateNatTransitIpV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenattransitipv3"
 
 dataopentelekomcloudprivatenattransitipv3.DataOpentelekomcloudPrivateNatTransitIpV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudprivatenattransitipv3.DataOpentelekomcloudPrivateNatTransitI
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatTransitIpV3.DataOpentelekomcloudPrivateNatTransitIpV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenattransitipv3"
 
 dataopentelekomcloudprivatenattransitipv3.DataOpentelekomcloudPrivateNatTransitIpV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataopentelekomcloudprivatenattransitipv3.DataOpentelekomcloudPrivateNatTransitI
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatTransitIpV3.DataOpentelekomcloudPrivateNatTransitIpV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenattransitipv3"
 
 dataopentelekomcloudprivatenattransitipv3.DataOpentelekomcloudPrivateNatTransitIpV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatTransitIpV3.DataOpentelekomcloudPrivateNatTransitIpV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenattransitipv3"
 
 &dataopentelekomcloudprivatenattransitipv3.DataOpentelekomcloudPrivateNatTransitIpV3Config {
 	Connection: interface{},
@@ -788,7 +788,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatTransitIpV3.DataOpentelekomcloudPrivateNatTransitIpV3TransitIps.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenattransitipv3"
 
 &dataopentelekomcloudprivatenattransitipv3.DataOpentelekomcloudPrivateNatTransitIpV3TransitIps {
 
@@ -803,7 +803,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatTransitIpV3.DataOpentelekomcloudPrivateNatTransitIpV3TransitIpsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenattransitipv3"
 
 dataopentelekomcloudprivatenattransitipv3.NewDataOpentelekomcloudPrivateNatTransitIpV3TransitIpsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudPrivateNatTransitIpV3TransitIpsList
 ```
@@ -952,7 +952,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatTransitIpV3.DataOpentelekomcloudPrivateNatTransitIpV3TransitIpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenattransitipv3"
 
 dataopentelekomcloudprivatenattransitipv3.NewDataOpentelekomcloudPrivateNatTransitIpV3TransitIpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudPrivateNatTransitIpV3TransitIpsOutputReference
 ```

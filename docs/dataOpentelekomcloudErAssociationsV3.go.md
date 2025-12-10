@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErAssociationsV3.DataOpentelekomcloudErAssociationsV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderassociationsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderassociationsv3"
 
 dataopentelekomclouderassociationsv3.NewDataOpentelekomcloudErAssociationsV3(scope Construct, id *string, config DataOpentelekomcloudErAssociationsV3Config) DataOpentelekomcloudErAssociationsV3
 ```
@@ -304,7 +304,7 @@ func ResetStatus()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErAssociationsV3.DataOpentelekomcloudErAssociationsV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderassociationsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderassociationsv3"
 
 dataopentelekomclouderassociationsv3.DataOpentelekomcloudErAssociationsV3_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErAssociationsV3.DataOpentelekomcloudErAssociationsV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderassociationsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderassociationsv3"
 
 dataopentelekomclouderassociationsv3.DataOpentelekomcloudErAssociationsV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomclouderassociationsv3.DataOpentelekomcloudErAssociationsV3_IsTerr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErAssociationsV3.DataOpentelekomcloudErAssociationsV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderassociationsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderassociationsv3"
 
 dataopentelekomclouderassociationsv3.DataOpentelekomcloudErAssociationsV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataopentelekomclouderassociationsv3.DataOpentelekomcloudErAssociationsV3_IsTerr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErAssociationsV3.DataOpentelekomcloudErAssociationsV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderassociationsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderassociationsv3"
 
 dataopentelekomclouderassociationsv3.DataOpentelekomcloudErAssociationsV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -714,7 +714,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErAssociationsV3.DataOpentelekomcloudErAssociationsV3Associations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderassociationsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderassociationsv3"
 
 &dataopentelekomclouderassociationsv3.DataOpentelekomcloudErAssociationsV3Associations {
 
@@ -727,7 +727,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErAssociationsV3.DataOpentelekomcloudErAssociationsV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderassociationsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderassociationsv3"
 
 &dataopentelekomclouderassociationsv3.DataOpentelekomcloudErAssociationsV3Config {
 	Connection: interface{},
@@ -918,7 +918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErAssociationsV3.DataOpentelekomcloudErAssociationsV3AssociationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderassociationsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderassociationsv3"
 
 dataopentelekomclouderassociationsv3.NewDataOpentelekomcloudErAssociationsV3AssociationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudErAssociationsV3AssociationsList
 ```
@@ -1067,7 +1067,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudErAssociationsV3.DataOpentelekomcloudErAssociationsV3AssociationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomclouderassociationsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomclouderassociationsv3"
 
 dataopentelekomclouderassociationsv3.NewDataOpentelekomcloudErAssociationsV3AssociationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudErAssociationsV3AssociationsOutputReference
 ```

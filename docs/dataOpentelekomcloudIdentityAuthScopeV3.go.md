@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityauthscopev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudidentityauthscopev3"
 
 dataopentelekomcloudidentityauthscopev3.NewDataOpentelekomcloudIdentityAuthScopeV3(scope Construct, id *string, config DataOpentelekomcloudIdentityAuthScopeV3Config) DataOpentelekomcloudIdentityAuthScopeV3
 ```
@@ -290,7 +290,7 @@ func ResetRegion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityauthscopev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudidentityauthscopev3"
 
 dataopentelekomcloudidentityauthscopev3.DataOpentelekomcloudIdentityAuthScopeV3_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityauthscopev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudidentityauthscopev3"
 
 dataopentelekomcloudidentityauthscopev3.DataOpentelekomcloudIdentityAuthScopeV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataopentelekomcloudidentityauthscopev3.DataOpentelekomcloudIdentityAuthScopeV3_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityauthscopev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudidentityauthscopev3"
 
 dataopentelekomcloudidentityauthscopev3.DataOpentelekomcloudIdentityAuthScopeV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudidentityauthscopev3.DataOpentelekomcloudIdentityAuthScopeV3_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityauthscopev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudidentityauthscopev3"
 
 dataopentelekomcloudidentityauthscopev3.DataOpentelekomcloudIdentityAuthScopeV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -744,7 +744,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityauthscopev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudidentityauthscopev3"
 
 &dataopentelekomcloudidentityauthscopev3.DataOpentelekomcloudIdentityAuthScopeV3Config {
 	Connection: interface{},
@@ -891,7 +891,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3Roles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityauthscopev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudidentityauthscopev3"
 
 &dataopentelekomcloudidentityauthscopev3.DataOpentelekomcloudIdentityAuthScopeV3Roles {
 
@@ -906,7 +906,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3RolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityauthscopev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudidentityauthscopev3"
 
 dataopentelekomcloudidentityauthscopev3.NewDataOpentelekomcloudIdentityAuthScopeV3RolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudIdentityAuthScopeV3RolesList
 ```
@@ -1055,7 +1055,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudIdentityAuthScopeV3.DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudidentityauthscopev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudidentityauthscopev3"
 
 dataopentelekomcloudidentityauthscopev3.NewDataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudIdentityAuthScopeV3RolesOutputReference
 ```

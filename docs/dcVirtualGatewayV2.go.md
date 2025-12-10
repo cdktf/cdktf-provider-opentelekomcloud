@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dcVirtualGatewayV2.DcVirtualGatewayV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dcvirtualgatewayv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dcvirtualgatewayv2"
 
 dcvirtualgatewayv2.NewDcVirtualGatewayV2(scope Construct, id *string, config DcVirtualGatewayV2Config) DcVirtualGatewayV2
 ```
@@ -460,7 +460,7 @@ func ResetRedundantDeviceId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dcVirtualGatewayV2.DcVirtualGatewayV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dcvirtualgatewayv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dcvirtualgatewayv2"
 
 dcvirtualgatewayv2.DcVirtualGatewayV2_IsConstruct(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dcVirtualGatewayV2.DcVirtualGatewayV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dcvirtualgatewayv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dcvirtualgatewayv2"
 
 dcvirtualgatewayv2.DcVirtualGatewayV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -506,7 +506,7 @@ dcvirtualgatewayv2.DcVirtualGatewayV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.dcVirtualGatewayV2.DcVirtualGatewayV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dcvirtualgatewayv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dcvirtualgatewayv2"
 
 dcvirtualgatewayv2.DcVirtualGatewayV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -520,7 +520,7 @@ dcvirtualgatewayv2.DcVirtualGatewayV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dcVirtualGatewayV2.DcVirtualGatewayV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dcvirtualgatewayv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dcvirtualgatewayv2"
 
 dcvirtualgatewayv2.DcVirtualGatewayV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1002,7 +1002,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dcVirtualGatewayV2.DcVirtualGatewayV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dcvirtualgatewayv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dcvirtualgatewayv2"
 
 &dcvirtualgatewayv2.DcVirtualGatewayV2Config {
 	Connection: interface{},
@@ -1018,8 +1018,8 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dcv
 	Description: *string,
 	DeviceId: *string,
 	Id: *string,
-	LocalEpGroup: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.dcVirtualGatewayV2.DcVirtualGatewayV2LocalEpGroup,
-	LocalEpGroupV6: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.dcVirtualGatewayV2.DcVirtualGatewayV2LocalEpGroupV6,
+	LocalEpGroup: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.dcVirtualGatewayV2.DcVirtualGatewayV2LocalEpGroup,
+	LocalEpGroupV6: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.dcVirtualGatewayV2.DcVirtualGatewayV2LocalEpGroupV6,
 	ProjectId: *string,
 	RedundantDeviceId: *string,
 }
@@ -1251,7 +1251,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dcVirtualGatewayV2.DcVirtualGatewayV2LocalEpGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dcvirtualgatewayv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dcvirtualgatewayv2"
 
 &dcvirtualgatewayv2.DcVirtualGatewayV2LocalEpGroup {
 	Endpoints: *[]*string,
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dcVirtualGatewayV2.DcVirtualGatewayV2LocalEpGroupV6.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dcvirtualgatewayv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dcvirtualgatewayv2"
 
 &dcvirtualgatewayv2.DcVirtualGatewayV2LocalEpGroupV6 {
 	Endpoints: *[]*string,
@@ -1401,7 +1401,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dcVirtualGatewayV2.DcVirtualGatewayV2LocalEpGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dcvirtualgatewayv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dcvirtualgatewayv2"
 
 dcvirtualgatewayv2.NewDcVirtualGatewayV2LocalEpGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DcVirtualGatewayV2LocalEpGroupOutputReference
 ```
@@ -1759,7 +1759,7 @@ func InternalValue() DcVirtualGatewayV2LocalEpGroup
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dcVirtualGatewayV2.DcVirtualGatewayV2LocalEpGroupV6OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dcvirtualgatewayv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dcvirtualgatewayv2"
 
 dcvirtualgatewayv2.NewDcVirtualGatewayV2LocalEpGroupV6OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DcVirtualGatewayV2LocalEpGroupV6OutputReference
 ```

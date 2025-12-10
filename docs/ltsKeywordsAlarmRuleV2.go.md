@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 ltskeywordsalarmrulev2.NewLtsKeywordsAlarmRuleV2(scope Construct, id *string, config LtsKeywordsAlarmRuleV2Config) LtsKeywordsAlarmRuleV2
 ```
@@ -480,7 +480,7 @@ func ResetTriggerConditionFrequency()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 ltskeywordsalarmrulev2.LtsKeywordsAlarmRuleV2_IsConstruct(x interface{}) *bool
 ```
@@ -512,7 +512,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 ltskeywordsalarmrulev2.LtsKeywordsAlarmRuleV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -526,7 +526,7 @@ ltskeywordsalarmrulev2.LtsKeywordsAlarmRuleV2_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 ltskeywordsalarmrulev2.LtsKeywordsAlarmRuleV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -540,7 +540,7 @@ ltskeywordsalarmrulev2.LtsKeywordsAlarmRuleV2_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 ltskeywordsalarmrulev2.LtsKeywordsAlarmRuleV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1132,7 +1132,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 &ltskeywordsalarmrulev2.LtsKeywordsAlarmRuleV2Config {
 	Connection: interface{},
@@ -1142,7 +1142,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lts
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	Frequency: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2Frequency,
+	Frequency: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2Frequency,
 	KeywordsRequests: interface{},
 	Name: *string,
 	NotificationFrequency: *f64,
@@ -1150,7 +1150,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lts
 	AlarmActionRuleName: *string,
 	Description: *string,
 	Id: *string,
-	NotificationRule: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2NotificationRule,
+	NotificationRule: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2NotificationRule,
 	RecoveryPolicy: *f64,
 	SendNotifications: interface{},
 	SendRecoveryNotifications: interface{},
@@ -1439,7 +1439,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2Frequency.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 &ltskeywordsalarmrulev2.LtsKeywordsAlarmRuleV2Frequency {
 	Type: *string,
@@ -1541,7 +1541,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2KeywordsRequests.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 &ltskeywordsalarmrulev2.LtsKeywordsAlarmRuleV2KeywordsRequests {
 	Condition: *string,
@@ -1657,7 +1657,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2NotificationRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 &ltskeywordsalarmrulev2.LtsKeywordsAlarmRuleV2NotificationRule {
 	Topics: interface{},
@@ -1747,7 +1747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2NotificationRuleTopics.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 &ltskeywordsalarmrulev2.LtsKeywordsAlarmRuleV2NotificationRuleTopics {
 	Name: *string,
@@ -1823,7 +1823,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2FrequencyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 ltskeywordsalarmrulev2.NewLtsKeywordsAlarmRuleV2FrequencyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LtsKeywordsAlarmRuleV2FrequencyOutputReference
 ```
@@ -2239,7 +2239,7 @@ func InternalValue() LtsKeywordsAlarmRuleV2Frequency
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2KeywordsRequestsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 ltskeywordsalarmrulev2.NewLtsKeywordsAlarmRuleV2KeywordsRequestsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LtsKeywordsAlarmRuleV2KeywordsRequestsList
 ```
@@ -2399,7 +2399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2KeywordsRequestsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 ltskeywordsalarmrulev2.NewLtsKeywordsAlarmRuleV2KeywordsRequestsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LtsKeywordsAlarmRuleV2KeywordsRequestsOutputReference
 ```
@@ -2820,7 +2820,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2NotificationRuleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 ltskeywordsalarmrulev2.NewLtsKeywordsAlarmRuleV2NotificationRuleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LtsKeywordsAlarmRuleV2NotificationRuleOutputReference
 ```
@@ -3213,7 +3213,7 @@ func InternalValue() LtsKeywordsAlarmRuleV2NotificationRule
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2NotificationRuleTopicsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 ltskeywordsalarmrulev2.NewLtsKeywordsAlarmRuleV2NotificationRuleTopicsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LtsKeywordsAlarmRuleV2NotificationRuleTopicsList
 ```
@@ -3373,7 +3373,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsKeywordsAlarmRuleV2.LtsKeywordsAlarmRuleV2NotificationRuleTopicsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltskeywordsalarmrulev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltskeywordsalarmrulev2"
 
 ltskeywordsalarmrulev2.NewLtsKeywordsAlarmRuleV2NotificationRuleTopicsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LtsKeywordsAlarmRuleV2NotificationRuleTopicsOutputReference
 ```

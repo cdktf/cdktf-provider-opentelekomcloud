@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltscceaccessv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltscceaccessv3"
 
 ltscceaccessv3.NewLtsCceAccessV3(scope Construct, id *string, config LtsCceAccessV3Config) LtsCceAccessV3
 ```
@@ -426,7 +426,7 @@ func ResetTags()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltscceaccessv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltscceaccessv3"
 
 ltscceaccessv3.LtsCceAccessV3_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltscceaccessv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltscceaccessv3"
 
 ltscceaccessv3.LtsCceAccessV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ ltscceaccessv3.LtsCceAccessV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltscceaccessv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltscceaccessv3"
 
 ltscceaccessv3.LtsCceAccessV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ ltscceaccessv3.LtsCceAccessV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltscceaccessv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltscceaccessv3"
 
 ltscceaccessv3.LtsCceAccessV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -990,7 +990,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3AccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltscceaccessv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltscceaccessv3"
 
 &ltscceaccessv3.LtsCceAccessV3AccessConfig {
 	PathType: *string,
@@ -1005,11 +1005,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lts
 	LogEnvs: *map[string]*string,
 	LogK8S: *map[string]*string,
 	LogLabels: *map[string]*string,
-	MultiLogFormat: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3AccessConfigMultiLogFormat,
+	MultiLogFormat: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.ltsCceAccessV3.LtsCceAccessV3AccessConfigMultiLogFormat,
 	NameSpaceRegex: *string,
 	Paths: *[]*string,
 	PodNameRegex: *string,
-	SingleLogFormat: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3AccessConfigSingleLogFormat,
+	SingleLogFormat: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.ltsCceAccessV3.LtsCceAccessV3AccessConfigSingleLogFormat,
 	Stderr: interface{},
 	Stdout: interface{},
 }
@@ -1278,7 +1278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3AccessConfigMultiLogFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltscceaccessv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltscceaccessv3"
 
 &ltscceaccessv3.LtsCceAccessV3AccessConfigMultiLogFormat {
 	Mode: *string,
@@ -1324,7 +1324,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3AccessConfigSingleLogFormat.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltscceaccessv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltscceaccessv3"
 
 &ltscceaccessv3.LtsCceAccessV3AccessConfigSingleLogFormat {
 	Mode: *string,
@@ -1370,7 +1370,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltscceaccessv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltscceaccessv3"
 
 &ltscceaccessv3.LtsCceAccessV3Config {
 	Connection: interface{},
@@ -1380,7 +1380,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/lts
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	AccessConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3AccessConfig,
+	AccessConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.ltsCceAccessV3.LtsCceAccessV3AccessConfig,
 	ClusterId: *string,
 	LogGroupId: *string,
 	LogStreamId: *string,
@@ -1619,7 +1619,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3AccessConfigMultiLogFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltscceaccessv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltscceaccessv3"
 
 ltscceaccessv3.NewLtsCceAccessV3AccessConfigMultiLogFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LtsCceAccessV3AccessConfigMultiLogFormatOutputReference
 ```
@@ -1919,7 +1919,7 @@ func InternalValue() LtsCceAccessV3AccessConfigMultiLogFormat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3AccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltscceaccessv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltscceaccessv3"
 
 ltscceaccessv3.NewLtsCceAccessV3AccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LtsCceAccessV3AccessConfigOutputReference
 ```
@@ -2738,7 +2738,7 @@ func InternalValue() LtsCceAccessV3AccessConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsCceAccessV3.LtsCceAccessV3AccessConfigSingleLogFormatOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltscceaccessv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltscceaccessv3"
 
 ltscceaccessv3.NewLtsCceAccessV3AccessConfigSingleLogFormatOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LtsCceAccessV3AccessConfigSingleLogFormatOutputReference
 ```

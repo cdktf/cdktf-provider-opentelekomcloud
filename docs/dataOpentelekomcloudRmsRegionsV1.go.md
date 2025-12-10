@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsRegionsV1.DataOpentelekomcloudRmsRegionsV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsregionsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsregionsv1"
 
 dataopentelekomcloudrmsregionsv1.NewDataOpentelekomcloudRmsRegionsV1(scope Construct, id *string, config DataOpentelekomcloudRmsRegionsV1Config) DataOpentelekomcloudRmsRegionsV1
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsRegionsV1.DataOpentelekomcloudRmsRegionsV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsregionsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsregionsv1"
 
 dataopentelekomcloudrmsregionsv1.DataOpentelekomcloudRmsRegionsV1_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsRegionsV1.DataOpentelekomcloudRmsRegionsV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsregionsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsregionsv1"
 
 dataopentelekomcloudrmsregionsv1.DataOpentelekomcloudRmsRegionsV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataopentelekomcloudrmsregionsv1.DataOpentelekomcloudRmsRegionsV1_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsRegionsV1.DataOpentelekomcloudRmsRegionsV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsregionsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsregionsv1"
 
 dataopentelekomcloudrmsregionsv1.DataOpentelekomcloudRmsRegionsV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudrmsregionsv1.DataOpentelekomcloudRmsRegionsV1_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsRegionsV1.DataOpentelekomcloudRmsRegionsV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsregionsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsregionsv1"
 
 dataopentelekomcloudrmsregionsv1.DataOpentelekomcloudRmsRegionsV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsRegionsV1.DataOpentelekomcloudRmsRegionsV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsregionsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsregionsv1"
 
 &dataopentelekomcloudrmsregionsv1.DataOpentelekomcloudRmsRegionsV1Config {
 	Connection: interface{},
@@ -702,7 +702,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsRegionsV1.DataOpentelekomcloudRmsRegionsV1Regions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsregionsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsregionsv1"
 
 &dataopentelekomcloudrmsregionsv1.DataOpentelekomcloudRmsRegionsV1Regions {
 
@@ -717,7 +717,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsRegionsV1.DataOpentelekomcloudRmsRegionsV1RegionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsregionsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsregionsv1"
 
 dataopentelekomcloudrmsregionsv1.NewDataOpentelekomcloudRmsRegionsV1RegionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudRmsRegionsV1RegionsList
 ```
@@ -866,7 +866,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsRegionsV1.DataOpentelekomcloudRmsRegionsV1RegionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsregionsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsregionsv1"
 
 dataopentelekomcloudrmsregionsv1.NewDataOpentelekomcloudRmsRegionsV1RegionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudRmsRegionsV1RegionsOutputReference
 ```

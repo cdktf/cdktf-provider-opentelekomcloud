@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmntopicsubscriptionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmntopicsubscriptionv2"
 
 dataopentelekomcloudsmntopicsubscriptionv2.NewDataOpentelekomcloudSmnTopicSubscriptionV2(scope Construct, id *string, config DataOpentelekomcloudSmnTopicSubscriptionV2Config) DataOpentelekomcloudSmnTopicSubscriptionV2
 ```
@@ -297,7 +297,7 @@ func ResetProtocol()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmntopicsubscriptionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmntopicsubscriptionv2"
 
 dataopentelekomcloudsmntopicsubscriptionv2.DataOpentelekomcloudSmnTopicSubscriptionV2_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmntopicsubscriptionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmntopicsubscriptionv2"
 
 dataopentelekomcloudsmntopicsubscriptionv2.DataOpentelekomcloudSmnTopicSubscriptionV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudsmntopicsubscriptionv2.DataOpentelekomcloudSmnTopicSubscript
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmntopicsubscriptionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmntopicsubscriptionv2"
 
 dataopentelekomcloudsmntopicsubscriptionv2.DataOpentelekomcloudSmnTopicSubscriptionV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataopentelekomcloudsmntopicsubscriptionv2.DataOpentelekomcloudSmnTopicSubscript
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmntopicsubscriptionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmntopicsubscriptionv2"
 
 dataopentelekomcloudsmntopicsubscriptionv2.DataOpentelekomcloudSmnTopicSubscriptionV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnTopicSubscriptionV2.DataOpentelekomcloudSmnTopicSubscriptionV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmntopicsubscriptionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmntopicsubscriptionv2"
 
 &dataopentelekomcloudsmntopicsubscriptionv2.DataOpentelekomcloudSmnTopicSubscriptionV2Config {
 	Connection: interface{},

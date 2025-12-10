@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityloginpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityloginpolicyv3"
 
 identityloginpolicyv3.NewIdentityLoginPolicyV3(scope Construct, id *string, config IdentityLoginPolicyV3Config) IdentityLoginPolicyV3
 ```
@@ -434,7 +434,7 @@ func ResetShowRecentLoginInfo()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityloginpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityloginpolicyv3"
 
 identityloginpolicyv3.IdentityLoginPolicyV3_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityloginpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityloginpolicyv3"
 
 identityloginpolicyv3.IdentityLoginPolicyV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ identityloginpolicyv3.IdentityLoginPolicyV3_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityloginpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityloginpolicyv3"
 
 identityloginpolicyv3.IdentityLoginPolicyV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ identityloginpolicyv3.IdentityLoginPolicyV3_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityloginpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityloginpolicyv3"
 
 identityloginpolicyv3.IdentityLoginPolicyV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -899,7 +899,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityLoginPolicyV3.IdentityLoginPolicyV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityloginpolicyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityloginpolicyv3"
 
 &identityloginpolicyv3.IdentityLoginPolicyV3Config {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesEventsV1.DataOpentelekomcloudCesEventsV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudceseventsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudceseventsv1"
 
 dataopentelekomcloudceseventsv1.NewDataOpentelekomcloudCesEventsV1(scope Construct, id *string, config DataOpentelekomcloudCesEventsV1Config) DataOpentelekomcloudCesEventsV1
 ```
@@ -318,7 +318,7 @@ func ResetTo()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesEventsV1.DataOpentelekomcloudCesEventsV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudceseventsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudceseventsv1"
 
 dataopentelekomcloudceseventsv1.DataOpentelekomcloudCesEventsV1_IsConstruct(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesEventsV1.DataOpentelekomcloudCesEventsV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudceseventsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudceseventsv1"
 
 dataopentelekomcloudceseventsv1.DataOpentelekomcloudCesEventsV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataopentelekomcloudceseventsv1.DataOpentelekomcloudCesEventsV1_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesEventsV1.DataOpentelekomcloudCesEventsV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudceseventsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudceseventsv1"
 
 dataopentelekomcloudceseventsv1.DataOpentelekomcloudCesEventsV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ dataopentelekomcloudceseventsv1.DataOpentelekomcloudCesEventsV1_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesEventsV1.DataOpentelekomcloudCesEventsV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudceseventsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudceseventsv1"
 
 dataopentelekomcloudceseventsv1.DataOpentelekomcloudCesEventsV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -739,7 +739,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesEventsV1.DataOpentelekomcloudCesEventsV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudceseventsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudceseventsv1"
 
 &dataopentelekomcloudceseventsv1.DataOpentelekomcloudCesEventsV1Config {
 	Connection: interface{},
@@ -928,7 +928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesEventsV1.DataOpentelekomcloudCesEventsV1Events.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudceseventsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudceseventsv1"
 
 &dataopentelekomcloudceseventsv1.DataOpentelekomcloudCesEventsV1Events {
 
@@ -941,7 +941,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesEventsV1.DataOpentelekomcloudCesEventsV1MetaData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudceseventsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudceseventsv1"
 
 &dataopentelekomcloudceseventsv1.DataOpentelekomcloudCesEventsV1MetaData {
 
@@ -956,7 +956,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesEventsV1.DataOpentelekomcloudCesEventsV1EventsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudceseventsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudceseventsv1"
 
 dataopentelekomcloudceseventsv1.NewDataOpentelekomcloudCesEventsV1EventsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudCesEventsV1EventsList
 ```
@@ -1105,7 +1105,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesEventsV1.DataOpentelekomcloudCesEventsV1EventsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudceseventsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudceseventsv1"
 
 dataopentelekomcloudceseventsv1.NewDataOpentelekomcloudCesEventsV1EventsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudCesEventsV1EventsOutputReference
 ```
@@ -1427,7 +1427,7 @@ func InternalValue() DataOpentelekomcloudCesEventsV1Events
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesEventsV1.DataOpentelekomcloudCesEventsV1MetaDataList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudceseventsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudceseventsv1"
 
 dataopentelekomcloudceseventsv1.NewDataOpentelekomcloudCesEventsV1MetaDataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudCesEventsV1MetaDataList
 ```
@@ -1576,7 +1576,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesEventsV1.DataOpentelekomcloudCesEventsV1MetaDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudceseventsv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudceseventsv1"
 
 dataopentelekomcloudceseventsv1.NewDataOpentelekomcloudCesEventsV1MetaDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudCesEventsV1MetaDataOutputReference
 ```

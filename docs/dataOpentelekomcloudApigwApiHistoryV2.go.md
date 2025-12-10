@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwapihistoryv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwapihistoryv2"
 
 dataopentelekomcloudapigwapihistoryv2.NewDataOpentelekomcloudApigwApiHistoryV2(scope Construct, id *string, config DataOpentelekomcloudApigwApiHistoryV2Config) DataOpentelekomcloudApigwApiHistoryV2
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwapihistoryv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwapihistoryv2"
 
 dataopentelekomcloudapigwapihistoryv2.DataOpentelekomcloudApigwApiHistoryV2_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwapihistoryv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwapihistoryv2"
 
 dataopentelekomcloudapigwapihistoryv2.DataOpentelekomcloudApigwApiHistoryV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudapigwapihistoryv2.DataOpentelekomcloudApigwApiHistoryV2_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwapihistoryv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwapihistoryv2"
 
 dataopentelekomcloudapigwapihistoryv2.DataOpentelekomcloudApigwApiHistoryV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ dataopentelekomcloudapigwapihistoryv2.DataOpentelekomcloudApigwApiHistoryV2_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwapihistoryv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwapihistoryv2"
 
 dataopentelekomcloudapigwapihistoryv2.DataOpentelekomcloudApigwApiHistoryV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -696,7 +696,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwapihistoryv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwapihistoryv2"
 
 &dataopentelekomcloudapigwapihistoryv2.DataOpentelekomcloudApigwApiHistoryV2Config {
 	Connection: interface{},
@@ -871,7 +871,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2History.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwapihistoryv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwapihistoryv2"
 
 &dataopentelekomcloudapigwapihistoryv2.DataOpentelekomcloudApigwApiHistoryV2History {
 
@@ -886,7 +886,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2HistoryList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwapihistoryv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwapihistoryv2"
 
 dataopentelekomcloudapigwapihistoryv2.NewDataOpentelekomcloudApigwApiHistoryV2HistoryList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudApigwApiHistoryV2HistoryList
 ```
@@ -1035,7 +1035,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwApiHistoryV2.DataOpentelekomcloudApigwApiHistoryV2HistoryOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwapihistoryv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwapihistoryv2"
 
 dataopentelekomcloudapigwapihistoryv2.NewDataOpentelekomcloudApigwApiHistoryV2HistoryOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudApigwApiHistoryV2HistoryOutputReference
 ```

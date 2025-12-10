@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.rmsAdvancedQueryV1.RmsAdvancedQueryV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/rmsadvancedqueryv1"
 
 rmsadvancedqueryv1.NewRmsAdvancedQueryV1(scope Construct, id *string, config RmsAdvancedQueryV1Config) RmsAdvancedQueryV1
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.rmsAdvancedQueryV1.RmsAdvancedQueryV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/rmsadvancedqueryv1"
 
 rmsadvancedqueryv1.RmsAdvancedQueryV1_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.rmsAdvancedQueryV1.RmsAdvancedQueryV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/rmsadvancedqueryv1"
 
 rmsadvancedqueryv1.RmsAdvancedQueryV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ rmsadvancedqueryv1.RmsAdvancedQueryV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.rmsAdvancedQueryV1.RmsAdvancedQueryV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/rmsadvancedqueryv1"
 
 rmsadvancedqueryv1.RmsAdvancedQueryV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ rmsadvancedqueryv1.RmsAdvancedQueryV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.rmsAdvancedQueryV1.RmsAdvancedQueryV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/rmsadvancedqueryv1"
 
 rmsadvancedqueryv1.RmsAdvancedQueryV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -802,7 +802,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.rmsAdvancedQueryV1.RmsAdvancedQueryV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/rmsadvancedqueryv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/rmsadvancedqueryv1"
 
 &rmsadvancedqueryv1.RmsAdvancedQueryV1Config {
 	Connection: interface{},

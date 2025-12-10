@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsNotificationTemplateV2.LtsNotificationTemplateV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsnotificationtemplatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsnotificationtemplatev2"
 
 ltsnotificationtemplatev2.NewLtsNotificationTemplateV2(scope Construct, id *string, config LtsNotificationTemplateV2Config) LtsNotificationTemplateV2
 ```
@@ -405,7 +405,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.ltsNotificationTemplateV2.LtsNotificationTemplateV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsnotificationtemplatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsnotificationtemplatev2"
 
 ltsnotificationtemplatev2.LtsNotificationTemplateV2_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.ltsNotificationTemplateV2.LtsNotificationTemplateV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsnotificationtemplatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsnotificationtemplatev2"
 
 ltsnotificationtemplatev2.LtsNotificationTemplateV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ ltsnotificationtemplatev2.LtsNotificationTemplateV2_IsTerraformElement(x interfa
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.ltsNotificationTemplateV2.LtsNotificationTemplateV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsnotificationtemplatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsnotificationtemplatev2"
 
 ltsnotificationtemplatev2.LtsNotificationTemplateV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ ltsnotificationtemplatev2.LtsNotificationTemplateV2_IsTerraformResource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.ltsNotificationTemplateV2.LtsNotificationTemplateV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsnotificationtemplatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsnotificationtemplatev2"
 
 ltsnotificationtemplatev2.LtsNotificationTemplateV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsNotificationTemplateV2.LtsNotificationTemplateV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsnotificationtemplatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsnotificationtemplatev2"
 
 &ltsnotificationtemplatev2.LtsNotificationTemplateV2Config {
 	Connection: interface{},
@@ -1028,7 +1028,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsNotificationTemplateV2.LtsNotificationTemplateV2Templates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsnotificationtemplatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsnotificationtemplatev2"
 
 &ltsnotificationtemplatev2.LtsNotificationTemplateV2Templates {
 	Content: *string,
@@ -1076,7 +1076,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsNotificationTemplateV2.LtsNotificationTemplateV2TemplatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsnotificationtemplatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsnotificationtemplatev2"
 
 ltsnotificationtemplatev2.NewLtsNotificationTemplateV2TemplatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) LtsNotificationTemplateV2TemplatesList
 ```
@@ -1236,7 +1236,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsNotificationTemplateV2.LtsNotificationTemplateV2TemplatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsnotificationtemplatev2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsnotificationtemplatev2"
 
 ltsnotificationtemplatev2.NewLtsNotificationTemplateV2TemplatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) LtsNotificationTemplateV2TemplatesOutputReference
 ```

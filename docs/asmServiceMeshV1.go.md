@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 asmservicemeshv1.NewAsmServiceMeshV1(scope Construct, id *string, config AsmServiceMeshV1Config) AsmServiceMeshV1
 ```
@@ -465,7 +465,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 asmservicemeshv1.AsmServiceMeshV1_IsConstruct(x interface{}) *bool
 ```
@@ -497,7 +497,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 asmservicemeshv1.AsmServiceMeshV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -511,7 +511,7 @@ asmservicemeshv1.AsmServiceMeshV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 asmservicemeshv1.AsmServiceMeshV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -525,7 +525,7 @@ asmservicemeshv1.AsmServiceMeshV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 asmservicemeshv1.AsmServiceMeshV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -985,7 +985,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1Clusters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 &asmservicemeshv1.AsmServiceMeshV1Clusters {
 	ClusterId: *string,
@@ -1045,7 +1045,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 &asmservicemeshv1.AsmServiceMeshV1Config {
 	Connection: interface{},
@@ -1061,9 +1061,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asm
 	Version: *string,
 	Id: *string,
 	Ipv6Enable: interface{},
-	ProxyConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1ProxyConfig,
-	TelemetryConfigTracing: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1TelemetryConfigTracing,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1Timeouts,
+	ProxyConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.asmServiceMeshV1.AsmServiceMeshV1ProxyConfig,
+	TelemetryConfigTracing: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.asmServiceMeshV1.AsmServiceMeshV1TelemetryConfigTracing,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.asmServiceMeshV1.AsmServiceMeshV1Timeouts,
 }
 ```
 
@@ -1284,7 +1284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1ProxyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 &asmservicemeshv1.AsmServiceMeshV1ProxyConfig {
 	ExcludeInboundPorts: *string,
@@ -1386,7 +1386,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1TelemetryConfigTracing.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 &asmservicemeshv1.AsmServiceMeshV1TelemetryConfigTracing {
 	DefaultProviders: *[]*string,
@@ -1448,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1TelemetryConfigTracingExtensionProviders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 &asmservicemeshv1.AsmServiceMeshV1TelemetryConfigTracingExtensionProviders {
 	Name: *string,
@@ -1508,7 +1508,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 &asmservicemeshv1.AsmServiceMeshV1Timeouts {
 	Create: *string,
@@ -1556,7 +1556,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1ClustersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 asmservicemeshv1.NewAsmServiceMeshV1ClustersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AsmServiceMeshV1ClustersList
 ```
@@ -1716,7 +1716,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1ClustersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 asmservicemeshv1.NewAsmServiceMeshV1ClustersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AsmServiceMeshV1ClustersOutputReference
 ```
@@ -2056,7 +2056,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1ProxyConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 asmservicemeshv1.NewAsmServiceMeshV1ProxyConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AsmServiceMeshV1ProxyConfigOutputReference
 ```
@@ -2479,7 +2479,7 @@ func InternalValue() AsmServiceMeshV1ProxyConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1TelemetryConfigTracingExtensionProvidersList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 asmservicemeshv1.NewAsmServiceMeshV1TelemetryConfigTracingExtensionProvidersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AsmServiceMeshV1TelemetryConfigTracingExtensionProvidersList
 ```
@@ -2639,7 +2639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1TelemetryConfigTracingExtensionProvidersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 asmservicemeshv1.NewAsmServiceMeshV1TelemetryConfigTracingExtensionProvidersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AsmServiceMeshV1TelemetryConfigTracingExtensionProvidersOutputReference
 ```
@@ -2993,7 +2993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1TelemetryConfigTracingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 asmservicemeshv1.NewAsmServiceMeshV1TelemetryConfigTracingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AsmServiceMeshV1TelemetryConfigTracingOutputReference
 ```
@@ -3342,7 +3342,7 @@ func InternalValue() AsmServiceMeshV1TelemetryConfigTracing
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.asmServiceMeshV1.AsmServiceMeshV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/asmservicemeshv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/asmservicemeshv1"
 
 asmservicemeshv1.NewAsmServiceMeshV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AsmServiceMeshV1TimeoutsOutputReference
 ```

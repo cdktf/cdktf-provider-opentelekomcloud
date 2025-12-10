@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlflavorsv3"
 
 dataopentelekomcloudtaurusdbmysqlflavorsv3.NewDataOpentelekomcloudTaurusdbMysqlFlavorsV3(scope Construct, id *string, config DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config) DataOpentelekomcloudTaurusdbMysqlFlavorsV3
 ```
@@ -304,7 +304,7 @@ func ResetVersion()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlflavorsv3"
 
 dataopentelekomcloudtaurusdbmysqlflavorsv3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlflavorsv3"
 
 dataopentelekomcloudtaurusdbmysqlflavorsv3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudtaurusdbmysqlflavorsv3.DataOpentelekomcloudTaurusdbMysqlFlav
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlflavorsv3"
 
 dataopentelekomcloudtaurusdbmysqlflavorsv3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataopentelekomcloudtaurusdbmysqlflavorsv3.DataOpentelekomcloudTaurusdbMysqlFlav
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlflavorsv3"
 
 dataopentelekomcloudtaurusdbmysqlflavorsv3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -681,7 +681,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlflavorsv3"
 
 &dataopentelekomcloudtaurusdbmysqlflavorsv3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Config {
 	Connection: interface{},
@@ -842,7 +842,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Flavors.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlflavorsv3"
 
 &dataopentelekomcloudtaurusdbmysqlflavorsv3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3Flavors {
 
@@ -857,7 +857,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3FlavorsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlflavorsv3"
 
 dataopentelekomcloudtaurusdbmysqlflavorsv3.NewDataOpentelekomcloudTaurusdbMysqlFlavorsV3FlavorsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudTaurusdbMysqlFlavorsV3FlavorsList
 ```
@@ -1006,7 +1006,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlFlavorsV3.DataOpentelekomcloudTaurusdbMysqlFlavorsV3FlavorsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlflavorsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlflavorsv3"
 
 dataopentelekomcloudtaurusdbmysqlflavorsv3.NewDataOpentelekomcloudTaurusdbMysqlFlavorsV3FlavorsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudTaurusdbMysqlFlavorsV3FlavorsOutputReference
 ```

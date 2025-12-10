@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesQuotasV1.DataOpentelekomcloudCesQuotasV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcesquotasv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcesquotasv1"
 
 dataopentelekomcloudcesquotasv1.NewDataOpentelekomcloudCesQuotasV1(scope Construct, id *string, config DataOpentelekomcloudCesQuotasV1Config) DataOpentelekomcloudCesQuotasV1
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesQuotasV1.DataOpentelekomcloudCesQuotasV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcesquotasv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcesquotasv1"
 
 dataopentelekomcloudcesquotasv1.DataOpentelekomcloudCesQuotasV1_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesQuotasV1.DataOpentelekomcloudCesQuotasV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcesquotasv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcesquotasv1"
 
 dataopentelekomcloudcesquotasv1.DataOpentelekomcloudCesQuotasV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataopentelekomcloudcesquotasv1.DataOpentelekomcloudCesQuotasV1_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesQuotasV1.DataOpentelekomcloudCesQuotasV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcesquotasv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcesquotasv1"
 
 dataopentelekomcloudcesquotasv1.DataOpentelekomcloudCesQuotasV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudcesquotasv1.DataOpentelekomcloudCesQuotasV1_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesQuotasV1.DataOpentelekomcloudCesQuotasV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcesquotasv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcesquotasv1"
 
 dataopentelekomcloudcesquotasv1.DataOpentelekomcloudCesQuotasV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesQuotasV1.DataOpentelekomcloudCesQuotasV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcesquotasv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcesquotasv1"
 
 &dataopentelekomcloudcesquotasv1.DataOpentelekomcloudCesQuotasV1Config {
 	Connection: interface{},
@@ -702,7 +702,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesQuotasV1.DataOpentelekomcloudCesQuotasV1Quotas.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcesquotasv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcesquotasv1"
 
 &dataopentelekomcloudcesquotasv1.DataOpentelekomcloudCesQuotasV1Quotas {
 
@@ -715,7 +715,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesQuotasV1.DataOpentelekomcloudCesQuotasV1QuotasResources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcesquotasv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcesquotasv1"
 
 &dataopentelekomcloudcesquotasv1.DataOpentelekomcloudCesQuotasV1QuotasResources {
 
@@ -730,7 +730,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesQuotasV1.DataOpentelekomcloudCesQuotasV1QuotasList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcesquotasv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcesquotasv1"
 
 dataopentelekomcloudcesquotasv1.NewDataOpentelekomcloudCesQuotasV1QuotasList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudCesQuotasV1QuotasList
 ```
@@ -879,7 +879,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesQuotasV1.DataOpentelekomcloudCesQuotasV1QuotasOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcesquotasv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcesquotasv1"
 
 dataopentelekomcloudcesquotasv1.NewDataOpentelekomcloudCesQuotasV1QuotasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudCesQuotasV1QuotasOutputReference
 ```
@@ -1157,7 +1157,7 @@ func InternalValue() DataOpentelekomcloudCesQuotasV1Quotas
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesQuotasV1.DataOpentelekomcloudCesQuotasV1QuotasResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcesquotasv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcesquotasv1"
 
 dataopentelekomcloudcesquotasv1.NewDataOpentelekomcloudCesQuotasV1QuotasResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudCesQuotasV1QuotasResourcesList
 ```
@@ -1306,7 +1306,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudCesQuotasV1.DataOpentelekomcloudCesQuotasV1QuotasResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudcesquotasv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudcesquotasv1"
 
 dataopentelekomcloudcesquotasv1.NewDataOpentelekomcloudCesQuotasV1QuotasResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudCesQuotasV1QuotasResourcesOutputReference
 ```

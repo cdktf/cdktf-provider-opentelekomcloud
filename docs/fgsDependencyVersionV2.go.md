@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsdependencyversionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsdependencyversionv2"
 
 fgsdependencyversionv2.NewFgsDependencyVersionV2(scope Construct, id *string, config FgsDependencyVersionV2Config) FgsDependencyVersionV2
 ```
@@ -406,7 +406,7 @@ func ResetLink()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsdependencyversionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsdependencyversionv2"
 
 fgsdependencyversionv2.FgsDependencyVersionV2_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsdependencyversionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsdependencyversionv2"
 
 fgsdependencyversionv2.FgsDependencyVersionV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ fgsdependencyversionv2.FgsDependencyVersionV2_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsdependencyversionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsdependencyversionv2"
 
 fgsdependencyversionv2.FgsDependencyVersionV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ fgsdependencyversionv2.FgsDependencyVersionV2_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsdependencyversionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsdependencyversionv2"
 
 fgsdependencyversionv2.FgsDependencyVersionV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -904,7 +904,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsDependencyVersionV2.FgsDependencyVersionV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsdependencyversionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsdependencyversionv2"
 
 &fgsdependencyversionv2.FgsDependencyVersionV2Config {
 	Connection: interface{},

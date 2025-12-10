@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityprotocolv3"
 
 identityprotocolv3.NewIdentityProtocolV3(scope Construct, id *string, config IdentityProtocolV3Config) IdentityProtocolV3
 ```
@@ -425,7 +425,7 @@ func ResetMetadata()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityprotocolv3"
 
 identityprotocolv3.IdentityProtocolV3_IsConstruct(x interface{}) *bool
 ```
@@ -457,7 +457,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityprotocolv3"
 
 identityprotocolv3.IdentityProtocolV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -471,7 +471,7 @@ identityprotocolv3.IdentityProtocolV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityprotocolv3"
 
 identityprotocolv3.IdentityProtocolV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -485,7 +485,7 @@ identityprotocolv3.IdentityProtocolV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityprotocolv3"
 
 identityprotocolv3.IdentityProtocolV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -857,7 +857,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityprotocolv3"
 
 &identityprotocolv3.IdentityProtocolV3AccessConfig {
 	AccessType: *string,
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityprotocolv3"
 
 &identityprotocolv3.IdentityProtocolV3Config {
 	Connection: interface{},
@@ -1000,9 +1000,9 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ide
 	MappingId: *string,
 	Protocol: *string,
 	ProviderId: *string,
-	AccessConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfig,
+	AccessConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.identityProtocolV3.IdentityProtocolV3AccessConfig,
 	Id: *string,
-	Metadata: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.identityProtocolV3.IdentityProtocolV3Metadata,
+	Metadata: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.identityProtocolV3.IdentityProtocolV3Metadata,
 }
 ```
 
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3Metadata.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityprotocolv3"
 
 &identityprotocolv3.IdentityProtocolV3Metadata {
 	DomainId: *string,
@@ -1242,7 +1242,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3AccessConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityprotocolv3"
 
 identityprotocolv3.NewIdentityProtocolV3AccessConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityProtocolV3AccessConfigOutputReference
 ```
@@ -1695,7 +1695,7 @@ func InternalValue() IdentityProtocolV3AccessConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityProtocolV3.IdentityProtocolV3MetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identityprotocolv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identityprotocolv3"
 
 identityprotocolv3.NewIdentityProtocolV3MetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) IdentityProtocolV3MetadataOutputReference
 ```

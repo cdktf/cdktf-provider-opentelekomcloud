@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatGatewayV3.DataOpentelekomcloudPrivateNatGatewayV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatgatewayv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatgatewayv3"
 
 dataopentelekomcloudprivatenatgatewayv3.NewDataOpentelekomcloudPrivateNatGatewayV3(scope Construct, id *string, config DataOpentelekomcloudPrivateNatGatewayV3Config) DataOpentelekomcloudPrivateNatGatewayV3
 ```
@@ -290,7 +290,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatGatewayV3.DataOpentelekomcloudPrivateNatGatewayV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatgatewayv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatgatewayv3"
 
 dataopentelekomcloudprivatenatgatewayv3.DataOpentelekomcloudPrivateNatGatewayV3_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatGatewayV3.DataOpentelekomcloudPrivateNatGatewayV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatgatewayv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatgatewayv3"
 
 dataopentelekomcloudprivatenatgatewayv3.DataOpentelekomcloudPrivateNatGatewayV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataopentelekomcloudprivatenatgatewayv3.DataOpentelekomcloudPrivateNatGatewayV3_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatGatewayV3.DataOpentelekomcloudPrivateNatGatewayV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatgatewayv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatgatewayv3"
 
 dataopentelekomcloudprivatenatgatewayv3.DataOpentelekomcloudPrivateNatGatewayV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudprivatenatgatewayv3.DataOpentelekomcloudPrivateNatGatewayV3_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatGatewayV3.DataOpentelekomcloudPrivateNatGatewayV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatgatewayv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatgatewayv3"
 
 dataopentelekomcloudprivatenatgatewayv3.DataOpentelekomcloudPrivateNatGatewayV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatGatewayV3.DataOpentelekomcloudPrivateNatGatewayV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatgatewayv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatgatewayv3"
 
 &dataopentelekomcloudprivatenatgatewayv3.DataOpentelekomcloudPrivateNatGatewayV3Config {
 	Connection: interface{},
@@ -745,7 +745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatGatewayV3.DataOpentelekomcloudPrivateNatGatewayV3Gateways.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatgatewayv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatgatewayv3"
 
 &dataopentelekomcloudprivatenatgatewayv3.DataOpentelekomcloudPrivateNatGatewayV3Gateways {
 
@@ -758,7 +758,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatGatewayV3.DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatgatewayv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatgatewayv3"
 
 &dataopentelekomcloudprivatenatgatewayv3.DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcs {
 
@@ -773,7 +773,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dat
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatGatewayV3.DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatgatewayv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatgatewayv3"
 
 dataopentelekomcloudprivatenatgatewayv3.NewDataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsList
 ```
@@ -922,7 +922,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatGatewayV3.DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatgatewayv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatgatewayv3"
 
 dataopentelekomcloudprivatenatgatewayv3.NewDataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcsOutputReference
 ```
@@ -1222,7 +1222,7 @@ func InternalValue() DataOpentelekomcloudPrivateNatGatewayV3GatewaysDownlinkVpcs
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatGatewayV3.DataOpentelekomcloudPrivateNatGatewayV3GatewaysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatgatewayv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatgatewayv3"
 
 dataopentelekomcloudprivatenatgatewayv3.NewDataOpentelekomcloudPrivateNatGatewayV3GatewaysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudPrivateNatGatewayV3GatewaysList
 ```
@@ -1371,7 +1371,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatGatewayV3.DataOpentelekomcloudPrivateNatGatewayV3GatewaysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatgatewayv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatgatewayv3"
 
 dataopentelekomcloudprivatenatgatewayv3.NewDataOpentelekomcloudPrivateNatGatewayV3GatewaysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudPrivateNatGatewayV3GatewaysOutputReference
 ```

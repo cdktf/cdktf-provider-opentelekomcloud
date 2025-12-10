@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 cfwfirewallv1.NewCfwFirewallV1(scope Construct, id *string, config CfwFirewallV1Config) CfwFirewallV1
 ```
@@ -431,7 +431,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 cfwfirewallv1.CfwFirewallV1_IsConstruct(x interface{}) *bool
 ```
@@ -463,7 +463,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 cfwfirewallv1.CfwFirewallV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -477,7 +477,7 @@ cfwfirewallv1.CfwFirewallV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 cfwfirewallv1.CfwFirewallV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ cfwfirewallv1.CfwFirewallV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 cfwfirewallv1.CfwFirewallV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -995,7 +995,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1ChargeInfo.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 &cfwfirewallv1.CfwFirewallV1ChargeInfo {
 	ChargeMode: *string,
@@ -1027,7 +1027,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 &cfwfirewallv1.CfwFirewallV1Config {
 	Connection: interface{},
@@ -1037,11 +1037,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfw
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	ChargeInfo: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cfwFirewallV1.CfwFirewallV1ChargeInfo,
-	Flavor: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cfwFirewallV1.CfwFirewallV1Flavor,
+	ChargeInfo: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.cfwFirewallV1.CfwFirewallV1ChargeInfo,
+	Flavor: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.cfwFirewallV1.CfwFirewallV1Flavor,
 	Name: *string,
 	ServiceType: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cfwFirewallV1.CfwFirewallV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.cfwFirewallV1.CfwFirewallV1Timeouts,
 }
 ```
 
@@ -1205,7 +1205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1Flavor.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 &cfwfirewallv1.CfwFirewallV1Flavor {
 	Version: *string,
@@ -1237,7 +1237,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1ProtectObjects.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 &cfwfirewallv1.CfwFirewallV1ProtectObjects {
 
@@ -1250,7 +1250,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfw
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1Resources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 &cfwfirewallv1.CfwFirewallV1Resources {
 
@@ -1263,7 +1263,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfw
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 &cfwfirewallv1.CfwFirewallV1Timeouts {
 	Create: *string,
@@ -1325,7 +1325,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1ChargeInfoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 cfwfirewallv1.NewCfwFirewallV1ChargeInfoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CfwFirewallV1ChargeInfoOutputReference
 ```
@@ -1596,7 +1596,7 @@ func InternalValue() CfwFirewallV1ChargeInfo
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1FlavorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 cfwfirewallv1.NewCfwFirewallV1FlavorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CfwFirewallV1FlavorOutputReference
 ```
@@ -1966,7 +1966,7 @@ func InternalValue() CfwFirewallV1Flavor
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1ProtectObjectsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 cfwfirewallv1.NewCfwFirewallV1ProtectObjectsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CfwFirewallV1ProtectObjectsList
 ```
@@ -2115,7 +2115,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1ProtectObjectsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 cfwfirewallv1.NewCfwFirewallV1ProtectObjectsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CfwFirewallV1ProtectObjectsOutputReference
 ```
@@ -2415,7 +2415,7 @@ func InternalValue() CfwFirewallV1ProtectObjects
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1ResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 cfwfirewallv1.NewCfwFirewallV1ResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CfwFirewallV1ResourcesList
 ```
@@ -2564,7 +2564,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1ResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 cfwfirewallv1.NewCfwFirewallV1ResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CfwFirewallV1ResourcesOutputReference
 ```
@@ -2897,7 +2897,7 @@ func InternalValue() CfwFirewallV1Resources
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwFirewallV1.CfwFirewallV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwfirewallv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwfirewallv1"
 
 cfwfirewallv1.NewCfwFirewallV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CfwFirewallV1TimeoutsOutputReference
 ```

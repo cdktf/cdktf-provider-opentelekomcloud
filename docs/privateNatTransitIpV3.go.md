@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/privatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/privatenattransitipv3"
 
 privatenattransitipv3.NewPrivateNatTransitIpV3(scope Construct, id *string, config PrivateNatTransitIpV3Config) PrivateNatTransitIpV3
 ```
@@ -419,7 +419,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/privatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/privatenattransitipv3"
 
 privatenattransitipv3.PrivateNatTransitIpV3_IsConstruct(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/privatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/privatenattransitipv3"
 
 privatenattransitipv3.PrivateNatTransitIpV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ privatenattransitipv3.PrivateNatTransitIpV3_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/privatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/privatenattransitipv3"
 
 privatenattransitipv3.PrivateNatTransitIpV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ privatenattransitipv3.PrivateNatTransitIpV3_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/privatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/privatenattransitipv3"
 
 privatenattransitipv3.PrivateNatTransitIpV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/privatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/privatenattransitipv3"
 
 &privatenattransitipv3.PrivateNatTransitIpV3Config {
 	Connection: interface{},
@@ -909,7 +909,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/pri
 	EnterpriseProjectId: *string,
 	IpAddress: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.privateNatTransitIpV3.PrivateNatTransitIpV3Timeouts,
 }
 ```
 
@@ -1069,7 +1069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/privatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/privatenattransitipv3"
 
 &privatenattransitipv3.PrivateNatTransitIpV3Timeouts {
 	Create: *string,
@@ -1117,7 +1117,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.privateNatTransitIpV3.PrivateNatTransitIpV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/privatenattransitipv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/privatenattransitipv3"
 
 privatenattransitipv3.NewPrivateNatTransitIpV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PrivateNatTransitIpV3TimeoutsOutputReference
 ```

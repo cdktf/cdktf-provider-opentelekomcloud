@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/kmskeymaterialv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/kmskeymaterialv1"
 
 kmskeymaterialv1.NewKmsKeyMaterialV1(scope Construct, id *string, config KmsKeyMaterialV1Config) KmsKeyMaterialV1
 ```
@@ -392,7 +392,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/kmskeymaterialv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/kmskeymaterialv1"
 
 kmskeymaterialv1.KmsKeyMaterialV1_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/kmskeymaterialv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/kmskeymaterialv1"
 
 kmskeymaterialv1.KmsKeyMaterialV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ kmskeymaterialv1.KmsKeyMaterialV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/kmskeymaterialv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/kmskeymaterialv1"
 
 kmskeymaterialv1.KmsKeyMaterialV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ kmskeymaterialv1.KmsKeyMaterialV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/kmskeymaterialv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/kmskeymaterialv1"
 
 kmskeymaterialv1.KmsKeyMaterialV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.kmsKeyMaterialV1.KmsKeyMaterialV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/kmskeymaterialv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/kmskeymaterialv1"
 
 &kmskeymaterialv1.KmsKeyMaterialV1Config {
 	Connection: interface{},

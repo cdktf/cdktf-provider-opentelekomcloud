@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwServiceGroupV1.CfwServiceGroupV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwservicegroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwservicegroupv1"
 
 cfwservicegroupv1.NewCfwServiceGroupV1(scope Construct, id *string, config CfwServiceGroupV1Config) CfwServiceGroupV1
 ```
@@ -405,7 +405,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cfwServiceGroupV1.CfwServiceGroupV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwservicegroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwservicegroupv1"
 
 cfwservicegroupv1.CfwServiceGroupV1_IsConstruct(x interface{}) *bool
 ```
@@ -437,7 +437,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cfwServiceGroupV1.CfwServiceGroupV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwservicegroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwservicegroupv1"
 
 cfwservicegroupv1.CfwServiceGroupV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -451,7 +451,7 @@ cfwservicegroupv1.CfwServiceGroupV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cfwServiceGroupV1.CfwServiceGroupV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwservicegroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwservicegroupv1"
 
 cfwservicegroupv1.CfwServiceGroupV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ cfwservicegroupv1.CfwServiceGroupV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.cfwServiceGroupV1.CfwServiceGroupV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwservicegroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwservicegroupv1"
 
 cfwservicegroupv1.CfwServiceGroupV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -804,7 +804,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwServiceGroupV1.CfwServiceGroupV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwservicegroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwservicegroupv1"
 
 &cfwservicegroupv1.CfwServiceGroupV1Config {
 	Connection: interface{},
@@ -817,7 +817,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfw
 	Name: *string,
 	ObjectId: *string,
 	Description: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cfwServiceGroupV1.CfwServiceGroupV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.cfwServiceGroupV1.CfwServiceGroupV1Timeouts,
 }
 ```
 
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwServiceGroupV1.CfwServiceGroupV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwservicegroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwservicegroupv1"
 
 &cfwservicegroupv1.CfwServiceGroupV1Timeouts {
 	Create: *string,
@@ -1026,7 +1026,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwServiceGroupV1.CfwServiceGroupV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwservicegroupv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwservicegroupv1"
 
 cfwservicegroupv1.NewCfwServiceGroupV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CfwServiceGroupV1TimeoutsOutputReference
 ```
