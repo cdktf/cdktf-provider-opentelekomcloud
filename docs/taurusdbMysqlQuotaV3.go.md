@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlQuotaV3.TaurusdbMysqlQuotaV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlquotav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlquotav3"
 
 taurusdbmysqlquotav3.NewTaurusdbMysqlQuotaV3(scope Construct, id *string, config TaurusdbMysqlQuotaV3Config) TaurusdbMysqlQuotaV3
 ```
@@ -406,7 +406,7 @@ func ResetVcpusQuota()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlQuotaV3.TaurusdbMysqlQuotaV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlquotav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlquotav3"
 
 taurusdbmysqlquotav3.TaurusdbMysqlQuotaV3_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlQuotaV3.TaurusdbMysqlQuotaV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlquotav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlquotav3"
 
 taurusdbmysqlquotav3.TaurusdbMysqlQuotaV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ taurusdbmysqlquotav3.TaurusdbMysqlQuotaV3_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlQuotaV3.TaurusdbMysqlQuotaV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlquotav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlquotav3"
 
 taurusdbmysqlquotav3.TaurusdbMysqlQuotaV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ taurusdbmysqlquotav3.TaurusdbMysqlQuotaV3_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlQuotaV3.TaurusdbMysqlQuotaV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlquotav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlquotav3"
 
 taurusdbmysqlquotav3.TaurusdbMysqlQuotaV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlQuotaV3.TaurusdbMysqlQuotaV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlquotav3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlquotav3"
 
 &taurusdbmysqlquotav3.TaurusdbMysqlQuotaV3Config {
 	Connection: interface{},

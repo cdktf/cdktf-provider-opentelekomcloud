@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwenvironmentsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwenvironmentsv2"
 
 dataopentelekomcloudapigwenvironmentsv2.NewDataOpentelekomcloudApigwEnvironmentsV2(scope Construct, id *string, config DataOpentelekomcloudApigwEnvironmentsV2Config) DataOpentelekomcloudApigwEnvironmentsV2
 ```
@@ -290,7 +290,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwenvironmentsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwenvironmentsv2"
 
 dataopentelekomcloudapigwenvironmentsv2.DataOpentelekomcloudApigwEnvironmentsV2_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwenvironmentsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwenvironmentsv2"
 
 dataopentelekomcloudapigwenvironmentsv2.DataOpentelekomcloudApigwEnvironmentsV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataopentelekomcloudapigwenvironmentsv2.DataOpentelekomcloudApigwEnvironmentsV2_
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwenvironmentsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwenvironmentsv2"
 
 dataopentelekomcloudapigwenvironmentsv2.DataOpentelekomcloudApigwEnvironmentsV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudapigwenvironmentsv2.DataOpentelekomcloudApigwEnvironmentsV2_
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwenvironmentsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwenvironmentsv2"
 
 dataopentelekomcloudapigwenvironmentsv2.DataOpentelekomcloudApigwEnvironmentsV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwenvironmentsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwenvironmentsv2"
 
 &dataopentelekomcloudapigwenvironmentsv2.DataOpentelekomcloudApigwEnvironmentsV2Config {
 	Connection: interface{},
@@ -792,7 +792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2Environments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwenvironmentsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwenvironmentsv2"
 
 &dataopentelekomcloudapigwenvironmentsv2.DataOpentelekomcloudApigwEnvironmentsV2Environments {
 
@@ -807,7 +807,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2EnvironmentsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwenvironmentsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwenvironmentsv2"
 
 dataopentelekomcloudapigwenvironmentsv2.NewDataOpentelekomcloudApigwEnvironmentsV2EnvironmentsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudApigwEnvironmentsV2EnvironmentsList
 ```
@@ -956,7 +956,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudApigwEnvironmentsV2.DataOpentelekomcloudApigwEnvironmentsV2EnvironmentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudapigwenvironmentsv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudapigwenvironmentsv2"
 
 dataopentelekomcloudapigwenvironmentsv2.NewDataOpentelekomcloudApigwEnvironmentsV2EnvironmentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudApigwEnvironmentsV2EnvironmentsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatSnatRuleV3.DataOpentelekomcloudPrivateNatSnatRuleV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatsnatrulev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatsnatrulev3"
 
 dataopentelekomcloudprivatenatsnatrulev3.NewDataOpentelekomcloudPrivateNatSnatRuleV3(scope Construct, id *string, config DataOpentelekomcloudPrivateNatSnatRuleV3Config) DataOpentelekomcloudPrivateNatSnatRuleV3
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatSnatRuleV3.DataOpentelekomcloudPrivateNatSnatRuleV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatsnatrulev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatsnatrulev3"
 
 dataopentelekomcloudprivatenatsnatrulev3.DataOpentelekomcloudPrivateNatSnatRuleV3_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatSnatRuleV3.DataOpentelekomcloudPrivateNatSnatRuleV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatsnatrulev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatsnatrulev3"
 
 dataopentelekomcloudprivatenatsnatrulev3.DataOpentelekomcloudPrivateNatSnatRuleV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataopentelekomcloudprivatenatsnatrulev3.DataOpentelekomcloudPrivateNatSnatRuleV
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatSnatRuleV3.DataOpentelekomcloudPrivateNatSnatRuleV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatsnatrulev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatsnatrulev3"
 
 dataopentelekomcloudprivatenatsnatrulev3.DataOpentelekomcloudPrivateNatSnatRuleV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudprivatenatsnatrulev3.DataOpentelekomcloudPrivateNatSnatRuleV
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatSnatRuleV3.DataOpentelekomcloudPrivateNatSnatRuleV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatsnatrulev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatsnatrulev3"
 
 dataopentelekomcloudprivatenatsnatrulev3.DataOpentelekomcloudPrivateNatSnatRuleV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -583,7 +583,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatSnatRuleV3.DataOpentelekomcloudPrivateNatSnatRuleV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatsnatrulev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatsnatrulev3"
 
 &dataopentelekomcloudprivatenatsnatrulev3.DataOpentelekomcloudPrivateNatSnatRuleV3Config {
 	Connection: interface{},
@@ -702,7 +702,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatSnatRuleV3.DataOpentelekomcloudPrivateNatSnatRuleV3SnatRules.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatsnatrulev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatsnatrulev3"
 
 &dataopentelekomcloudprivatenatsnatrulev3.DataOpentelekomcloudPrivateNatSnatRuleV3SnatRules {
 
@@ -715,7 +715,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatSnatRuleV3.DataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesTransitIpAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatsnatrulev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatsnatrulev3"
 
 &dataopentelekomcloudprivatenatsnatrulev3.DataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesTransitIpAssociations {
 
@@ -730,7 +730,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatSnatRuleV3.DataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatsnatrulev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatsnatrulev3"
 
 dataopentelekomcloudprivatenatsnatrulev3.NewDataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesList
 ```
@@ -879,7 +879,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatSnatRuleV3.DataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatsnatrulev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatsnatrulev3"
 
 dataopentelekomcloudprivatenatsnatrulev3.NewDataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesOutputReference
 ```
@@ -1278,7 +1278,7 @@ func InternalValue() DataOpentelekomcloudPrivateNatSnatRuleV3SnatRules
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatSnatRuleV3.DataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesTransitIpAssociationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatsnatrulev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatsnatrulev3"
 
 dataopentelekomcloudprivatenatsnatrulev3.NewDataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesTransitIpAssociationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesTransitIpAssociationsList
 ```
@@ -1427,7 +1427,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudPrivateNatSnatRuleV3.DataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesTransitIpAssociationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudprivatenatsnatrulev3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudprivatenatsnatrulev3"
 
 dataopentelekomcloudprivatenatsnatrulev3.NewDataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesTransitIpAssociationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudPrivateNatSnatRuleV3SnatRulesTransitIpAssociationsOutputReference
 ```

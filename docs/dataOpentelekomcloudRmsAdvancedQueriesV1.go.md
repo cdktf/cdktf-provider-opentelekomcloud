@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueriesV1.DataOpentelekomcloudRmsAdvancedQueriesV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsadvancedqueriesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueriesv1"
 
 dataopentelekomcloudrmsadvancedqueriesv1.NewDataOpentelekomcloudRmsAdvancedQueriesV1(scope Construct, id *string, config DataOpentelekomcloudRmsAdvancedQueriesV1Config) DataOpentelekomcloudRmsAdvancedQueriesV1
 ```
@@ -290,7 +290,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueriesV1.DataOpentelekomcloudRmsAdvancedQueriesV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsadvancedqueriesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueriesv1"
 
 dataopentelekomcloudrmsadvancedqueriesv1.DataOpentelekomcloudRmsAdvancedQueriesV1_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueriesV1.DataOpentelekomcloudRmsAdvancedQueriesV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsadvancedqueriesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueriesv1"
 
 dataopentelekomcloudrmsadvancedqueriesv1.DataOpentelekomcloudRmsAdvancedQueriesV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataopentelekomcloudrmsadvancedqueriesv1.DataOpentelekomcloudRmsAdvancedQueriesV
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueriesV1.DataOpentelekomcloudRmsAdvancedQueriesV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsadvancedqueriesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueriesv1"
 
 dataopentelekomcloudrmsadvancedqueriesv1.DataOpentelekomcloudRmsAdvancedQueriesV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudrmsadvancedqueriesv1.DataOpentelekomcloudRmsAdvancedQueriesV
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueriesV1.DataOpentelekomcloudRmsAdvancedQueriesV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsadvancedqueriesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueriesv1"
 
 dataopentelekomcloudrmsadvancedqueriesv1.DataOpentelekomcloudRmsAdvancedQueriesV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -623,7 +623,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueriesV1.DataOpentelekomcloudRmsAdvancedQueriesV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsadvancedqueriesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueriesv1"
 
 &dataopentelekomcloudrmsadvancedqueriesv1.DataOpentelekomcloudRmsAdvancedQueriesV1Config {
 	Connection: interface{},
@@ -756,7 +756,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueriesV1.DataOpentelekomcloudRmsAdvancedQueriesV1Queries.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsadvancedqueriesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueriesv1"
 
 &dataopentelekomcloudrmsadvancedqueriesv1.DataOpentelekomcloudRmsAdvancedQueriesV1Queries {
 
@@ -771,7 +771,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueriesV1.DataOpentelekomcloudRmsAdvancedQueriesV1QueriesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsadvancedqueriesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueriesv1"
 
 dataopentelekomcloudrmsadvancedqueriesv1.NewDataOpentelekomcloudRmsAdvancedQueriesV1QueriesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudRmsAdvancedQueriesV1QueriesList
 ```
@@ -920,7 +920,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudRmsAdvancedQueriesV1.DataOpentelekomcloudRmsAdvancedQueriesV1QueriesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudrmsadvancedqueriesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudrmsadvancedqueriesv1"
 
 dataopentelekomcloudrmsadvancedqueriesv1.NewDataOpentelekomcloudRmsAdvancedQueriesV1QueriesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudRmsAdvancedQueriesV1QueriesOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmnmessagetemplatesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmnmessagetemplatesv2"
 
 dataopentelekomcloudsmnmessagetemplatesv2.NewDataOpentelekomcloudSmnMessageTemplatesV2(scope Construct, id *string, config DataOpentelekomcloudSmnMessageTemplatesV2Config) DataOpentelekomcloudSmnMessageTemplatesV2
 ```
@@ -304,7 +304,7 @@ func ResetTemplateId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmnmessagetemplatesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmnmessagetemplatesv2"
 
 dataopentelekomcloudsmnmessagetemplatesv2.DataOpentelekomcloudSmnMessageTemplatesV2_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmnmessagetemplatesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmnmessagetemplatesv2"
 
 dataopentelekomcloudsmnmessagetemplatesv2.DataOpentelekomcloudSmnMessageTemplatesV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudsmnmessagetemplatesv2.DataOpentelekomcloudSmnMessageTemplate
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmnmessagetemplatesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmnmessagetemplatesv2"
 
 dataopentelekomcloudsmnmessagetemplatesv2.DataOpentelekomcloudSmnMessageTemplatesV2_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ dataopentelekomcloudsmnmessagetemplatesv2.DataOpentelekomcloudSmnMessageTemplate
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmnmessagetemplatesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmnmessagetemplatesv2"
 
 dataopentelekomcloudsmnmessagetemplatesv2.DataOpentelekomcloudSmnMessageTemplatesV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -670,7 +670,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmnmessagetemplatesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmnmessagetemplatesv2"
 
 &dataopentelekomcloudsmnmessagetemplatesv2.DataOpentelekomcloudSmnMessageTemplatesV2Config {
 	Connection: interface{},
@@ -831,7 +831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2Templates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmnmessagetemplatesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmnmessagetemplatesv2"
 
 &dataopentelekomcloudsmnmessagetemplatesv2.DataOpentelekomcloudSmnMessageTemplatesV2Templates {
 
@@ -846,7 +846,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2TemplatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmnmessagetemplatesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmnmessagetemplatesv2"
 
 dataopentelekomcloudsmnmessagetemplatesv2.NewDataOpentelekomcloudSmnMessageTemplatesV2TemplatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudSmnMessageTemplatesV2TemplatesList
 ```
@@ -995,7 +995,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSmnMessageTemplatesV2.DataOpentelekomcloudSmnMessageTemplatesV2TemplatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsmnmessagetemplatesv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsmnmessagetemplatesv2"
 
 dataopentelekomcloudsmnmessagetemplatesv2.NewDataOpentelekomcloudSmnMessageTemplatesV2TemplatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudSmnMessageTemplatesV2TemplatesOutputReference
 ```

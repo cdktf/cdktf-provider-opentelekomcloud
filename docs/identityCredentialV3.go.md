@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identitycredentialv3"
 
 identitycredentialv3.NewIdentityCredentialV3(scope Construct, id *string, config IdentityCredentialV3Config) IdentityCredentialV3
 ```
@@ -413,7 +413,7 @@ func ResetUserId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identitycredentialv3"
 
 identitycredentialv3.IdentityCredentialV3_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identitycredentialv3"
 
 identitycredentialv3.IdentityCredentialV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ identitycredentialv3.IdentityCredentialV3_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identitycredentialv3"
 
 identitycredentialv3.IdentityCredentialV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ identitycredentialv3.IdentityCredentialV3_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identitycredentialv3"
 
 identitycredentialv3.IdentityCredentialV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -867,7 +867,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.identityCredentialV3.IdentityCredentialV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/identitycredentialv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/identitycredentialv3"
 
 &identitycredentialv3.IdentityCredentialV3Config {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 taurusdbmysqlproxyv3.NewTaurusdbMysqlProxyV3(scope Construct, id *string, config TaurusdbMysqlProxyV3Config) TaurusdbMysqlProxyV3
 ```
@@ -459,7 +459,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 taurusdbmysqlproxyv3.TaurusdbMysqlProxyV3_IsConstruct(x interface{}) *bool
 ```
@@ -491,7 +491,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 taurusdbmysqlproxyv3.TaurusdbMysqlProxyV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -505,7 +505,7 @@ taurusdbmysqlproxyv3.TaurusdbMysqlProxyV3_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 taurusdbmysqlproxyv3.TaurusdbMysqlProxyV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -519,7 +519,7 @@ taurusdbmysqlproxyv3.TaurusdbMysqlProxyV3_IsTerraformResource(x interface{}) *bo
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 taurusdbmysqlproxyv3.TaurusdbMysqlProxyV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1001,7 +1001,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 &taurusdbmysqlproxyv3.TaurusdbMysqlProxyV3Config {
 	Connection: interface{},
@@ -1015,11 +1015,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	InstanceId: *string,
 	NodeNum: *f64,
 	Id: *string,
-	MasterNodeWeight: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3MasterNodeWeight,
+	MasterNodeWeight: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3MasterNodeWeight,
 	ProxyMode: *string,
 	ProxyName: *string,
 	ReadonlyNodesWeight: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3Timeouts,
 }
 ```
 
@@ -1238,7 +1238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3MasterNodeWeight.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 &taurusdbmysqlproxyv3.TaurusdbMysqlProxyV3MasterNodeWeight {
 	Id: *string,
@@ -1287,7 +1287,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3Nodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 &taurusdbmysqlproxyv3.TaurusdbMysqlProxyV3Nodes {
 
@@ -1300,7 +1300,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3ReadonlyNodesWeight.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 &taurusdbmysqlproxyv3.TaurusdbMysqlProxyV3ReadonlyNodesWeight {
 	Id: *string,
@@ -1349,7 +1349,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 &taurusdbmysqlproxyv3.TaurusdbMysqlProxyV3Timeouts {
 	Create: *string,
@@ -1411,7 +1411,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3MasterNodeWeightOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 taurusdbmysqlproxyv3.NewTaurusdbMysqlProxyV3MasterNodeWeightOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TaurusdbMysqlProxyV3MasterNodeWeightOutputReference
 ```
@@ -1704,7 +1704,7 @@ func InternalValue() TaurusdbMysqlProxyV3MasterNodeWeight
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3NodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 taurusdbmysqlproxyv3.NewTaurusdbMysqlProxyV3NodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TaurusdbMysqlProxyV3NodesList
 ```
@@ -1853,7 +1853,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3NodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 taurusdbmysqlproxyv3.NewTaurusdbMysqlProxyV3NodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TaurusdbMysqlProxyV3NodesOutputReference
 ```
@@ -2186,7 +2186,7 @@ func InternalValue() TaurusdbMysqlProxyV3Nodes
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3ReadonlyNodesWeightList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 taurusdbmysqlproxyv3.NewTaurusdbMysqlProxyV3ReadonlyNodesWeightList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TaurusdbMysqlProxyV3ReadonlyNodesWeightList
 ```
@@ -2346,7 +2346,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3ReadonlyNodesWeightOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 taurusdbmysqlproxyv3.NewTaurusdbMysqlProxyV3ReadonlyNodesWeightOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TaurusdbMysqlProxyV3ReadonlyNodesWeightOutputReference
 ```
@@ -2657,7 +2657,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.taurusdbMysqlProxyV3.TaurusdbMysqlProxyV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/taurusdbmysqlproxyv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/taurusdbmysqlproxyv3"
 
 taurusdbmysqlproxyv3.NewTaurusdbMysqlProxyV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TaurusdbMysqlProxyV3TimeoutsOutputReference
 ```

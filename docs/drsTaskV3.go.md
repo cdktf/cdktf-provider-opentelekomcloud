@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 drstaskv3.NewDrsTaskV3(scope Construct, id *string, config DrsTaskV3Config) DrsTaskV3
 ```
@@ -535,7 +535,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 drstaskv3.DrsTaskV3_IsConstruct(x interface{}) *bool
 ```
@@ -567,7 +567,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 drstaskv3.DrsTaskV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -581,7 +581,7 @@ drstaskv3.DrsTaskV3_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 drstaskv3.DrsTaskV3_IsTerraformResource(x interface{}) *bool
 ```
@@ -595,7 +595,7 @@ drstaskv3.DrsTaskV3_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 drstaskv3.DrsTaskV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1374,7 +1374,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 &drstaskv3.DrsTaskV3Config {
 	Connection: interface{},
@@ -1384,11 +1384,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
-	DestinationDb: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.drsTaskV3.DrsTaskV3DestinationDb,
+	DestinationDb: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.drsTaskV3.DrsTaskV3DestinationDb,
 	Direction: *string,
 	EngineType: *string,
 	Name: *string,
-	SourceDb: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.drsTaskV3.DrsTaskV3SourceDb,
+	SourceDb: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.drsTaskV3.DrsTaskV3SourceDb,
 	Type: *string,
 	Action: *string,
 	Description: *string,
@@ -1404,7 +1404,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	NodeNum: *f64,
 	StartTime: *string,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.drsTaskV3.DrsTaskV3Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.drsTaskV3.DrsTaskV3Timeouts,
 }
 ```
 
@@ -1781,7 +1781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3DestinationDb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 &drstaskv3.DrsTaskV3DestinationDb {
 	EngineType: *string,
@@ -2009,7 +2009,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3LimitSpeed.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 &drstaskv3.DrsTaskV3LimitSpeed {
 	EndTime: *string,
@@ -2069,7 +2069,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3SourceDb.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 &drstaskv3.DrsTaskV3SourceDb {
 	EngineType: *string,
@@ -2297,7 +2297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 &drstaskv3.DrsTaskV3Timeouts {
 	Create: *string,
@@ -2359,7 +2359,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3DestinationDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 drstaskv3.NewDrsTaskV3DestinationDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DrsTaskV3DestinationDbOutputReference
 ```
@@ -3019,7 +3019,7 @@ func InternalValue() DrsTaskV3DestinationDb
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3LimitSpeedList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 drstaskv3.NewDrsTaskV3LimitSpeedList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DrsTaskV3LimitSpeedList
 ```
@@ -3179,7 +3179,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3LimitSpeedOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 drstaskv3.NewDrsTaskV3LimitSpeedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DrsTaskV3LimitSpeedOutputReference
 ```
@@ -3512,7 +3512,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3SourceDbOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 drstaskv3.NewDrsTaskV3SourceDbOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DrsTaskV3SourceDbOutputReference
 ```
@@ -4172,7 +4172,7 @@ func InternalValue() DrsTaskV3SourceDb
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.drsTaskV3.DrsTaskV3TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/drstaskv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/drstaskv3"
 
 drstaskv3.NewDrsTaskV3TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DrsTaskV3TimeoutsOutputReference
 ```

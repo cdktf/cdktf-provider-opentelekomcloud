@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsquicksearchcriteriav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsquicksearchcriteriav1"
 
 ltsquicksearchcriteriav1.NewLtsQuickSearchCriteriaV1(scope Construct, id *string, config LtsQuickSearchCriteriaV1Config) LtsQuickSearchCriteriaV1
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsquicksearchcriteriav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsquicksearchcriteriav1"
 
 ltsquicksearchcriteriav1.LtsQuickSearchCriteriaV1_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsquicksearchcriteriav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsquicksearchcriteriav1"
 
 ltsquicksearchcriteriav1.LtsQuickSearchCriteriaV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ ltsquicksearchcriteriav1.LtsQuickSearchCriteriaV1_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsquicksearchcriteriav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsquicksearchcriteriav1"
 
 ltsquicksearchcriteriav1.LtsQuickSearchCriteriaV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ ltsquicksearchcriteriav1.LtsQuickSearchCriteriaV1_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsquicksearchcriteriav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsquicksearchcriteriav1"
 
 ltsquicksearchcriteriav1.LtsQuickSearchCriteriaV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.ltsQuickSearchCriteriaV1.LtsQuickSearchCriteriaV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/ltsquicksearchcriteriav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/ltsquicksearchcriteriav1"
 
 &ltsquicksearchcriteriav1.LtsQuickSearchCriteriaV1Config {
 	Connection: interface{},

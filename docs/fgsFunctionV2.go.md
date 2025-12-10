@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2(scope Construct, id *string, config FgsFunctionV2Config) FgsFunctionV2
 ```
@@ -792,7 +792,7 @@ func ResetVpcId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.FgsFunctionV2_IsConstruct(x interface{}) *bool
 ```
@@ -824,7 +824,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.FgsFunctionV2_IsTerraformElement(x interface{}) *bool
 ```
@@ -838,7 +838,7 @@ fgsfunctionv2.FgsFunctionV2_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.FgsFunctionV2_IsTerraformResource(x interface{}) *bool
 ```
@@ -852,7 +852,7 @@ fgsfunctionv2.FgsFunctionV2_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.FgsFunctionV2_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2313,7 +2313,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 &fgsfunctionv2.FgsFunctionV2Config {
 	Connection: interface{},
@@ -2334,7 +2334,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	CodeType: *string,
 	CodeUrl: *string,
 	ConcurrencyNum: *f64,
-	CustomImage: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.fgsFunctionV2.FgsFunctionV2CustomImage,
+	CustomImage: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage,
 	DependList: *[]*string,
 	Description: *string,
 	DnsList: *string,
@@ -2362,7 +2362,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	MaxInstanceNum: *string,
 	MountUserGroupId: *f64,
 	MountUserId: *f64,
-	NetworkController: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.fgsFunctionV2.FgsFunctionV2NetworkController,
+	NetworkController: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkController,
 	NetworkId: *string,
 	PeeringCidr: *string,
 	PreStopHandler: *string,
@@ -2371,7 +2371,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	RestoreHookHandler: *string,
 	RestoreHookTimeout: *f64,
 	Tags: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.fgsFunctionV2.FgsFunctionV2Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.fgsFunctionV2.FgsFunctionV2Timeouts,
 	UserData: *string,
 	Versions: interface{},
 	VpcId: *string,
@@ -3158,7 +3158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImage.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 &fgsfunctionv2.FgsFunctionV2CustomImage {
 	Url: *string,
@@ -3260,7 +3260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2FuncMounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 &fgsfunctionv2.FgsFunctionV2FuncMounts {
 	LocalMountPath: *string,
@@ -3334,7 +3334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkController.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 &fgsfunctionv2.FgsFunctionV2NetworkController {
 	DisablePublicNetwork: interface{},
@@ -3382,7 +3382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerTriggerAccessVpcs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 &fgsfunctionv2.FgsFunctionV2NetworkControllerTriggerAccessVpcs {
 	VpcId: *string,
@@ -3428,14 +3428,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 &fgsfunctionv2.FgsFunctionV2ReservedInstances {
 	Count: *f64,
 	QualifierName: *string,
 	QualifierType: *string,
 	IdleMode: interface{},
-	TacticsConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfig,
+	TacticsConfig: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfig,
 }
 ```
 
@@ -3518,7 +3518,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 &fgsfunctionv2.FgsFunctionV2ReservedInstancesTacticsConfig {
 	CronConfigs: interface{},
@@ -3552,7 +3552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 &fgsfunctionv2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigs {
 	Count: *f64,
@@ -3640,7 +3640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 &fgsfunctionv2.FgsFunctionV2Timeouts {
 	Create: *string,
@@ -3686,11 +3686,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2Versions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 &fgsfunctionv2.FgsFunctionV2Versions {
 	Name: *string,
-	Aliases: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.fgsFunctionV2.FgsFunctionV2VersionsAliases,
+	Aliases: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsAliases,
 	Description: *string,
 }
 ```
@@ -3748,7 +3748,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsAliases.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 &fgsfunctionv2.FgsFunctionV2VersionsAliases {
 	Name: *string,
@@ -3796,7 +3796,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2CustomImageOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2CustomImageOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FgsFunctionV2CustomImageOutputReference
 ```
@@ -4212,7 +4212,7 @@ func InternalValue() FgsFunctionV2CustomImage
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2FuncMountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2FuncMountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FgsFunctionV2FuncMountsList
 ```
@@ -4372,7 +4372,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2FuncMountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2FuncMountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FgsFunctionV2FuncMountsOutputReference
 ```
@@ -4727,7 +4727,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2NetworkControllerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FgsFunctionV2NetworkControllerOutputReference
 ```
@@ -5047,7 +5047,7 @@ func InternalValue() FgsFunctionV2NetworkController
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerTriggerAccessVpcsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2NetworkControllerTriggerAccessVpcsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FgsFunctionV2NetworkControllerTriggerAccessVpcsList
 ```
@@ -5207,7 +5207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FgsFunctionV2NetworkControllerTriggerAccessVpcsOutputReference
 ```
@@ -5532,7 +5532,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2ReservedInstancesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FgsFunctionV2ReservedInstancesList
 ```
@@ -5692,7 +5692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2ReservedInstancesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FgsFunctionV2ReservedInstancesOutputReference
 ```
@@ -6096,7 +6096,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2ReservedInstancesTacticsConfigCronConfigsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FgsFunctionV2ReservedInstancesTacticsConfigCronConfigsList
 ```
@@ -6256,7 +6256,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigCronConfigsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2ReservedInstancesTacticsConfigCronConfigsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FgsFunctionV2ReservedInstancesTacticsConfigCronConfigsOutputReference
 ```
@@ -6633,7 +6633,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2ReservedInstancesTacticsConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2ReservedInstancesTacticsConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FgsFunctionV2ReservedInstancesTacticsConfigOutputReference
 ```
@@ -6924,7 +6924,7 @@ func InternalValue() FgsFunctionV2ReservedInstancesTacticsConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FgsFunctionV2TimeoutsOutputReference
 ```
@@ -7231,7 +7231,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsAliasesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2VersionsAliasesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) FgsFunctionV2VersionsAliasesOutputReference
 ```
@@ -7531,7 +7531,7 @@ func InternalValue() FgsFunctionV2VersionsAliases
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2VersionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) FgsFunctionV2VersionsList
 ```
@@ -7691,7 +7691,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.fgsFunctionV2.FgsFunctionV2VersionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/fgsfunctionv2"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/fgsfunctionv2"
 
 fgsfunctionv2.NewFgsFunctionV2VersionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) FgsFunctionV2VersionsOutputReference
 ```

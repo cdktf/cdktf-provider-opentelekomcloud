@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourcetagvaluesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourcetagvaluesv1"
 
 dataopentelekomcloudtmsresourcetagvaluesv1.NewDataOpentelekomcloudTmsResourceTagValuesV1(scope Construct, id *string, config DataOpentelekomcloudTmsResourceTagValuesV1Config) DataOpentelekomcloudTmsResourceTagValuesV1
 ```
@@ -290,7 +290,7 @@ func ResetRegionId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourcetagvaluesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourcetagvaluesv1"
 
 dataopentelekomcloudtmsresourcetagvaluesv1.DataOpentelekomcloudTmsResourceTagValuesV1_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourcetagvaluesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourcetagvaluesv1"
 
 dataopentelekomcloudtmsresourcetagvaluesv1.DataOpentelekomcloudTmsResourceTagValuesV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataopentelekomcloudtmsresourcetagvaluesv1.DataOpentelekomcloudTmsResourceTagVal
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourcetagvaluesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourcetagvaluesv1"
 
 dataopentelekomcloudtmsresourcetagvaluesv1.DataOpentelekomcloudTmsResourceTagValuesV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudtmsresourcetagvaluesv1.DataOpentelekomcloudTmsResourceTagVal
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourcetagvaluesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourcetagvaluesv1"
 
 dataopentelekomcloudtmsresourcetagvaluesv1.DataOpentelekomcloudTmsResourceTagValuesV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -634,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceTagValuesV1.DataOpentelekomcloudTmsResourceTagValuesV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourcetagvaluesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourcetagvaluesv1"
 
 &dataopentelekomcloudtmsresourcetagvaluesv1.DataOpentelekomcloudTmsResourceTagValuesV1Config {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlErrorLogsV3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
 
 dataopentelekomcloudtaurusdbmysqlerrorlogsv3.NewDataOpentelekomcloudTaurusdbMysqlErrorLogsV3(scope Construct, id *string, config DataOpentelekomcloudTaurusdbMysqlErrorLogsV3Config) DataOpentelekomcloudTaurusdbMysqlErrorLogsV3
 ```
@@ -290,7 +290,7 @@ func ResetLevel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlErrorLogsV3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
 
 dataopentelekomcloudtaurusdbmysqlerrorlogsv3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlErrorLogsV3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
 
 dataopentelekomcloudtaurusdbmysqlerrorlogsv3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataopentelekomcloudtaurusdbmysqlerrorlogsv3.DataOpentelekomcloudTaurusdbMysqlEr
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlErrorLogsV3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
 
 dataopentelekomcloudtaurusdbmysqlerrorlogsv3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudtaurusdbmysqlerrorlogsv3.DataOpentelekomcloudTaurusdbMysqlEr
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlErrorLogsV3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
 
 dataopentelekomcloudtaurusdbmysqlerrorlogsv3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -711,7 +711,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlErrorLogsV3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
 
 &dataopentelekomcloudtaurusdbmysqlerrorlogsv3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3Config {
 	Connection: interface{},
@@ -900,7 +900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlErrorLogsV3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3ErrorLogListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
 
 &dataopentelekomcloudtaurusdbmysqlerrorlogsv3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3ErrorLogListStruct {
 
@@ -915,7 +915,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlErrorLogsV3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3ErrorLogListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
 
 dataopentelekomcloudtaurusdbmysqlerrorlogsv3.NewDataOpentelekomcloudTaurusdbMysqlErrorLogsV3ErrorLogListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudTaurusdbMysqlErrorLogsV3ErrorLogListStructList
 ```
@@ -1064,7 +1064,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTaurusdbMysqlErrorLogsV3.DataOpentelekomcloudTaurusdbMysqlErrorLogsV3ErrorLogListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtaurusdbmysqlerrorlogsv3"
 
 dataopentelekomcloudtaurusdbmysqlerrorlogsv3.NewDataOpentelekomcloudTaurusdbMysqlErrorLogsV3ErrorLogListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudTaurusdbMysqlErrorLogsV3ErrorLogListStructOutputReference
 ```

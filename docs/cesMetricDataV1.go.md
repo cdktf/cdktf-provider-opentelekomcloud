@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 cesmetricdatav1.NewCesMetricDataV1(scope Construct, id *string, config CesMetricDataV1Config) CesMetricDataV1
 ```
@@ -432,7 +432,7 @@ func ResetUnit()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 cesmetricdatav1.CesMetricDataV1_IsConstruct(x interface{}) *bool
 ```
@@ -464,7 +464,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 cesmetricdatav1.CesMetricDataV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -478,7 +478,7 @@ cesmetricdatav1.CesMetricDataV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 cesmetricdatav1.CesMetricDataV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -492,7 +492,7 @@ cesmetricdatav1.CesMetricDataV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 cesmetricdatav1.CesMetricDataV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -897,7 +897,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 &cesmetricdatav1.CesMetricDataV1Config {
 	Connection: interface{},
@@ -908,11 +908,11 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	CollectTime: *f64,
-	Metric: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.cesMetricDataV1.CesMetricDataV1Metric,
+	Metric: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cesMetricDataV1.CesMetricDataV1Metric,
 	Ttl: *f64,
 	Value: *f64,
 	Id: *string,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.cesMetricDataV1.CesMetricDataV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cesMetricDataV1.CesMetricDataV1Timeouts,
 	Type: *string,
 	Unit: *string,
 }
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Metric.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 &cesmetricdatav1.CesMetricDataV1Metric {
 	Dimensions: interface{},
@@ -1180,7 +1180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1MetricDimensions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 &cesmetricdatav1.CesMetricDataV1MetricDimensions {
 	Name: *string,
@@ -1226,7 +1226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 &cesmetricdatav1.CesMetricDataV1Timeouts {
 	Create: *string,
@@ -1274,7 +1274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1MetricDimensionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 cesmetricdatav1.NewCesMetricDataV1MetricDimensionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CesMetricDataV1MetricDimensionsList
 ```
@@ -1434,7 +1434,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1MetricDimensionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 cesmetricdatav1.NewCesMetricDataV1MetricDimensionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CesMetricDataV1MetricDimensionsOutputReference
 ```
@@ -1745,7 +1745,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1MetricOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 cesmetricdatav1.NewCesMetricDataV1MetricOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesMetricDataV1MetricOutputReference
 ```
@@ -2073,7 +2073,7 @@ func InternalValue() CesMetricDataV1Metric
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cesMetricDataV1.CesMetricDataV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cesmetricdatav1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cesmetricdatav1"
 
 cesmetricdatav1.NewCesMetricDataV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CesMetricDataV1TimeoutsOutputReference
 ```

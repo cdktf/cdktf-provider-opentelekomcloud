@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1(scope Construct, id *string, config CfwAclRuleV1Config) CfwAclRuleV1
 ```
@@ -506,7 +506,7 @@ func ResetTimeouts()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.CfwAclRuleV1_IsConstruct(x interface{}) *bool
 ```
@@ -538,7 +538,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.CfwAclRuleV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -552,7 +552,7 @@ cfwaclrulev1.CfwAclRuleV1_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.CfwAclRuleV1_IsTerraformResource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ cfwaclrulev1.CfwAclRuleV1_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.CfwAclRuleV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1268,7 +1268,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 &cfwaclrulev1.CfwAclRuleV1Config {
 	Connection: interface{},
@@ -1280,13 +1280,13 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	Provisioners: *[]interface{},
 	ActionType: *f64,
 	AddressType: *f64,
-	Destination: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.cfwAclRuleV1.CfwAclRuleV1Destination,
+	Destination: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1Destination,
 	LongConnectEnable: *f64,
 	Name: *string,
 	ObjectId: *string,
-	Sequence: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.cfwAclRuleV1.CfwAclRuleV1Sequence,
-	Service: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.cfwAclRuleV1.CfwAclRuleV1Service,
-	Source: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.cfwAclRuleV1.CfwAclRuleV1Source,
+	Sequence: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1Sequence,
+	Service: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1Service,
+	Source: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1Source,
 	Status: *f64,
 	Type: *f64,
 	Applications: *[]*string,
@@ -1297,7 +1297,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 	LongConnectTimeHour: *f64,
 	LongConnectTimeMinute: *f64,
 	LongConnectTimeSecond: *f64,
-	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12.cfwAclRuleV1.CfwAclRuleV1Timeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1Timeouts,
 }
 ```
 
@@ -1660,7 +1660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1Destination.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 &cfwaclrulev1.CfwAclRuleV1Destination {
 	Type: *f64,
@@ -1876,7 +1876,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1DestinationRegionListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 &cfwaclrulev1.CfwAclRuleV1DestinationRegionListStruct {
 	RegionId: *string,
@@ -1922,7 +1922,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1Sequence.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 &cfwaclrulev1.CfwAclRuleV1Sequence {
 	Bottom: *f64,
@@ -1982,7 +1982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1Service.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 &cfwaclrulev1.CfwAclRuleV1Service {
 	Type: *f64,
@@ -2172,7 +2172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1ServiceCustomService.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 &cfwaclrulev1.CfwAclRuleV1ServiceCustomService {
 	Description: *string,
@@ -2260,7 +2260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1ServiceServiceGroupNames.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 &cfwaclrulev1.CfwAclRuleV1ServiceServiceGroupNames {
 	Name: *string,
@@ -2334,7 +2334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1Source.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 &cfwaclrulev1.CfwAclRuleV1Source {
 	Type: *f64,
@@ -2550,7 +2550,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1SourceRegionListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 &cfwaclrulev1.CfwAclRuleV1SourceRegionListStruct {
 	RegionId: *string,
@@ -2596,7 +2596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1Timeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 &cfwaclrulev1.CfwAclRuleV1Timeouts {
 	Create: *string,
@@ -2658,7 +2658,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1DestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1DestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CfwAclRuleV1DestinationOutputReference
 ```
@@ -3319,7 +3319,7 @@ func InternalValue() CfwAclRuleV1Destination
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1DestinationRegionListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1DestinationRegionListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CfwAclRuleV1DestinationRegionListStructList
 ```
@@ -3479,7 +3479,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1DestinationRegionListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1DestinationRegionListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CfwAclRuleV1DestinationRegionListStructOutputReference
 ```
@@ -3804,7 +3804,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1SequenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1SequenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CfwAclRuleV1SequenceOutputReference
 ```
@@ -4140,7 +4140,7 @@ func InternalValue() CfwAclRuleV1Sequence
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1ServiceCustomServiceList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1ServiceCustomServiceList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CfwAclRuleV1ServiceCustomServiceList
 ```
@@ -4300,7 +4300,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1ServiceCustomServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1ServiceCustomServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CfwAclRuleV1ServiceCustomServiceOutputReference
 ```
@@ -4712,7 +4712,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1ServiceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1ServiceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CfwAclRuleV1ServiceOutputReference
 ```
@@ -5328,7 +5328,7 @@ func InternalValue() CfwAclRuleV1Service
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1ServiceServiceGroupNamesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1ServiceServiceGroupNamesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CfwAclRuleV1ServiceServiceGroupNamesList
 ```
@@ -5488,7 +5488,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1ServiceServiceGroupNamesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1ServiceServiceGroupNamesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CfwAclRuleV1ServiceServiceGroupNamesOutputReference
 ```
@@ -5871,7 +5871,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1SourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1SourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CfwAclRuleV1SourceOutputReference
 ```
@@ -6532,7 +6532,7 @@ func InternalValue() CfwAclRuleV1Source
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1SourceRegionListStructList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1SourceRegionListStructList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CfwAclRuleV1SourceRegionListStructList
 ```
@@ -6692,7 +6692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1SourceRegionListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1SourceRegionListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CfwAclRuleV1SourceRegionListStructOutputReference
 ```
@@ -7017,7 +7017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.cfwAclRuleV1.CfwAclRuleV1TimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/cfwaclrulev1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/cfwaclrulev1"
 
 cfwaclrulev1.NewCfwAclRuleV1TimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CfwAclRuleV1TimeoutsOutputReference
 ```

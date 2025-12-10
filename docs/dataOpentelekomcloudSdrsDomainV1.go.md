@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsdrsdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsdrsdomainv1"
 
 dataopentelekomcloudsdrsdomainv1.NewDataOpentelekomcloudSdrsDomainV1(scope Construct, id *string, config DataOpentelekomcloudSdrsDomainV1Config) DataOpentelekomcloudSdrsDomainV1
 ```
@@ -290,7 +290,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsdrsdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsdrsdomainv1"
 
 dataopentelekomcloudsdrsdomainv1.DataOpentelekomcloudSdrsDomainV1_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsdrsdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsdrsdomainv1"
 
 dataopentelekomcloudsdrsdomainv1.DataOpentelekomcloudSdrsDomainV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataopentelekomcloudsdrsdomainv1.DataOpentelekomcloudSdrsDomainV1_IsTerraformEle
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsdrsdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsdrsdomainv1"
 
 dataopentelekomcloudsdrsdomainv1.DataOpentelekomcloudSdrsDomainV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataopentelekomcloudsdrsdomainv1.DataOpentelekomcloudSdrsDomainV1_IsTerraformDat
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsdrsdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsdrsdomainv1"
 
 dataopentelekomcloudsdrsdomainv1.DataOpentelekomcloudSdrsDomainV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudSdrsDomainV1.DataOpentelekomcloudSdrsDomainV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudsdrsdomainv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudsdrsdomainv1"
 
 &dataopentelekomcloudsdrsdomainv1.DataOpentelekomcloudSdrsDomainV1Config {
 	Connection: interface{},

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourceinstancesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourceinstancesv1"
 
 dataopentelekomcloudtmsresourceinstancesv1.NewDataOpentelekomcloudTmsResourceInstancesV1(scope Construct, id *string, config DataOpentelekomcloudTmsResourceInstancesV1Config) DataOpentelekomcloudTmsResourceInstancesV1
 ```
@@ -310,7 +310,7 @@ func ResetWithoutAnyTag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourceinstancesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourceinstancesv1"
 
 dataopentelekomcloudtmsresourceinstancesv1.DataOpentelekomcloudTmsResourceInstancesV1_IsConstruct(x interface{}) *bool
 ```
@@ -342,7 +342,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourceinstancesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourceinstancesv1"
 
 dataopentelekomcloudtmsresourceinstancesv1.DataOpentelekomcloudTmsResourceInstancesV1_IsTerraformElement(x interface{}) *bool
 ```
@@ -356,7 +356,7 @@ dataopentelekomcloudtmsresourceinstancesv1.DataOpentelekomcloudTmsResourceInstan
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourceinstancesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourceinstancesv1"
 
 dataopentelekomcloudtmsresourceinstancesv1.DataOpentelekomcloudTmsResourceInstancesV1_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -370,7 +370,7 @@ dataopentelekomcloudtmsresourceinstancesv1.DataOpentelekomcloudTmsResourceInstan
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourceinstancesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourceinstancesv1"
 
 dataopentelekomcloudtmsresourceinstancesv1.DataOpentelekomcloudTmsResourceInstancesV1_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -698,7 +698,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourceinstancesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourceinstancesv1"
 
 &dataopentelekomcloudtmsresourceinstancesv1.DataOpentelekomcloudTmsResourceInstancesV1Config {
 	Connection: interface{},
@@ -875,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Resources.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourceinstancesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourceinstancesv1"
 
 &dataopentelekomcloudtmsresourceinstancesv1.DataOpentelekomcloudTmsResourceInstancesV1Resources {
 
@@ -888,7 +888,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1Tags.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourceinstancesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourceinstancesv1"
 
 &dataopentelekomcloudtmsresourceinstancesv1.DataOpentelekomcloudTmsResourceInstancesV1Tags {
 	Key: *string,
@@ -936,7 +936,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/opent
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1ResourcesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourceinstancesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourceinstancesv1"
 
 dataopentelekomcloudtmsresourceinstancesv1.NewDataOpentelekomcloudTmsResourceInstancesV1ResourcesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudTmsResourceInstancesV1ResourcesList
 ```
@@ -1085,7 +1085,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1ResourcesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourceinstancesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourceinstancesv1"
 
 dataopentelekomcloudtmsresourceinstancesv1.NewDataOpentelekomcloudTmsResourceInstancesV1ResourcesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudTmsResourceInstancesV1ResourcesOutputReference
 ```
@@ -1418,7 +1418,7 @@ func InternalValue() DataOpentelekomcloudTmsResourceInstancesV1Resources
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourceinstancesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourceinstancesv1"
 
 dataopentelekomcloudtmsresourceinstancesv1.NewDataOpentelekomcloudTmsResourceInstancesV1TagsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudTmsResourceInstancesV1TagsList
 ```
@@ -1578,7 +1578,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudTmsResourceInstancesV1.DataOpentelekomcloudTmsResourceInstancesV1TagsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudtmsresourceinstancesv1"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudtmsresourceinstancesv1"
 
 dataopentelekomcloudtmsresourceinstancesv1.NewDataOpentelekomcloudTmsResourceInstancesV1TagsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudTmsResourceInstancesV1TagsOutputReference
 ```

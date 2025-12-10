@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/opentelekomcloud/ope
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiTemplatesV3.DataOpentelekomcloudGeminiTemplatesV3.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudgeminitemplatesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudgeminitemplatesv3"
 
 dataopentelekomcloudgeminitemplatesv3.NewDataOpentelekomcloudGeminiTemplatesV3(scope Construct, id *string, config DataOpentelekomcloudGeminiTemplatesV3Config) DataOpentelekomcloudGeminiTemplatesV3
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiTemplatesV3.DataOpentelekomcloudGeminiTemplatesV3.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudgeminitemplatesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudgeminitemplatesv3"
 
 dataopentelekomcloudgeminitemplatesv3.DataOpentelekomcloudGeminiTemplatesV3_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiTemplatesV3.DataOpentelekomcloudGeminiTemplatesV3.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudgeminitemplatesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudgeminitemplatesv3"
 
 dataopentelekomcloudgeminitemplatesv3.DataOpentelekomcloudGeminiTemplatesV3_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ dataopentelekomcloudgeminitemplatesv3.DataOpentelekomcloudGeminiTemplatesV3_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiTemplatesV3.DataOpentelekomcloudGeminiTemplatesV3.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudgeminitemplatesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudgeminitemplatesv3"
 
 dataopentelekomcloudgeminitemplatesv3.DataOpentelekomcloudGeminiTemplatesV3_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ dataopentelekomcloudgeminitemplatesv3.DataOpentelekomcloudGeminiTemplatesV3_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiTemplatesV3.DataOpentelekomcloudGeminiTemplatesV3.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudgeminitemplatesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudgeminitemplatesv3"
 
 dataopentelekomcloudgeminitemplatesv3.DataOpentelekomcloudGeminiTemplatesV3_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -594,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiTemplatesV3.DataOpentelekomcloudGeminiTemplatesV3Config.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudgeminitemplatesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudgeminitemplatesv3"
 
 &dataopentelekomcloudgeminitemplatesv3.DataOpentelekomcloudGeminiTemplatesV3Config {
 	Connection: interface{},
@@ -713,7 +713,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiTemplatesV3.DataOpentelekomcloudGeminiTemplatesV3Templates.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudgeminitemplatesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudgeminitemplatesv3"
 
 &dataopentelekomcloudgeminitemplatesv3.DataOpentelekomcloudGeminiTemplatesV3Templates {
 
@@ -728,7 +728,7 @@ import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiTemplatesV3.DataOpentelekomcloudGeminiTemplatesV3TemplatesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudgeminitemplatesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudgeminitemplatesv3"
 
 dataopentelekomcloudgeminitemplatesv3.NewDataOpentelekomcloudGeminiTemplatesV3TemplatesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataOpentelekomcloudGeminiTemplatesV3TemplatesList
 ```
@@ -877,7 +877,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-opentelekomcloud.dataOpentelekomcloudGeminiTemplatesV3.DataOpentelekomcloudGeminiTemplatesV3TemplatesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/v12/dataopentelekomcloudgeminitemplatesv3"
+import "github.com/cdktf/cdktf-provider-opentelekomcloud-go/opentelekomcloud/dataopentelekomcloudgeminitemplatesv3"
 
 dataopentelekomcloudgeminitemplatesv3.NewDataOpentelekomcloudGeminiTemplatesV3TemplatesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataOpentelekomcloudGeminiTemplatesV3TemplatesOutputReference
 ```
